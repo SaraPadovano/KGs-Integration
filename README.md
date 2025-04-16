@@ -5,7 +5,8 @@ Tesi di Laurea per il corso di Laurea in Informatica dell'Università di Bari Al
 1) Utilizzo di python 3.6.13 (si può anche usare 3.7 ma poi bisogna usare versione di ternsorflow 1.15.0);
 2) CUDA version 9.0;
 3) CUDNN version 7.6.5;
-4) Tensorflow versione 1.12.0
+4) Tensorflow versione 1.12.0;
+5) Scaricare il progetto di AutoAlign dal repsository indicato nell'articolo prima di far andare tutto perchè serve per il path del richiamo di AutoAlign.py (che poi nel codice va modificato in base a dove viene scaricato il progetto)
 
 **INTEGRAZIONE CONDA CON PYCHARM PER INSTALLAZIONE SEMPLICE DI CUDA E CUDNN**
 1) *CREA AMBIENTE CON ANACONDA*
