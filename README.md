@@ -31,4 +31,5 @@ Tesi di Laurea per il corso di Laurea in Informatica dell'Università di Bari Al
 - bisognerebbe aggiungere qualcosa per capire dove ci si trova dopo l'ultimo print di test;
 - si può verificare un problema pickle da crlf a lf perchè passaggio da linux a windows;
 - problema di writer risolto;
-- lento ma penso sia normale
+- lento ma penso sia normale;
+- dovuto inserire il main in una cartella per come AutoAlign si richiama i file per testarlo
