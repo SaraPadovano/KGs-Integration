@@ -26,8 +26,7 @@ Tesi di Laurea per il corso di Laurea in Informatica dell'Università di Bari Al
 
 
 **CONSIDERAZIONI**
-- vuole il richiamo ad AutoAlign.py in una cartella per questione dei file (probabilmente questo non serve perchè dovremmo modificare il codice per mettere i nostri knowledge graphs);
-- dà il superamento del 10% della memoria;
+- dà il superamento del 10% della memoria a volte;
 - bisognerebbe aggiungere qualcosa per capire dove ci si trova dopo l'ultimo print di test;
 - si può verificare un problema pickle da crlf a lf perchè passaggio da linux a windows;
 - problema di writer risolto;
