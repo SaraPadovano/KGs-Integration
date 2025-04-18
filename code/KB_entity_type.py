@@ -21,15 +21,6 @@ import re
 os.environ['TF_CPP_MIN_LOG_LEVEL']='4'
 
 
-# In[ ]:
-
-
-dy_filename = "./../DY-NB/dbp_yago.ttl"
-prox_graph_file = "./yago_pred_prox_graph"
-graph = Graph()
-graph.parse(location=dy_filename, format='nt')
-print("len(graph):", len(graph))
-
 
 # In[ ]:
 
@@ -101,47 +92,6 @@ def add_to_set(types, typeset):
         typeset.add(t)
 
 
-# In[ ]:
-
-
-typeset1 = set()
-typeset2 = set()
-
-prox_graph = []
-i=0
-for s,p,o in graph:
-    i += 1
-    s, s_data_type = getRDFData(str(s)) # change data type
-    o, o_data_type = getRDFData(str(o))
-    
-    add_to_set(s_data_type, typeset1)
-    add_to_set(o_data_type, typeset2)
-    
-    prox_triple_list = [','.join(s_data_type), p, ','.join(o_data_type)]
-    prox_triple_string = '\t'.join(prox_triple_list)
-
-    prox_graph.append(prox_triple_string)
-
-    if i % 1000 == 0:
-        with open(f"{prox_graph_file}.txt", 'a+') as f:
-            for prox_i in prox_graph:
-                f.write(str(prox_i))
-                f.write('\n')
-        prox_graph = []
-        print("i: ", i)
-
-
-
-# In[ ]:
-
-
-with open('./typeset1.txt', 'w') as f:
-    f.write(','.join(list(typeset1)))
-with open('./typeset2.txt', 'w') as f:
-    f.write(','.join(list(typeset2)))
-
-
-# In[ ]:
 
 
 
