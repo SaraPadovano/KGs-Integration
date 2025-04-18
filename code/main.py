@@ -2,6 +2,8 @@ import sys
 import os
 import warnings
 import importlib.util
+from KB_entity_type import getRDFData, add_to_set
+from rdflib import Graph
 
 # Eliminiamo i warning futuri per funzioni obsolete soprattutto per numpy
 warnings.simplefilter(action='ignore', category=FutureWarning)
@@ -21,6 +23,47 @@ file_path = os.path.join(path_modulo, 'AutoAlign.py')
 
 # Aggiungiamo variabile mancante 'writer'
 writer = open("training_log2.txt", "w", encoding="utf-8")
+
+def entity_prox_graph(filename, file_prox_graph):
+    graph = Graph()
+    graph.parse(location=filename, format='nt')
+    print("len(graph):", len(graph))
+    typeset1 = set()
+    typeset2 = set()
+
+    prox_graph = []
+    i = 0
+    for s, p, o in graph:
+        i += 1
+        s, s_data_type = getRDFData(str(s))  # change data type
+        o, o_data_type = getRDFData(str(o))
+
+        add_to_set(s_data_type, typeset1)
+        add_to_set(o_data_type, typeset2)
+
+        prox_triple_list = [','.join(s_data_type), p, ','.join(o_data_type)]
+        prox_triple_string = '\t'.join(prox_triple_list)
+
+        prox_graph.append(prox_triple_string)
+
+        if i % 1000 == 0:
+            with open(f"{file_prox_graph}.txt", 'a+') as f:
+                for prox_i in prox_graph:
+                    f.write(str(prox_i))
+                    f.write('\n')
+            prox_graph = []
+            print("i: ", i)
+
+    with open('./typeset1.txt', 'w') as f:
+        f.write(','.join(list(typeset1)))
+    with open('./typeset2.txt', 'w') as f:
+        f.write(','.join(list(typeset2)))
+
+
+# Definiamo il primo KG in ttl che deve essere fatto il grafo di prossimità e i tipi delle entità
+KG1_filename = r'C:\Users\acer\KGs-Integration\KGs\KG1.ttl'
+KG1_prox_graph_file = r'C:\Users\acer\KGs-Integration\KGs/KG1_pred_prox_graph'
+entity_prox_graph(KG1_filename, KG1_prox_graph_file)
 
 try:
     # Carichiamo specifica del modulo
