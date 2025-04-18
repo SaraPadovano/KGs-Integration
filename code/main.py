@@ -29,7 +29,7 @@ try:
     # Iniettiamo writer
     module.__dict__['writer'] = writer
     # Eseguiamo AutoAlign
-    spec.loader.exec_module(module)
+    #spec.loader.exec_module(module)
 
 except ImportError as e:
     print("Errore di import:", e)
