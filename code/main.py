@@ -24,7 +24,7 @@ file_path = os.path.join(path_modulo, 'AutoAlign.py')
 # Aggiungiamo variabile mancante 'writer'
 writer = open("training_log2.txt", "w", encoding="utf-8")
 
-def entity_prox_graph(filename, file_prox_graph):
+def entity_prox_graph(filename, file_prox_graph, KG1_flag):
     graph = Graph()
     graph.parse(location=filename, format='nt')
     print("len(graph):", len(graph))
@@ -35,8 +35,8 @@ def entity_prox_graph(filename, file_prox_graph):
     i = 0
     for s, p, o in graph:
         i += 1
-        s, s_data_type = getRDFData(str(s))  # change data type
-        o, o_data_type = getRDFData(str(o))
+        s, s_data_type = getRDFData(str(s), KG1_flag)  # change data type
+        o, o_data_type = getRDFData(str(o), KG1_flag)
 
         add_to_set(s_data_type, typeset1)
         add_to_set(o_data_type, typeset2)
@@ -63,7 +63,8 @@ def entity_prox_graph(filename, file_prox_graph):
 # Definiamo il primo KG in ttl che deve essere fatto il grafo di prossimità e i tipi delle entità
 KG1_filename = r'C:\Users\acer\KGs-Integration\KGs\KG1.ttl'
 KG1_prox_graph_file = r'C:\Users\acer\KGs-Integration\KGs/KG1_pred_prox_graph'
-entity_prox_graph(KG1_filename, KG1_prox_graph_file)
+KG1_flag = True
+entity_prox_graph(KG1_filename, KG1_prox_graph_file, KG1_flag)
 
 try:
     # Carichiamo specifica del modulo
