@@ -4,21 +4,25 @@ import re
 os.environ['TF_CPP_MIN_LOG_LEVEL']='4'
 
 
-def query_sparkle(Q, KG1_flag):
+def query_sparql(Q, KG1_flag):
+    print("Entrato in query_sparql")
 
     if KG1_flag:
+        print("entrato per query KG1")
         queryString = """
+            PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
             PREFIX dcterms: <http://purl.org/dc/terms/> 
             PREFIX foaf: <http://xmlns.com/foaf/0.1/> 
             PREFIX ns1: <https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#>
             PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
             SELECT DISTINCT ?obj WHERE{
             """ + Q + """ rdf:type ?obj
-            FILTER strstarts(str(?obj), str(dbo:))
+            FILTER strstarts(str(?obj), str(ns1:))
             }
             """
         return queryString
     else:
+        print("Entrato per query KG2")
         queryString = """
                     PREFIX : <http://example.org/abuse-of-women#>
                     PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -26,20 +30,23 @@ def query_sparkle(Q, KG1_flag):
                     PREFIX owl: <http://www.w3.org/2002/07/owl#> 
                     SELECT DISTINCT ?obj WHERE{
                     """ + Q + """ rdf:type ?obj
-                    FILTER strstarts(str(?obj), str(dbo:))
+                    FILTER strstarts(str(?obj), str(:))
                     }
                     """
         return queryString
 
 
 def getRdfType(Q, KG1_flag):
+    print("Entrato in getRdfType")
     Q_types = []
 
-    query = query_sparkle(Q, KG1_flag)
-
+    query = query_sparql(Q, KG1_flag)
+    print("Uscito query_sparql")
     if KG1_flag:
-        sparql = SPARQLWrapper("http://dbpedia.org/sparql")
+        print("primo kg endpoint")
+        sparql = SPARQLWrapper("http://localhost:5000/sparql")
     else:
+        print("secondo kg endpoint")
         sparql = SPARQLWrapper("http://dbpedia.org/sparql")
 
     sparql.setQuery(query)
@@ -51,8 +58,10 @@ def getRdfType(Q, KG1_flag):
         results = sparql.query().convert()
         for result in results["results"]["bindings"]:
             if KG1_flag:
-                Q_types.append(result["obj"]["value"].replace("http://dbpedia.org/ontology/",""))
+                print("kg1 type append")
+                Q_types.append(result["obj"]["value"].replace("https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#", ""))
             else:
+                print("kg2 type append")
                 Q_types.append(result["obj"]["value"].replace("http://dbpedia.org/ontology/", ""))
         return Q_types
     except TimeoutError:
@@ -77,16 +86,29 @@ def dataType(string):
 
 
 def getRDFData(o, KG1_flag):
-    if str(o).startswith('http://dbpedia.org/resource/'):
-        Q_entity = "<"+o+">"
-        data_type = getRdfType(Q_entity, KG1_flag)
+    print("Entrato in getRDFdata")
+    if KG1_flag:
+        if str(o).startswith('https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#'):
+            print("Entrato in if per il primo KG")
+            Q_entity = "<"+o+">"
+            data_type = getRdfType(Q_entity, KG1_flag)
+            print("uscito getRdfType")
+        else:
+            data_type = [dataType(o)]
+        return o, data_type
     else:
-        data_type = [dataType(o)]
-    
-    return o, data_type
+        if str(o).startswith('http://dbpedia.org/resource/'):
+            print("Entrato in if per il secondo KG")
+            Q_entity = "<"+o+">"
+            data_type = getRdfType(Q_entity, KG1_flag)
+            print("uscito getRdfType")
+        else:
+            data_type = [dataType(o)]
+        return o, data_type
 
 
 def add_to_set(types, typeset):
+    print("entrato in add_to_set")
     for t in types:
         typeset.add(t)
 
