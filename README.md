@@ -7,15 +7,14 @@ Tesi di Laurea per il corso di Laurea in Informatica dell'Università di Bari Al
 3) CUDNN version 7.6.5;
 4) Tensorflow versione 1.12.0;
 5) Scaricare il progetto di AutoAlign dal repsository indicato nell'articolo prima di far andare tutto perchè serve per il path del richiamo di AutoAlign.py (che poi nel codice va modificato in base a dove viene scaricato il progetto);
-6) avere installato anaconda;
-7) scaricare il progetto del collega Rubini per avere l'endpoint di sparql per i tipi di entità e modificare all'interno del main.py il percorso in base a dove è stato scaricato il progetto del collega per lo script endpoint.py del collega 
+6) avere installato anaconda
 
 **INTEGRAZIONE CONDA CON PYCHARM PER INSTALLAZIONE SEMPLICE DI CUDA E CUDNN**
 1) *CREA AMBIENTE CON ANACONDA*
    - conda create -n [nome_ambiente] python=[versione python];
    - conda activate [nome_ambiente];
    - conda installa cudatoolkit==[versione cuda] cudnn==[versione cudnn];
-   - pip install [requirements] (se ci sono, in questo caso i requirements del progetto di AutoAlign + flask)
+   - pip install [requirements] (se ci sono, in questo caso i requirements del progetto di AutoAlign + requests)
 
 3) *COLLEGA CONDA A PYCHARM*
    - apri progetto in pycharm;
