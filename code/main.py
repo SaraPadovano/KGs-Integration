@@ -4,35 +4,39 @@ import warnings
 import importlib.util
 from KB_entity_type import getRDFData, add_to_set
 from rdflib import Graph
-import subprocess
-import time
 
 def entity_prox_graph(filename, file_prox_graph, KG1_flag):
+
     print("Entrato nella funzione entity_prox_graph")
     graph = Graph()
-    graph.parse(location=filename, format='nt')
+    graph.parse(location=filename, format='turtle')
     print("len(graph):", len(graph))
     typeset1 = set()
     typeset2 = set()
 
     prox_graph = []
     i = 0
-    print("Avvio for")
+
     for s, p, o in graph:
         i += 1
-        s, s_data_type = getRDFData(str(s), KG1_flag)  # change data type
-        o, o_data_type = getRDFData(str(o), KG1_flag)
-        print("effettuati i getRDFData")
+        print(f"\n--- Tripla {i} ---")
+        print(f"s: {s}, p: {p}, o: {o}")
+        s, s_data_type = getRDFData(str(s), KG1_flag, graph)
+        print(f"🟢 Tipo soggetto: {s_data_type}")
+        o, o_data_type = getRDFData(str(o), KG1_flag, graph)
+        print(f"🔵 Tipo oggetto: {o_data_type}")
+
 
         add_to_set(s_data_type, typeset1)
         add_to_set(o_data_type, typeset2)
-        print("effettuati gli add_tp_set")
+
 
         prox_triple_list = [','.join(s_data_type), p, ','.join(o_data_type)]
         prox_triple_string = '\t'.join(prox_triple_list)
+        print(f"✅ Tripla prossimità: {prox_triple_string}")
 
         prox_graph.append(prox_triple_string)
-        print("effettuiamo prox_graph")
+
         if i % 1000 == 0:
             with open(f"{file_prox_graph}.txt", 'a+') as f:
                 for prox_i in prox_graph:
@@ -40,7 +44,9 @@ def entity_prox_graph(filename, file_prox_graph, KG1_flag):
                     f.write('\n')
             prox_graph = []
             print("i: ", i)
+
     print("uscito for")
+
     if KG1_flag:
         print("Scrittura file con i tipi per KG1")
         with open('./typeset1_KG1.txt', 'w') as f:
@@ -55,6 +61,7 @@ def entity_prox_graph(filename, file_prox_graph, KG1_flag):
             f.write(','.join(list(typeset2)))
 
 def main():
+
     print("Entrato in main")
     # Eliminiamo i warning futuri per funzioni obsolete soprattutto per numpy
     warnings.simplefilter(action='ignore', category=FutureWarning)
@@ -75,22 +82,12 @@ def main():
     # Aggiungiamo variabile mancante 'writer'
     writer = open("training_log2.txt", "w", encoding="utf-8")
 
-    # Avviamo il server SPARQL per il primo KG
-    print("Avvio del server SPARQL per il KG1...")
-    # Eseguiamo il server Flask di Giuseppe Rubini per avere l'endpoint Sparql
-    sparql_process_KG1 = subprocess.Popen(["python", r"C:\Users\acer\EVA-KG\src\endpoint.py"])
-    # Aspettiamo che il server si avvii correttamente
-    time.sleep(5)
-    print("Server SPARQL avviato e pronto per ricevere richieste.")
     # Definiamo il primo KG in ttl che deve essere fatto il grafo di prossimità e i tipi delle entità
     KG1_filename = r'C:\Users\acer\KGs-Integration\KGs\KG1.ttl'
     KG1_prox_graph_file = r'C:\Users\acer\KGs-Integration\KGs/KG1_pred_prox_graph'
     KG1_flag = True
     entity_prox_graph(KG1_filename, KG1_prox_graph_file, KG1_flag)
-    # Chiudiamo il server dopo l'uso
-    print("Chiudo il server SPARQL...")
-    sparql_process_KG1.terminate()
-    print("Server SPARQL terminato.")
+
 
     try:
         # Carichiamo specifica del modulo
