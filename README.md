@@ -15,7 +15,7 @@ Tesi di Laurea per il corso di Laurea in Informatica dell'Università di Bari Al
    - conda create -n [nome_ambiente] python=[versione python];
    - conda activate [nome_ambiente];
    - conda installa cudatoolkit==[versione cuda] cudnn==[versione cudnn];
-   - pip install [requirements] (se ci sono, in questo caso i requirements del progetto di AutoAlign]
+   - pip install [requirements] (se ci sono, in questo caso i requirements del progetto di AutoAlign + flask)
 
 3) *COLLEGA CONDA A PYCHARM*
    - apri progetto in pycharm;
