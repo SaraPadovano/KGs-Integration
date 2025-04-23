@@ -1,9 +1,23 @@
 from SPARQLWrapper import SPARQLWrapper
 import os
 import re
-from rdflib import URIRef, RDF
+import xml.etree.ElementTree as ET
 os.environ['TF_CPP_MIN_LOG_LEVEL']='4'
 
+
+def find_type_in_xml(uri, xml_root):
+    ns = {"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"}
+    types = []
+
+    for description in xml_root.findall("rdf:Description", namespaces=ns):
+        about_uri = description.attrib.get("{http://www.w3.org/1999/02/22-rdf-syntax-ns#}about")
+        if about_uri == uri:
+            type_elems = description.findall("rdf:type", namespaces=ns)
+            for type_elem in type_elems:
+                rdf_type = type_elem.attrib.get("{http://www.w3.org/1999/02/22-rdf-syntax-ns#}resource")
+                if rdf_type:
+                    types.append(rdf_type)
+    return types if types else None
 
 def query_sparql(Q, KG1_flag):
 
@@ -34,7 +48,7 @@ def query_sparql(Q, KG1_flag):
         return queryString
 
 
-def getRdfType(Q, KG1_flag, graph):
+def getRdfType(Q, KG1_flag, graph, xml_root):
     Q_types = []
 
     # Verifica se è stato passato un grafo
@@ -49,11 +63,20 @@ def getRdfType(Q, KG1_flag, graph):
         try:
             results = graph.query(query)
             print(f"✅ Query eseguita, risultati trovati: {len(results)}")
-            for row in results:
-                for val in row:
-                    value = str(val)
-                    Q_types.append(value.replace("https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#", ""))
-            return Q_types
+            if len(results) == 0:
+                print("Cerchiamo nel file xml")
+                if xml_root:
+                    uri = Q.strip("<>")  # Rimuovi eventuali tag <>
+                    type_from_xml = find_type_in_xml(uri, xml_root)
+                    if type_from_xml:
+                        for val in type_from_xml:
+                            tipo = str(val).split('#')[-1]
+                            Q_types.append(tipo)
+
+                        # Rimuoviamo duplicati
+                        Q_types = list(set(Q_types))
+                        return Q_types
+
 
         except Exception as e:
             print(f"Errore interrogando KG1 locale: {e}")
@@ -99,19 +122,19 @@ def dataType(string):
     return odp
 
 
-def getRDFData(o, KG1_flag, graph):
+def getRDFData(o, KG1_flag, graph, xml_root):
     data_type = []
 
     # Se l'oggetto è un URI, otteniamo i tipi dall'entità
     if str(o).startswith('https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#'):
         # Si tratta di un'entità nel primo Knowledge Graph (KG1)
         Q_entity = "<" + o + ">"
-        data_type = getRdfType(Q_entity, KG1_flag, graph)  # Ottieni i tipi associati all'entità
+        data_type = getRdfType(Q_entity, KG1_flag, graph, xml_root)  # Ottieni i tipi associati all'entità
 
     elif str(o).startswith('http://dbpedia.org/resource/'):
         # Si tratta di un'entità nel secondo Knowledge Graph (KG2)
         Q_entity = "<" + o + ">"
-        data_type = getRdfType(Q_entity, KG1_flag, graph)
+        data_type = getRdfType(Q_entity, KG1_flag, graph, xml_root)
 
     else:
         # Se l'oggetto non è un URI, si tratta di un valore letterale
