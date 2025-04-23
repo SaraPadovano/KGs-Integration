@@ -31,6 +31,7 @@ def query_sparql(Q, KG1_flag):
                    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
                    SELECT DISTINCT ?obj WHERE{
                     """ + Q + """ rdf:type ?obj
+                    FILTER strstarts(str(?obj), str(ns1:))
                     }
                    """
         return queryString
@@ -39,16 +40,16 @@ def query_sparql(Q, KG1_flag):
                     PREFIX : <http://example.org/abuse-of-women#>
                     PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
                     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-                    PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+                    PREFIX owl: <http://www.w3.org/2002/07/owl#>
+                    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
                     SELECT DISTINCT ?obj WHERE{
                     """ + Q + """ rdf:type ?obj
-                    FILTER strstarts(str(?obj), str(:))
                     }
                     """
         return queryString
 
 
-def getRdfType(Q, KG1_flag, graph, xml_root):
+def getRdfType(Q, KG1_flag, graph):
     Q_types = []
 
     # Verifica se è stato passato un grafo
@@ -60,6 +61,8 @@ def getRdfType(Q, KG1_flag, graph, xml_root):
     print("🧪 SPARQL query generata:\n", query)
 
     if KG1_flag:
+        xml_tree = ET.parse(r"C:\Users\acer\EVA-KG\ontology\ontology.owl")
+        xml_root = xml_tree.getroot()
         try:
             results = graph.query(query)
             print(f"✅ Query eseguita, risultati trovati: {len(results)}")
@@ -84,24 +87,23 @@ def getRdfType(Q, KG1_flag, graph, xml_root):
 
     else:
         try:
-            sparql = SPARQLWrapper("http://dbpedia.org/sparql")
-            sparql.setQuery(query)
-            sparql.setTimeout(1000)
-            sparql.setReturnFormat("json")
+            results = graph.query(query)
+            print(f"✅ Query eseguita, risultati trovati: {len(results)}")
+            for row in results:
+                for val in row:
+                    val_str = str(val)
+                    if '#' in val_str:
+                        tipo = val_str.split('#')[-1]
+                    else:
+                        tipo = val_str.split('/')[-1]
+                    Q_types.append(tipo)
 
-            results = sparql.query().convert()
-            for result in results["results"]["bindings"]:
-                value = result["obj"]["value"]
-                # Aggiungi solo le entità che sono URI validi
-                if value.startswith("http://dbpedia.org/ontology/"):
-                    Q_types.append(value.split("/")[-1])  # Solo l'ID dell'entità
+            # Rimuoviamo duplicati
+            Q_types = list(set(Q_types))
             return Q_types
 
-        except TimeoutError:
-            print("Timeout DBpedia")
-            return []
         except Exception as e:
-            print(f"Errore interrogando DBpedia: {e}")
+            print(f"Errore interrogando KG2 locale: {e}")
             return []
 
 def dataType(string):
@@ -122,19 +124,19 @@ def dataType(string):
     return odp
 
 
-def getRDFData(o, KG1_flag, graph, xml_root):
+def getRDFData(o, KG1_flag, graph):
     data_type = []
 
     # Se l'oggetto è un URI, otteniamo i tipi dall'entità
     if str(o).startswith('https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#'):
         # Si tratta di un'entità nel primo Knowledge Graph (KG1)
         Q_entity = "<" + o + ">"
-        data_type = getRdfType(Q_entity, KG1_flag, graph, xml_root)  # Ottieni i tipi associati all'entità
+        data_type = getRdfType(Q_entity, KG1_flag, graph)  # Ottieni i tipi associati all'entità
 
-    elif str(o).startswith('http://dbpedia.org/resource/'):
+    elif str(o).startswith('http://example.org/abuse-of-women#'):
         # Si tratta di un'entità nel secondo Knowledge Graph (KG2)
         Q_entity = "<" + o + ">"
-        data_type = getRdfType(Q_entity, KG1_flag, graph, xml_root)
+        data_type = getRdfType(Q_entity, KG1_flag, graph)
 
     else:
         # Se l'oggetto non è un URI, si tratta di un valore letterale
