@@ -4,6 +4,7 @@ import warnings
 import importlib.util
 from KB_entity_type import getRDFData, add_to_set
 from rdflib import Graph
+import xml.etree.ElementTree as ET
 
 def entity_prox_graph(filename, file_prox_graph, KG1_flag):
 
@@ -13,6 +14,8 @@ def entity_prox_graph(filename, file_prox_graph, KG1_flag):
     print("len(graph):", len(graph))
     typeset1 = set()
     typeset2 = set()
+    xml_tree = ET.parse(r"C:\Users\acer\EVA-KG\ontology\ontology.owl")
+    xml_root = xml_tree.getroot()
 
     prox_graph = []
     i = 0
@@ -21,9 +24,9 @@ def entity_prox_graph(filename, file_prox_graph, KG1_flag):
         i += 1
         print(f"\n--- Tripla {i} ---")
         print(f"s: {s}, p: {p}, o: {o}")
-        s, s_data_type = getRDFData(str(s), KG1_flag, graph)
+        s, s_data_type = getRDFData(str(s), KG1_flag, graph, xml_root)
         print(f"🟢 Tipo soggetto: {s_data_type}")
-        o, o_data_type = getRDFData(str(o), KG1_flag, graph)
+        o, o_data_type = getRDFData(str(o), KG1_flag, graph, xml_root)
         print(f"🔵 Tipo oggetto: {o_data_type}")
 
 
@@ -84,7 +87,7 @@ def main():
 
     # Definiamo il primo KG in ttl che deve essere fatto il grafo di prossimità e i tipi delle entità
     KG1_filename = r'C:\Users\acer\KGs-Integration\KGs\KG1.ttl'
-    KG1_prox_graph_file = r'C:\Users\acer\KGs-Integration\KGs/KG1_pred_prox_graph'
+    KG1_prox_graph_file = r'C:\Users\acer\KGs-Integration\KGs\KG1_pred_prox_graph'
     KG1_flag = True
     entity_prox_graph(KG1_filename, KG1_prox_graph_file, KG1_flag)
 
