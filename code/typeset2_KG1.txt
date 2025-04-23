@@ -1,1 +1,1 @@
-string,date,integer
+integer,Class,date,string
