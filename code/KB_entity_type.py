@@ -52,7 +52,6 @@ def query_sparql(Q, KG1_flag):
 def getRdfType(Q, KG1_flag, graph):
     Q_types = []
 
-    # Verifica se è stato passato un grafo
     if graph is None:
         print("Errore: nessun grafo passato")
         return []
@@ -69,7 +68,8 @@ def getRdfType(Q, KG1_flag, graph):
             if len(results) == 0:
                 print("Cerchiamo nel file xml")
                 if xml_root:
-                    uri = Q.strip("<>")  # Rimuovi eventuali tag <>
+                    # Rimuoviamo eventuali tag <>
+                    uri = Q.strip("<>")
                     type_from_xml = find_type_in_xml(uri, xml_root)
                     if type_from_xml:
                         for val in type_from_xml:
@@ -127,21 +127,16 @@ def dataType(string):
 def getRDFData(o, KG1_flag, graph):
     data_type = []
 
-    # Se l'oggetto è un URI, otteniamo i tipi dall'entità
     if str(o).startswith('https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#'):
-        # Si tratta di un'entità nel primo Knowledge Graph (KG1)
         Q_entity = "<" + o + ">"
-        data_type = getRdfType(Q_entity, KG1_flag, graph)  # Ottieni i tipi associati all'entità
+        data_type = getRdfType(Q_entity, KG1_flag, graph)
 
     elif str(o).startswith('http://example.org/abuse-of-women#'):
-        # Si tratta di un'entità nel secondo Knowledge Graph (KG2)
         Q_entity = "<" + o + ">"
         data_type = getRdfType(Q_entity, KG1_flag, graph)
 
     else:
-        # Se l'oggetto non è un URI, si tratta di un valore letterale
-        # Determina il tipo del valore letterale (string, integer, date, etc.)
-        data_type = [dataType(o)]  # Determina il tipo del valore letterale
+        data_type = [dataType(o)]
         print(f"Tipo letterale identificato: {data_type}")
 
     return o, data_type
