@@ -5,10 +5,12 @@ import importlib.util
 from KB_entity_type import getRDFData, add_to_set
 from rdflib import Graph
 
+# Funzione che richiama le funzioni di KB_entity_type per la definzione dei tipi per la generazione dei prox graph
 def entity_prox_graph(filename, file_prox_graph, KG1_flag):
 
     print("Entrato nella funzione entity_prox_graph")
     graph = Graph()
+    # Definiamo il formato turtle non nt perchè i file non hanno semplici triple ma più complesse per il formato nt
     graph.parse(location=filename, format='turtle')
     print("len(graph):", len(graph))
     typeset1 = set()
@@ -17,6 +19,7 @@ def entity_prox_graph(filename, file_prox_graph, KG1_flag):
     prox_graph = []
     i = 0
 
+    # Ciclo che itera sulle triple del grafo indentificando i tipi dei soggetti e degli oggetti per ogni tripla
     for s, p, o in graph:
         i += 1
         print(f"\n--- Tripla {i} ---")
@@ -56,15 +59,15 @@ def entity_prox_graph(filename, file_prox_graph, KG1_flag):
 
     if KG1_flag:
         print("Scrittura file con i tipi per KG1")
-        with open('./typeset1_KG1.txt', 'w') as f:
+        with open('../files/typeset1_KG1.txt', 'w') as f:
             f.write(','.join(list(typeset1)))
-        with open('./typeset2_KG1.txt', 'w') as f:
+        with open('../files/typeset2_KG1.txt', 'w') as f:
             f.write(','.join(list(typeset2)))
     else:
         print("Scrittura file con i tipi per KG2")
-        with open('./typeset1_KG2.txt', 'w') as f:
+        with open('../files/typeset1_KG2.txt', 'w') as f:
             f.write(','.join(list(typeset1)))
-        with open('./typeset2_KG2.txt', 'w') as f:
+        with open('../files/typeset2_KG2.txt', 'w') as f:
             f.write(','.join(list(typeset2)))
 
 def main():
@@ -87,17 +90,17 @@ def main():
     file_path = os.path.join(path_modulo, 'AutoAlign.py')
 
     # Aggiungiamo variabile mancante 'writer'
-    writer = open("training_log2.txt", "w", encoding="utf-8")
+    writer = open("../files/training_log2.txt", "w", encoding="utf-8")
 
     # Definiamo il primo KG in ttl che deve essere fatto il grafo di prossimità e i tipi delle entità
     KG1_filename = r'C:\Users\acer\KGs-Integration\KGs\KG1.ttl'
-    KG1_prox_graph_file = r'C:\Users\acer\KGs-Integration\KGs\KG1_pred_prox_graph'
+    KG1_prox_graph_file = r'C:\Users\acer\KGs-Integration\KGs\files\KG1_pred_prox_graph'
     KG1_flag = True
     entity_prox_graph(KG1_filename, KG1_prox_graph_file, KG1_flag)
 
     # Definiamo il secondo KG in ttl che deve essere fatto il grafo di prossimità e i tipi delle entità
     KG2_filename = r'C:\Users\acer\KGs-Integration\KGs\KG2.ttl'
-    KG2_prox_graph_file = r'C:\Users\acer\KGs-Integration\KGs\KG2_pred_prox_graph'
+    KG2_prox_graph_file = r'C:\Users\acer\KGs-Integration\KGs\files\KG2_pred_prox_graph'
     KG1_flag = False
     entity_prox_graph(KG2_filename, KG2_prox_graph_file, KG1_flag)
 
