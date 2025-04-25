@@ -59,9 +59,9 @@ def entity_prox_graph(filename, file_prox_graph, KG1_flag):
 
     if KG1_flag:
         print("Scrittura file con i tipi per KG1")
-        with open('../files/typeset1_KG1.txt', 'w') as f:
+        with open('../files/typeset1_KG_PROVA.txt', 'w') as f:
             f.write(','.join(list(typeset1)))
-        with open('../files/typeset2_KG1.txt', 'w') as f:
+        with open('../files/typeset2_KG_PROVA.txt', 'w') as f:
             f.write(','.join(list(typeset2)))
     else:
         print("Scrittura file con i tipi per KG2")
@@ -92,17 +92,22 @@ def main():
     # Aggiungiamo variabile mancante 'writer'
     writer = open("../files/training_log2.txt", "w", encoding="utf-8")
 
-    # Definiamo il primo KG in ttl che deve essere fatto il grafo di prossimità e i tipi delle entità
-    KG1_filename = r'C:\Users\acer\KGs-Integration\KGs\KG1.ttl'
-    KG1_prox_graph_file = r'C:\Users\acer\KGs-Integration\KGs\files\KG1_pred_prox_graph'
+    KG1_filename = r'C:\Users\acer\KGs-Integration\KGs\KG_PROVA.ttl'
+    KG1_prox_graph_file = r'C:\Users\acer\KGs-Integration\files\KG_PROVA_pred_prox_graph'
     KG1_flag = True
     entity_prox_graph(KG1_filename, KG1_prox_graph_file, KG1_flag)
 
+    # Definiamo il primo KG in ttl che deve essere fatto il grafo di prossimità e i tipi delle entità
+    #KG1_filename = r'C:\Users\acer\KGs-Integration\KGs\KG1.ttl'
+    #KG1_prox_graph_file = r'C:\Users\acer\KGs-Integration\files\KG1_pred_prox_graph'
+    #KG1_flag = True
+    #entity_prox_graph(KG1_filename, KG1_prox_graph_file, KG1_flag)
+
     # Definiamo il secondo KG in ttl che deve essere fatto il grafo di prossimità e i tipi delle entità
-    KG2_filename = r'C:\Users\acer\KGs-Integration\KGs\KG2.ttl'
-    KG2_prox_graph_file = r'C:\Users\acer\KGs-Integration\KGs\files\KG2_pred_prox_graph'
-    KG1_flag = False
-    entity_prox_graph(KG2_filename, KG2_prox_graph_file, KG1_flag)
+    #KG2_filename = r'C:\Users\acer\KGs-Integration\KGs\KG2.ttl'
+    #KG2_prox_graph_file = r'C:\Users\acer\KGs-Integration\files\KG2_pred_prox_graph'
+    #KG1_flag = False
+    #entity_prox_graph(KG2_filename, KG2_prox_graph_file, KG1_flag)
 
     try:
         # Carichiamo specifica del modulo
