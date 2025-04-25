@@ -1,4 +1,3 @@
-from SPARQLWrapper import SPARQLWrapper
 import os
 import re
 import xml.etree.ElementTree as ET
@@ -24,14 +23,12 @@ def query_sparql(Q, KG1_flag):
     if KG1_flag:
         print("entrato per query KG1")
         queryString = """
-                   PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
                    PREFIX dcterms: <http://purl.org/dc/terms/> 
                    PREFIX foaf: <http://xmlns.com/foaf/0.1/> 
                    PREFIX ns1: <https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#>
                    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
                    SELECT DISTINCT ?obj WHERE{
-                    """ + Q + """ rdf:type ?obj
-                    FILTER strstarts(str(?obj), str(ns1:))
+                    """ + Q + """ dcterms:type ?obj
                     }
                    """
         return queryString
