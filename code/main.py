@@ -92,6 +92,7 @@ def main():
     # Aggiungiamo variabile mancante 'writer'
     writer = open("../files/training_log2.txt", "w", encoding="utf-8")
 
+    # KG di prova
     KG1_filename = r'C:\Users\acer\KGs-Integration\KGs\KG_PROVA.ttl'
     KG1_prox_graph_file = r'C:\Users\acer\KGs-Integration\files\KG_PROVA_pred_prox_graph'
     KG1_flag = True
