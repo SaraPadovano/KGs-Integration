@@ -109,3 +109,258 @@ string	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	string
 string	http://xmlns.com/foaf/0.1/name	string
 StrasbourgCaseLaw	http://purl.org/dc/terms/abstract	string
 StrasbourgCaseLaw	http://purl.org/dc/terms/isVersionOf	string
+string	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	string
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	http://purl.org/dc/terms/isVersionOf	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/identifier	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/date	date
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#respondentState	string
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	integer
+string	http://xmlns.com/foaf/0.1/name	string
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#importanceLevel	integer
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	http://purl.org/dc/terms/abstract	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/contributor	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/type	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/creator	string
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+unknown	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	unknown
+unknown	http://xmlns.com/foaf/0.1/name	unknown
+unknown	http://purl.org/dc/terms/abstract	unknown
+unknown	http://purl.org/dc/terms/type	unknown
+unknown	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	unknown
+unknown	http://purl.org/dc/terms/isVersionOf	unknown
+unknown	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	unknown
+unknown	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	unknown
+unknown	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	unknown
+unknown	http://purl.org/dc/terms/contributor	unknown
+unknown	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	unknown
+unknown	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	unknown
+unknown	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#respondentState	unknown
+unknown	http://purl.org/dc/terms/date	unknown
+unknown	http://purl.org/dc/terms/identifier	unknown
+unknown	http://purl.org/dc/terms/creator	unknown
+unknown	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#importanceLevel	unknown
+StrasbourgCaseLaw	http://purl.org/dc/terms/contributor	string
+string	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	string
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	http://purl.org/dc/terms/date	date
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#importanceLevel	integer
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	integer
+StrasbourgCaseLaw	http://purl.org/dc/terms/creator	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/type	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/isVersionOf	string
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#respondentState	string
+string	http://xmlns.com/foaf/0.1/name	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/abstract	string
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	http://purl.org/dc/terms/identifier	string
+string	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/contributor	string
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	http://purl.org/dc/terms/creator	string
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#importanceLevel	integer
+StrasbourgCaseLaw	http://purl.org/dc/terms/type	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/isVersionOf	string
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	integer
+string	http://xmlns.com/foaf/0.1/name	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/abstract	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/identifier	string
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#respondentState	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/date	date
+StrasbourgCaseLaw	http://purl.org/dc/terms/isVersionOf	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/type	wikidata_entity
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+string	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	wikidata_entity
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	http://purl.org/dc/terms/contributor	string
+string	http://xmlns.com/foaf/0.1/name	string
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#respondentState	wikidata_entity
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#importanceLevel	integer
+StrasbourgCaseLaw	http://purl.org/dc/terms/identifier	string
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	http://purl.org/dc/terms/abstract	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/date	date
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	integer
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	http://purl.org/dc/terms/creator	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/creator	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/type	wikidata_entity
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	http://purl.org/dc/terms/isVersionOf	string
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	integer
+StrasbourgCaseLaw	http://purl.org/dc/terms/identifier	string
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#respondentState	wikidata_entity
+string	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	wikidata_entity
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+string	http://xmlns.com/foaf/0.1/name	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/abstract	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/date	date
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	http://purl.org/dc/terms/contributor	string
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#importanceLevel	integer
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#importanceLevel	integer
+StrasbourgCaseLaw	http://purl.org/dc/terms/contributor	string
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#respondentState	colonial power,sovereign state,country,island country
+StrasbourgCaseLaw	http://purl.org/dc/terms/creator	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/date	date
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	integer
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	http://purl.org/dc/terms/identifier	string
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	http://purl.org/dc/terms/type	
+StrasbourgCaseLaw	http://purl.org/dc/terms/abstract	string
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+string	http://xmlns.com/foaf/0.1/name	string
+string	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	legal profession
+StrasbourgCaseLaw	http://purl.org/dc/terms/isVersionOf	string
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	http://purl.org/dc/terms/contributor	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/abstract	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/identifier	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/creator	string
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#importanceLevel	integer
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	http://purl.org/dc/terms/date	date
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	integer
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+string	http://xmlns.com/foaf/0.1/name	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/type	
+StrasbourgCaseLaw	http://purl.org/dc/terms/isVersionOf	string
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#respondentState	colonial power,sovereign state,country,island country
+string	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	legal profession
+StrasbourgCaseLaw	http://purl.org/dc/terms/abstract	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/type	
+StrasbourgCaseLaw	http://purl.org/dc/terms/contributor	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/creator	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/identifier	string
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#importanceLevel	integer
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	http://purl.org/dc/terms/date	date
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	integer
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#respondentState	colonial power,sovereign state,island country,country
+StrasbourgCaseLaw	http://purl.org/dc/terms/isVersionOf	string
+string	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	legal profession
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+string	http://xmlns.com/foaf/0.1/name	string
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	http://purl.org/dc/terms/isVersionOf	string
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	http://purl.org/dc/terms/identifier	string
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	http://purl.org/dc/terms/abstract	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/contributor	string
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#respondentState	country,sovereign state,colonial power,island country
+StrasbourgCaseLaw	http://purl.org/dc/terms/creator	string
+string	http://xmlns.com/foaf/0.1/name	string
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	integer
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+string	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	legal profession
+StrasbourgCaseLaw	http://purl.org/dc/terms/date	date
+StrasbourgCaseLaw	http://purl.org/dc/terms/type	
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#importanceLevel	integer
+StrasbourgCaseLaw	http://purl.org/dc/terms/isVersionOf	string
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	http://purl.org/dc/terms/abstract	string
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	http://purl.org/dc/terms/identifier	string
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	integer
+string	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	legal profession,academic degree,occupation group according to ISCO-08
+string	http://xmlns.com/foaf/0.1/name	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/date	date
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	http://purl.org/dc/terms/creator	string
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#respondentState	country,colonial power,island country,sovereign state
+StrasbourgCaseLaw	http://purl.org/dc/terms/type	
+StrasbourgCaseLaw	http://purl.org/dc/terms/contributor	string
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#importanceLevel	integer
+string	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	legal profession,academic degree,occupation group according to ISCO-08
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	http://purl.org/dc/terms/isVersionOf	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/identifier	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/contributor	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/abstract	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/creator	string
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#respondentState	sovereign state,colonial power,island country,country
+StrasbourgCaseLaw	http://purl.org/dc/terms/date	date
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#importanceLevel	integer
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+string	http://xmlns.com/foaf/0.1/name	string
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	integer
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	http://purl.org/dc/terms/type	
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	http://purl.org/dc/terms/identifier	string
+string	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	academic degree,legal profession,occupation group according to ISCO-08
+StrasbourgCaseLaw	http://purl.org/dc/terms/contributor	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/creator	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/date	date
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+string	http://xmlns.com/foaf/0.1/name	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/type	court decision
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	http://purl.org/dc/terms/abstract	string
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	http://purl.org/dc/terms/isVersionOf	string
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	integer
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#respondentState	sovereign state,colonial power,island country,country
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#importanceLevel	integer
+StrasbourgCaseLaw	http://purl.org/dc/terms/abstract	string
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	http://purl.org/dc/terms/creator	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/type	written work,decision,legal case
+string	http://xmlns.com/foaf/0.1/name	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/isVersionOf	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/date	date
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#importanceLevel	integer
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	integer
+string	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	occupation group according to ISCO-08,jurist,academic degree,legal profession
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#respondentState	Northern Europe,Europe,country,sovereign state,colonial power,realm of the United Kingdom,European Union,Common Travel Area,island country
+StrasbourgCaseLaw	http://purl.org/dc/terms/identifier	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/contributor	string
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	http://purl.org/dc/terms/creator	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/abstract	string
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#importanceLevel	integer
+StrasbourgCaseLaw	http://purl.org/dc/terms/isVersionOf	string
+string	http://xmlns.com/foaf/0.1/name	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/type	decision,written work,legal case
+StrasbourgCaseLaw	http://purl.org/dc/terms/contributor	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/identifier	string
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#respondentState	island country,sovereign state,Northern Europe,Common Travel Area,country,colonial power,realm of the United Kingdom,European Union,Europe
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	integer
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	http://purl.org/dc/terms/date	date
+string	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	legal profession,academic degree,occupation group according to ISCO-08,jurist
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer

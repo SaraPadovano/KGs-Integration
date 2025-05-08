@@ -1,1 +1,1 @@
-string,date,integer
+island country,sovereign state,Northern Europe,Common Travel Area,occupation group according to ISCO-08,colonial power,integer,legal case,jurist,academic degree,date,realm of the United Kingdom,written work,string,country,legal profession,European Union,Europe,decision
