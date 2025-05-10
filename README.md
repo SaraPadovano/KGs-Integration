@@ -15,7 +15,7 @@ Tesi di Laurea per il corso di Laurea in Informatica dell'Università di Bari Al
    - conda create -n [nome_ambiente] python=[versione python];
    - conda activate [nome_ambiente];
    - conda installa cudatoolkit==[versione cuda] cudnn==[versione cudnn];
-   - pip install [requirements] (se ci sono, in questo caso i requirements del progetto di AutoAlign + requests + bautifulsoup4 per domandare pagine html)
+   - pip install [requirements] (se ci sono, in questo caso i requirements del progetto di AutoAlign + requests + selenium)
 
 3) *COLLEGA CONDA A PYCHARM*
    - apri progetto in pycharm;
@@ -28,7 +28,8 @@ Tesi di Laurea per il corso di Laurea in Informatica dell'Università di Bari Al
    - applica il tutto
 
 **PASSAGGI EFFETTUATI NEL CODICE**
-   - integrato nel codice il file Jupiter per la creazione del grafo di prossimità e per ottenere gli insiemi dei tipi di entità (nome file: *KB_entity_type*). Per consentirne la modifica (perchè serve sostituire il path dello script con i path dei due grafi) è stato trasformato da file Jupiter a file .py con il comando : jupyter nbconvert --to script KB_entity_type.ipynb. Eseguito dal terminale anaconda nella cartella in cui è presente il file (si vedrà nella stessa cartella lo script con lo stesso nome in formato .py)
+   - integrato nel codice il file Jupiter per la creazione del grafo di prossimità e per ottenere gli insiemi dei tipi di entità (nome file: *KB_entity_type*). Per consentirne la modifica (perchè serve sostituire il path dello script con i path dei due grafi) è stato trasformato da file Jupiter a file .py con il comando : jupyter nbconvert --to script KB_entity_type.ipynb. Eseguito dal terminale anaconda nella cartella in cui è presente il file (si vedrà nella stessa cartella lo script con lo stesso nome in formato .py);
+   - per usare selenium per l'estrazione del titolo per alcuni uri per identificarne il tipo, bisogna usare un driver legato al browser che si vuole usare. Basta modificare il link dell'eseguibile del driver installato con quello presente nel codice. Io usato Google Chrome nella versione 136.0.7103.93 a 64 bit, quindi ho installato il relativo driver. La modifica eventuale da effettuare nel codice è nella funzione *'get_hudoc_type'* dello script *KB_entity_type* 
 
 **CONSIDERAZIONI**
 - dà il superamento del 10% della memoria a volte;
