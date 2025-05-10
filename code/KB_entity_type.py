@@ -2,8 +2,33 @@ import os
 import re
 import xml.etree.ElementTree as ET
 from SPARQLWrapper import SPARQLWrapper, JSON
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.common.by import By
 os.environ['TF_CPP_MIN_LOG_LEVEL']='4'
 
+def get_hudoc_type(uri):
+    # Specifica il percorso del driver di Chrome
+    service = Service(r'C:\Users\acer\Downloads\chromedriver-win64\chromedriver-win64\chromedriver.exe')
+
+    # Avvia il driver usando l'oggetto Service
+    driver = webdriver.Chrome(service=service)
+
+    # Apre la pagina
+    driver.get(uri)
+
+    # Attendi che la pagina carichi completamente
+    driver.implicitly_wait(10)
+
+    # Estrai il titolo dalla pagina
+    title = driver.find_element(By.CSS_SELECTOR, ".lineone").text
+
+    # Stampa il titolo
+    print(f"Titolo: {title}")
+
+    # Chiudi il driver
+    driver.quit()
+    return title
 
 def get_wikidata_type(entity_uri):
     qid = entity_uri.split("/")[-1]
@@ -48,6 +73,7 @@ def find_type_in_xml(uri, xml_root):
                 if rdf_type:
                     types.append(rdf_type)
     return types if types else None
+
 
 def query_sparql(Q, KG1_flag):
 
@@ -136,18 +162,24 @@ def getRdfType(Q, KG1_flag, graph):
             print(f"Errore interrogando KG2 locale: {e}")
             return []
 
-    # Fallback per Wikidata: cerca direttamente tramite l'endpoint
-    if "wikidata" in Q.lower():
+    clean_uri = Q.strip("<>")
+
+    if "wikidata.org/entity/" in clean_uri:
         print("🔎 URI esterna rilevata (Wikidata), interrogazione endpoint...")
-        types_from_wikidata = get_wikidata_type(Q.strip("<>"))
+        types_from_wikidata = get_wikidata_type(clean_uri)
         if types_from_wikidata:
             Q_types.extend(types_from_wikidata)
-            Q_types = list(set(Q_types))  # Rimuove duplicati
+            Q_types = list(set(Q_types))
             return Q_types
 
+    elif "hudoc.echr.coe.int" in clean_uri:
+        print("🔎 URI esterna rilevata (HUDOC), estrazione contenuto...")
+        types_from_hudoc = get_hudoc_type(clean_uri)
+        if types_from_hudoc:
+            Q_types.append(types_from_hudoc)
+            return Q_types
 
     return Q_types if Q_types else []
-
 
 def dataType(string):
     odp='string'
@@ -175,6 +207,10 @@ def getRDFData(o, KG1_flag, graph):
         data_type = getRdfType(Q_entity, KG1_flag, graph)
 
     elif "wikidata.org/entity/" in o:
+        Q_entity = "<" + o + ">"
+        data_type = getRdfType(Q_entity, KG1_flag, graph)
+
+    elif "hudoc.echr.coe.int" in o:
         Q_entity = "<" + o + ">"
         data_type = getRdfType(Q_entity, KG1_flag, graph)
 
