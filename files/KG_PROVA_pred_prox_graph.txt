@@ -602,3 +602,37 @@ StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontol
 StrasbourgCaseLaw	http://purl.org/dc/terms/identifier	(1 of 1) IRENE WILSON v. THE UNITED KINGDOM
 StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#importanceLevel	integer
 StrasbourgCaseLaw	http://purl.org/dc/terms/type	decision,legal case,written work
+StrasbourgCaseLaw	http://purl.org/dc/terms/type	decision,written work,legal case
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#respondentState	colonial power,Common Travel Area,country,Northern Europe,Europe,European Union,island country,sovereign state,realm of the United Kingdom
+StrasbourgCaseLaw	http://purl.org/dc/terms/identifier	(1 of 1) IRENE WILSON v. THE UNITED KINGDOM
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+string	http://xmlns.com/foaf/0.1/name	string
+string	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	occupation group according to ISCO-08,jurist,legal profession,academic degree
+StrasbourgCaseLaw	http://purl.org/dc/terms/date	date
+StrasbourgCaseLaw	http://purl.org/dc/terms/isVersionOf	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/contributor	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/creator	string
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	integer
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#importanceLevel	integer
+StrasbourgCaseLaw	http://purl.org/dc/terms/abstract	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/contributor	string
+string	http://xmlns.com/foaf/0.1/name	string
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	http://purl.org/dc/terms/creator	string
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#importanceLevel	integer
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	integer
+StrasbourgCaseLaw	http://purl.org/dc/terms/type	legal case,written work,decision
+StrasbourgCaseLaw	http://purl.org/dc/terms/isVersionOf	string
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#respondentState	island country,European Union,Common Travel Area,Europe,colonial power,country,realm of the United Kingdom,Northern Europe,sovereign state
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+string	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	legal profession,academic degree,occupation group according to ISCO-08,jurist
+StrasbourgCaseLaw	http://purl.org/dc/terms/date	date
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	http://purl.org/dc/terms/identifier	(1 of 1) IRENE WILSON v. THE UNITED KINGDOM
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+StrasbourgCaseLaw	http://purl.org/dc/terms/abstract	string
