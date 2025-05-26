@@ -4,12 +4,12 @@ import warnings
 import importlib.util
 from KB_entity_type import getRDFData, add_to_set
 from rdflib import Graph
-from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.chrome.options import Options
+#from selenium import webdriver
+#from selenium.webdriver.chrome.service import Service
+#from selenium.webdriver.chrome.options import Options
 
 # Funzione che richiama le funzioni di KB_entity_type per la definzione dei tipi per la generazione dei prox graph
-def entity_prox_graph(filename, file_prox_graph, KG1_flag, driver):
+def entity_prox_graph(filename, file_prox_graph, KG1_flag):
 
     print("Entrato nella funzione entity_prox_graph")
     graph = Graph()
@@ -27,9 +27,9 @@ def entity_prox_graph(filename, file_prox_graph, KG1_flag, driver):
         i += 1
         print(f"\n--- Tripla {i} ---")
         print(f"s: {s}, p: {p}, o: {o}")
-        s, s_data_type = getRDFData(str(s), KG1_flag, graph, driver)
+        s, s_data_type = getRDFData(str(s), KG1_flag, graph)
         print(f"🟢 Tipo soggetto: {s_data_type}")
-        o, o_data_type = getRDFData(str(o), KG1_flag, graph, driver)
+        o, o_data_type = getRDFData(str(o), KG1_flag, graph)
         print(f"🔵 Tipo oggetto: {o_data_type}")
 
 
@@ -95,33 +95,29 @@ def main():
     # Aggiungiamo variabile mancante 'writer'
     writer = open("../files/training_log2.txt", "w", encoding="utf-8")
 
-    service = Service(r'C:\Users\acer\Downloads\chromedriver-win64\chromedriver-win64\chromedriver.exe')
-    options = Options()
-    options.add_argument("--headless")
-    options.add_argument("--disable-gpu")
-    driver = webdriver.Chrome(service=service, options=options)
-    try:
-        # KG di prova
-        #KG1_filename = r'C:\Users\acer\KGs-Integration\KGs\KG_PROVA.ttl'
-        #KG1_prox_graph_file = r'C:\Users\acer\KGs-Integration\files\KG_PROVA_pred_prox_graph'
-        #KG1_flag = True
-        #entity_prox_graph(KG1_filename, KG1_prox_graph_file, KG1_flag)
+    #service = Service(r'C:\Users\acer\Downloads\chromedriver-win64\chromedriver-win64\chromedriver.exe')
+    #options = Options()
+    #options.add_argument("--headless")
+    #options.add_argument("--disable-gpu")
+    #driver = webdriver.Chrome(service=service, options=options)
 
-        # Definiamo il primo KG in ttl che deve essere fatto il grafo di prossimità e i tipi delle entità
-        KG1_filename = r'C:\Users\acer\KGs-Integration\KGs\KG1.ttl'
-        KG1_prox_graph_file = r'C:\Users\acer\KGs-Integration\files\KG1_pred_prox_graph'
-        KG1_flag = True
-        entity_prox_graph(KG1_filename, KG1_prox_graph_file, KG1_flag, driver)
+    # KG di prova
+    #KG1_filename = r'C:\Users\acer\KGs-Integration\KGs\KG_PROVA.ttl'
+    #KG1_prox_graph_file = r'C:\Users\acer\KGs-Integration\files\KG_PROVA_pred_prox_graph'
+    #KG1_flag = True
+    #entity_prox_graph(KG1_filename, KG1_prox_graph_file, KG1_flag)
 
-        # Definiamo il secondo KG in ttl che deve essere fatto il grafo di prossimità e i tipi delle entità
-        KG2_filename = r'C:\Users\acer\KGs-Integration\KGs\KG2.ttl'
-        KG2_prox_graph_file = r'C:\Users\acer\KGs-Integration\files\KG2_pred_prox_graph'
-        KG1_flag = False
-        entity_prox_graph(KG2_filename, KG2_prox_graph_file, KG1_flag, driver)
+    # Definiamo il primo KG in ttl che deve essere fatto il grafo di prossimità e i tipi delle entità
+    KG1_filename = r'C:\Users\acer\KGs-Integration\KGs\KG1.ttl'
+    KG1_prox_graph_file = r'C:\Users\acer\KGs-Integration\files\KG1_pred_prox_graph'
+    KG1_flag = True
+    entity_prox_graph(KG1_filename, KG1_prox_graph_file, KG1_flag)
 
-    finally:
-        # Chiude il driver al termine di tutto
-        driver.quit()
+    # Definiamo il secondo KG in ttl che deve essere fatto il grafo di prossimità e i tipi delle entità
+    KG2_filename = r'C:\Users\acer\KGs-Integration\KGs\KG2.ttl'
+    KG2_prox_graph_file = r'C:\Users\acer\KGs-Integration\files\KG2_pred_prox_graph'
+    KG1_flag = False
+    entity_prox_graph(KG2_filename, KG2_prox_graph_file, KG1_flag)
 
     try:
         # Carichiamo specifica del modulo
