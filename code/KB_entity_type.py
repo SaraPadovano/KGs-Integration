@@ -2,26 +2,26 @@ import os
 import re
 import xml.etree.ElementTree as ET
 from SPARQLWrapper import SPARQLWrapper, JSON
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
+#from selenium.webdriver.common.by import By
+#from selenium.webdriver.support.ui import WebDriverWait
+#from selenium.webdriver.support import expected_conditions as EC
 os.environ['TF_CPP_MIN_LOG_LEVEL']='4'
 
-def get_hudoc_type(uri, driver):
-    try:
-        driver.get(uri)
+#def get_hudoc_type(uri, driver):
+    #try:
+        #driver.get(uri)
 
-        title_element = WebDriverWait(driver, 10).until(
-            EC.presence_of_element_located((By.CSS_SELECTOR, ".lineone"))
-        )
-        title = title_element.text
-        print(f"Titolo: {title}")
+        #title_element = WebDriverWait(driver, 10).until(
+            #EC.presence_of_element_located((By.CSS_SELECTOR, ".lineone"))
+        #)
+        #title = title_element.text
+        #print(f"Titolo: {title}")
 
-    except Exception as e:
-        print(f"Errore durante l'estrazione del titolo HUDOC: {e}")
-        title = "HUDOC_title_not_found"
+    #except Exception as e:
+        #print(f"Errore durante l'estrazione del titolo HUDOC: {e}")
+        #title = "HUDOC_title_not_found"
 
-    return title
+    #return title
 
 def get_wikidata_type(entity_uri):
     qid = entity_uri.split("/")[-1]
@@ -54,7 +54,10 @@ def get_wikidata_type(entity_uri):
 
 
 def find_type_in_xml(uri, xml_root):
-    ns = {"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"}
+    ns = {
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    }
     types = []
 
     for description in xml_root.findall("rdf:Description", namespaces=ns):
@@ -63,8 +66,18 @@ def find_type_in_xml(uri, xml_root):
             type_elems = description.findall("rdf:type", namespaces=ns)
             for type_elem in type_elems:
                 rdf_type = type_elem.attrib.get("{http://www.w3.org/1999/02/22-rdf-syntax-ns#}resource")
-                if rdf_type:
+
+                if rdf_type == "http://www.w3.org/2002/07/owl#DatatypeProperty":
+                    range_elems = description.findall("rdfs:range", namespaces=ns)
+                    for range_elem in range_elems:
+                        range_type = range_elem.attrib.get("{http://www.w3.org/1999/02/22-rdf-syntax-ns#}resource")
+                        if range_type:
+                            types.append(range_type)
+                elif rdf_type == "http://www.w3.org/2002/07/owl#Class":
+                    types.append(uri)
+                elif rdf_type:
                     types.append(rdf_type)
+
     return types if types else None
 
 
@@ -96,7 +109,7 @@ def query_sparql(Q, KG1_flag):
         return queryString
 
 
-def getRdfType(Q, KG1_flag, graph, driver):
+def getRdfType(Q, KG1_flag, graph):
     Q_types = []
 
     if graph is None:
@@ -165,12 +178,13 @@ def getRdfType(Q, KG1_flag, graph, driver):
             Q_types = list(set(Q_types))
             return Q_types
 
-    elif "hudoc.echr.coe.int" in clean_uri:
-        print("🔎 URI esterna rilevata (HUDOC), estrazione contenuto...")
-        types_from_hudoc = get_hudoc_type(clean_uri, driver)
-        if types_from_hudoc:
-            Q_types.append(types_from_hudoc)
-            return Q_types
+    #Commento codice perchè non vi è necessità di vedere l'uri hudoc in quanto semplice tipo string
+    #elif "hudoc.echr.coe.int" in clean_uri:
+        #print("🔎 URI esterna rilevata (HUDOC), estrazione contenuto...")
+        #types_from_hudoc = get_hudoc_type(clean_uri, driver)
+        #if types_from_hudoc:
+            #Q_types.append(types_from_hudoc)
+            #return Q_types
 
     return Q_types if Q_types else []
 
@@ -192,24 +206,24 @@ def dataType(string):
     return odp
 
 
-def getRDFData(o, KG1_flag, graph, driver):
+def getRDFData(o, KG1_flag, graph):
     data_type = []
 
     if str(o).startswith('https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#'):
         Q_entity = "<" + o + ">"
-        data_type = getRdfType(Q_entity, KG1_flag, graph, driver)
+        data_type = getRdfType(Q_entity, KG1_flag, graph)
 
     elif "wikidata.org/entity/" in o:
         Q_entity = "<" + o + ">"
-        data_type = getRdfType(Q_entity, KG1_flag, graph, driver)
+        data_type = getRdfType(Q_entity, KG1_flag, graph)
 
-    elif "hudoc.echr.coe.int" in o:
-        Q_entity = "<" + o + ">"
-        data_type = getRdfType(Q_entity, KG1_flag, graph, driver)
+    #elif "hudoc.echr.coe.int" in o:
+        #Q_entity = "<" + o + ">"
+        #data_type = getRdfType(Q_entity, KG1_flag, graph, driver)
 
     elif str(o).startswith('http://example.org/abuse-of-women#'):
         Q_entity = "<" + o + ">"
-        data_type = getRdfType(Q_entity, KG1_flag, graph, driver)
+        data_type = getRdfType(Q_entity, KG1_flag, graph)
 
     else:
         data_type = [dataType(o)]
