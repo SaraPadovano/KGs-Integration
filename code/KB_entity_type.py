@@ -81,9 +81,9 @@ def find_type_in_xml(uri, xml_root):
     return types if types else None
 
 
-def query_sparql(Q, KG1_flag):
+def query_sparql(Q, KG1_flag, data_flag):
 
-    if KG1_flag:
+    if KG1_flag and data_flag == False:
         print("entrato per query KG1")
         queryString = """
                    PREFIX dcterms: <http://purl.org/dc/terms/> 
@@ -95,7 +95,7 @@ def query_sparql(Q, KG1_flag):
                     }
                    """
         return queryString
-    else:
+    elif KG1_flag == False and data_flag == False:
         queryString = """
                     PREFIX : <http://example.org/abuse-of-women#>
                     PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -107,16 +107,29 @@ def query_sparql(Q, KG1_flag):
                     }
                     """
         return queryString
+    elif KG1_flag == False and data_flag == True:
+        queryString = """
+                            PREFIX : <http://example.org/abuse-of-women#>
+                            PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+                            PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+                            PREFIX owl: <http://www.w3.org/2002/07/owl#>
+                            PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
+                            SELECT DISTINCT ?obj WHERE{
+                            """ + Q + """ rdfs:range ?obj
+                            }
+                            """
+        return queryString
 
 
 def getRdfType(Q, KG1_flag, graph):
+    data_flag = False
     Q_types = []
 
     if graph is None:
         print("Errore: nessun grafo passato")
         return []
 
-    query = query_sparql(Q, KG1_flag)
+    query = query_sparql(Q, KG1_flag, data_flag)
     print("🧪 SPARQL query generata:\n", query)
 
     if KG1_flag:
@@ -155,6 +168,35 @@ def getRdfType(Q, KG1_flag, graph):
                         tipo = val_str.split('#')[-1]
                     else:
                         tipo = val_str.split('/')[-1]
+                    if tipo == "DatatypeProperty":
+                        data_flag = True
+                        query = query_sparql(Q, KG1_flag, data_flag)
+                        print("🔢 SPARQL query DataProperty:\n", query)
+                        results = graph.query(query)
+                        print(f"✅ Query eseguita, risultati trovati: {len(results)}")
+                        for row in results:
+                            for val in row:
+                                val_str = str(val)
+                                if '#' in val_str:
+                                    tipo = val_str.split('#')[-1]
+                                elif '/' in val_str:
+                                    tipo = val_str.split('/')[-1]
+                                elif ':' in val_str:
+                                    tipo = val_str.split(':')[-1]
+                                else:
+                                    tipo = val_str
+                                tipo = tipo.strip('/')
+                    if tipo == "Class":
+                        val_str = str(Q)
+                        if '#' in val_str:
+                            tipo = val_str.split('#')[-1]
+                        elif '/' in val_str:
+                            tipo = val_str.split('/')[-1]
+                        elif ':' in val_str:
+                            tipo = val_str.split(':')[-1]
+                        else:
+                            tipo = val_str
+                        tipo = tipo.strip('/> \n\r\t')
                     Q_types.append(tipo)
 
             # Rimuoviamo duplicati
