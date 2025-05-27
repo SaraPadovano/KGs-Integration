@@ -32,16 +32,18 @@ def entity_prox_graph(filename, file_prox_graph, KG1_flag):
         o, o_data_type = getRDFData(str(o), KG1_flag, graph)
         print(f"🔵 Tipo oggetto: {o_data_type}")
 
+        if "ObjectProperty" in s_data_type or "ObjectProperty" in o_data_type:
+            print(f"⏩ Non inserito perchè soggetto o oggetto ObjectProperty")
+            continue
+        else:
+            add_to_set(s_data_type, typeset1)
+            add_to_set(o_data_type, typeset2)
+            prox_triple_list = [','.join(s_data_type), p, ','.join(o_data_type)]
+            prox_triple_string = '\t'.join(prox_triple_list)
+            print(f"✅ Tripla prossimità: {prox_triple_string}")
 
-        add_to_set(s_data_type, typeset1)
-        add_to_set(o_data_type, typeset2)
+            prox_graph.append(prox_triple_string)
 
-
-        prox_triple_list = [','.join(s_data_type), p, ','.join(o_data_type)]
-        prox_triple_string = '\t'.join(prox_triple_list)
-        print(f"✅ Tripla prossimità: {prox_triple_string}")
-
-        prox_graph.append(prox_triple_string)
 
         if i % 1000 == 0:
             with open(f"{file_prox_graph}.txt", 'a+', encoding='utf-8') as f:
