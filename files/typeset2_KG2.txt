@@ -1,1 +1,1 @@
-Class,string
+string,Abuse,LegalCase

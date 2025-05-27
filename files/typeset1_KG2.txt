@@ -1,1 +1,1 @@
-ObjectProperty,DatatypeProperty,Class
+string,Damages,LegalArticle,decimal,Consequence,Perpetrator,LegalCase,Violation,Victim,Context,integer,LegalJudgment,PhysicalAbuse,EmotionalAbuse,Abuse,duration
