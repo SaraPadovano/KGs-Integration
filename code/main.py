@@ -7,6 +7,7 @@ from rdflib import Graph
 #from selenium import webdriver
 #from selenium.webdriver.chrome.service import Service
 #from selenium.webdriver.chrome.options import Options
+from prompt_gen import union_typeset, prompt, call_for_sim, call_llm_without_api, another_try
 
 # Funzione che richiama le funzioni di KB_entity_type per la definzione dei tipi per la generazione dei prox graph
 def entity_prox_graph(filename, file_prox_graph, KG1_flag):
@@ -110,16 +111,39 @@ def main():
     #entity_prox_graph(KG1_filename, KG1_prox_graph_file, KG1_flag)
 
     # Definiamo il primo KG in ttl che deve essere fatto il grafo di prossimità e i tipi delle entità
-    KG1_filename = r'C:\Users\acer\KGs-Integration\KGs\KG1.ttl'
-    KG1_prox_graph_file = r'C:\Users\acer\KGs-Integration\files\KG1_pred_prox_graph'
-    KG1_flag = True
-    entity_prox_graph(KG1_filename, KG1_prox_graph_file, KG1_flag)
+    #KG1_filename = r'C:\Users\acer\KGs-Integration\KGs\KG1.ttl'
+    #KG1_prox_graph_file = r'C:\Users\acer\KGs-Integration\files\KG1_pred_prox_graph'
+    #KG1_flag = True
+    #entity_prox_graph(KG1_filename, KG1_prox_graph_file, KG1_flag)
+    #file1 = r'C:\Users\acer\KGs-Integration\files\typeset1_KG1.txt'
+    #file2 = r'C:\Users\acer\KGs-Integration\files\typeset2_KG1.txt'
+    #fileUnion = r'C:\Users\acer\KGs-Integration\files\final_typeset_KG1.txt'
+    #union_typeset(file1, file2, fileUnion)
 
     # Definiamo il secondo KG in ttl che deve essere fatto il grafo di prossimità e i tipi delle entità
-    KG2_filename = r'C:\Users\acer\KGs-Integration\KGs\KG2.ttl'
-    KG2_prox_graph_file = r'C:\Users\acer\KGs-Integration\files\KG2_pred_prox_graph'
-    KG1_flag = False
-    entity_prox_graph(KG2_filename, KG2_prox_graph_file, KG1_flag)
+    #KG2_filename = r'C:\Users\acer\KGs-Integration\KGs\KG2.ttl'
+    #KG2_prox_graph_file = r'C:\Users\acer\KGs-Integration\files\KG2_pred_prox_graph'
+    #KG1_flag = False
+    #entity_prox_graph(KG2_filename, KG2_prox_graph_file, KG1_flag)
+    #file1 = r'C:\Users\acer\KGs-Integration\files\typeset1_KG2.txt'
+    #file2 = r'C:\Users\acer\KGs-Integration\files\typeset2_KG2.txt'
+    #fileUnion = r'C:\Users\acer\KGs-Integration\files\final_typeset_KG2.txt'
+    #union_typeset(file1, file2, fileUnion)
+
+    # Creiamo il prompt per l'LLM
+    #file_type_KG1 = r'C:\Users\acer\KGs-Integration\files\final_typeset_KG1.txt'
+    #file_type_KG2 = r'C:\Users\acer\KGs-Integration\files\final_typeset_KG2.txt'
+    prompt_file = r'C:\Users\acer\KGs-Integration\files\prompt.txt'
+    #prompt(file_type_KG1, file_type_KG2, prompt_file)
+    # Richiamiamo la funzione per richiamare prima un modello di similarità
+    #match_file_sim = r'C:\Users\acer\KGs-Integration\files\matched_types_LLM_SIM.txt'
+    #call_for_sim(match_file_sim, file_type_KG1, file_type_KG2)
+    # Richiamo la funzione per richiamare un llm generativo
+    #match_file_gen = r'C:\Users\acer\KGs-Integration\files\matched_types_LLM_GEN.txt'
+    #call_llm_without_api(prompt_file, match_file_gen)
+    # Un altro modello generativo più potente
+    match_file_gen2 = r'C:\Users\acer\KGs-Integration\files\matched_types_LLM_GEN2.txt'
+    another_try(prompt_file, match_file_gen2)
 
     try:
         # Carichiamo specifica del modulo
