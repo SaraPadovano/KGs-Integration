@@ -1,0 +1,1 @@
+string, Damages, LegalArticle, decimal, Consequence, Perpetrator, LegalCase, Violation, Victim
