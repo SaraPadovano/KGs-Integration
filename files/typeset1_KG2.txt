@@ -1,1 +1,1 @@
-string,Damages,LegalArticle,decimal,Consequence,Perpetrator,LegalCase,Violation,Victim,Context,integer,LegalJudgment,PhysicalAbuse,EmotionalAbuse,Abuse,duration
+Consequence,PhysicalAbuse,LegalArticle,Context,Abuse,EmotionalAbuse,string,decimal,LegalCase,Perpetrator,Damages,integer,Victim,Violation,LegalJudgment,duration
