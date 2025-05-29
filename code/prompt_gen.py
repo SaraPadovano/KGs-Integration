@@ -86,7 +86,7 @@ def call_for_sim(match_file, file1, file2):
     model = SentenceTransformer('all-MiniLM-L6-v2')  # modello embedding leggero e veloce
     set1 = load_words_from_file(file1)
     set2 = load_words_from_file(file2)
-    threshold = 0.5
+    threshold = 0.4
 
     embeddings1 = model.encode(set1, convert_to_tensor=True)
     embeddings2 = model.encode(set2, convert_to_tensor=True)
