@@ -131,13 +131,13 @@ def main():
     #union_typeset(file1, file2, fileUnion)
 
     # Creiamo il prompt per l'LLM
-    file_type_KG1 = r'C:\Users\acer\KGs-Integration\files\final_typeset_KG1.txt'
-    file_type_KG2 = r'C:\Users\acer\KGs-Integration\files\final_typeset_KG2.txt'
+    #file_type_KG1 = r'C:\Users\acer\KGs-Integration\files\final_typeset_KG1.txt'
+    #file_type_KG2 = r'C:\Users\acer\KGs-Integration\files\final_typeset_KG2.txt'
     #prompt_file = r'C:\Users\acer\KGs-Integration\files\prompt.txt'
     #prompt(file_type_KG1, file_type_KG2, prompt_file)
     # Richiamiamo la funzione per richiamare prima un modello di similarità
-    match_file_sim = r'C:\Users\acer\KGs-Integration\files\matched_types_SIM.txt'
-    call_for_sim(match_file_sim, file_type_KG1, file_type_KG2)
+    #match_file_sim = r'C:\Users\acer\KGs-Integration\files\matched_types_SIM.txt'
+    #call_for_sim(match_file_sim, file_type_KG1, file_type_KG2)
     # Richiamo la funzione per richiamare un llm generativo
     #match_file_gen = r'C:\Users\acer\KGs-Integration\files\matched_types_LLM_GEN.txt'
     #call_llm_without_api(prompt_file, match_file_gen)
