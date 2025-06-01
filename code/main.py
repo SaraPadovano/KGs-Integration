@@ -7,7 +7,8 @@ from rdflib import Graph
 #from selenium import webdriver
 #from selenium.webdriver.chrome.service import Service
 #from selenium.webdriver.chrome.options import Options
-from prompt_gen import union_typeset, prompt, call_for_sim, call_llm_without_api, another_try
+from prompt_gen import union_typeset, prompt, call_for_sim, call_llm_without_api, another_try, gpt_score, clean_match
+from match_type import match_entities
 
 # Funzione che richiama le funzioni di KB_entity_type per la definzione dei tipi per la generazione dei prox graph
 def entity_prox_graph(filename, file_prox_graph, KG1_flag):
@@ -22,6 +23,7 @@ def entity_prox_graph(filename, file_prox_graph, KG1_flag):
 
     prox_graph = []
     i = 0
+    open(f"{file_prox_graph}.txt", 'w', encoding='utf-8').close()
 
     # Ciclo che itera sulle triple del grafo indentificando i tipi dei soggetti e degli oggetti per ogni tripla
     for s, p, o in graph:
@@ -33,17 +35,14 @@ def entity_prox_graph(filename, file_prox_graph, KG1_flag):
         o, o_data_type = getRDFData(str(o), KG1_flag, graph)
         print(f"🔵 Tipo oggetto: {o_data_type}")
 
-        if "ObjectProperty" in s_data_type or "ObjectProperty" in o_data_type:
-            print(f"⏩ Non inserito perchè soggetto o oggetto ObjectProperty")
-            continue
-        else:
-            add_to_set(s_data_type, typeset1)
-            add_to_set(o_data_type, typeset2)
-            prox_triple_list = [','.join(s_data_type), p, ','.join(o_data_type)]
-            prox_triple_string = '\t'.join(prox_triple_list)
-            print(f"✅ Tripla prossimità: {prox_triple_string}")
 
-            prox_graph.append(prox_triple_string)
+        add_to_set(s_data_type, typeset1)
+        add_to_set(o_data_type, typeset2)
+        prox_triple_list = [','.join(s_data_type), p, ','.join(o_data_type)]
+        prox_triple_string = '\t'.join(prox_triple_list)
+        print(f"✅ Tripla prossimità: {prox_triple_string}")
+
+        prox_graph.append(prox_triple_string)
 
 
         if i % 1000 == 0:
@@ -137,13 +136,25 @@ def main():
     #prompt(file_type_KG1, file_type_KG2, prompt_file)
     # Richiamiamo la funzione per richiamare prima un modello di similarità
     #match_file_sim = r'C:\Users\acer\KGs-Integration\files\matched_types_SIM.txt'
-    #call_for_sim(match_file_sim, file_type_KG1, file_type_KG2)
+    #match_score = r'C:\Users\acer\KGs-Integration\files\matched_score.txt'
+    #call_for_sim(match_file_sim, file_type_KG1, file_type_KG2, match_score)
     # Richiamo la funzione per richiamare un llm generativo
     #match_file_gen = r'C:\Users\acer\KGs-Integration\files\matched_types_LLM_GEN.txt'
     #call_llm_without_api(prompt_file, match_file_gen)
     # Un altro modello generativo più potente
     #match_file_gen2 = r'C:\Users\acer\KGs-Integration\files\matched_types_LLM_GEN2.txt'
     #another_try(prompt_file, match_file_gen2)
+    # Calcoliamo lo score delle coppie date da GPT
+    #score_gpt = r'C:\Users\acer\KGs-Integration\files\matched_score_GPT.txt'
+    match_gpt = r'C:\Users\acer\KGs-Integration\files\GPT_match.txt'
+    #gpt_score(score_gpt, match_gpt)
+    # Ripuliamo il file dei sinonimi da quelli con stesso type1 ma score più basso dell'altro
+    #clean_gpt_score = r'C:\Users\acer\KGs-Integration\files\cleaned_matched_score_GPT.txt'
+    #clean_match(score_gpt, clean_gpt_score)
+
+    # Creiamo il grafo di prossimità finale per KG1
+    prox_graph_KG1 = r'C:\Users\acer\KGs-Integration\files\KG1_pred_prox_graph.txt'
+    match_entities(match_gpt, prox_graph_KG1)
 
     try:
         # Carichiamo specifica del modulo
