@@ -1,0 +1,10 @@
+(StrasbourgCaseLaw, LegalCase), 0.5586
+(legal case, LegalCase), 0.7276
+(court decision, LegalJudgment), 0.4706
+(decision, LegalJudgment), 0.2532
+(DomesticLaw, LegalArticle), 0.4007
+(InternationalLaw, LegalArticle), 0.4673
+(written work, LegalArticle), 0.3144
+(date, duration), 0.3562
+(integer, integer), 0.8223
+(string, string), 0.7766
