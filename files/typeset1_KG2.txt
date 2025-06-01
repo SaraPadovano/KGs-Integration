@@ -1,1 +1,1 @@
-Consequence,PhysicalAbuse,LegalArticle,Context,Abuse,EmotionalAbuse,string,decimal,LegalCase,Perpetrator,Damages,integer,Victim,Violation,LegalJudgment,duration
+hasLegalJudgment,LegalJudgment,hasConsequence,hasLegalArticle,PhysicalAbuse,hasVictim,duration,hasLegalCase,hasRelatedTo,Perpetrator,LegalCase,decimal,Violation,hasContext,integer,Abuse,hasPerpetrator,Context,hasDamages,Victim,Damages,EmotionalAbuse,string,Consequence,LegalArticle
