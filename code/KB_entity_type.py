@@ -186,7 +186,7 @@ def getRdfType(Q, KG1_flag, graph):
                                 else:
                                     tipo = val_str
                                 tipo = tipo.strip('/')
-                    if tipo == "Class":
+                    if tipo == "Class" or tipo == "ObjectProperty":
                         val_str = str(Q)
                         if '#' in val_str:
                             tipo = val_str.split('#')[-1]
@@ -198,6 +198,7 @@ def getRdfType(Q, KG1_flag, graph):
                             tipo = val_str
                         tipo = tipo.strip('/> \n\r\t')
                     Q_types.append(tipo)
+
 
             # Rimuoviamo duplicati
             Q_types = list(set(Q_types))
