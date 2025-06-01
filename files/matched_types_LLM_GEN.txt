@@ -1,1 +1,1 @@
-string, Damages, LegalArticle, decimal, Consequence, Perpetrator, LegalCase, Violation, Victim
+hasLegalJudgment, LegalJudgment, hasConsequence, hasLegalArticle, PhysicalAbuse, hasVictim, duration
