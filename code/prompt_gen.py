@@ -166,7 +166,7 @@ def gpt_score(score_file, match_file):
         for t1, t2, score in results:
             f.write(f"{t1}, {t2}, {score}\n")
 
-def clean_match(score_file, final_score_file):
+def clean_match(score_file, final_score_file, final_file):
     results = []
     with open(score_file, 'r', encoding='utf-8') as f:
         for line in f:
@@ -192,3 +192,7 @@ def clean_match(score_file, final_score_file):
     with open(final_score_file, 'w', encoding='utf-8') as f:
         for t1, (t2, score) in best_scores.items():
             f.write(f"({t1}, {t2}), {score:.4f}\n")
+
+    with open(final_file, 'w', encoding='utf-8') as f:
+        for t1, (t2, score) in best_scores.items():
+            f.write(f"({t1}, {t2})\n")
