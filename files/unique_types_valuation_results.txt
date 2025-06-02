@@ -1,0 +1,7 @@
+=== Risultato Analisi Riduzione Tipi ===
+Numero di tipi unici prima dell’allineamento: 97
+Numero di tipi unici dopo l’allineamento: 89
+Riduzione assoluta del numero di tipi: 8
+Riduzione percentuale: 8.25%
+Tipi unificati (sostituiti): ['DomesticLaw', 'InternationalLaw', 'StrasbourgCaseLaw', 'court decision', 'date', 'decision', 'legal case', 'written work']
+========================================
