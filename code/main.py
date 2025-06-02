@@ -9,6 +9,7 @@ from rdflib import Graph
 #from selenium.webdriver.chrome.options import Options
 from prompt_gen import union_typeset, prompt, call_for_sim, call_llm_without_api, another_try, gpt_score, clean_match
 from match_type import match_entities
+from valuation import type_unique_valuation, process_and_write, merge_prox_graphs, embedding_predicate
 
 # Funzione che richiama le funzioni di KB_entity_type per la definzione dei tipi per la generazione dei prox graph
 def entity_prox_graph(filename, file_prox_graph, KG1_flag):
@@ -24,6 +25,7 @@ def entity_prox_graph(filename, file_prox_graph, KG1_flag):
     prox_graph = []
     i = 0
     open(f"{file_prox_graph}.txt", 'w', encoding='utf-8').close()
+    unique_predicates = set()
 
     # Ciclo che itera sulle triple del grafo indentificando i tipi dei soggetti e degli oggetti per ogni tripla
     for s, p, o in graph:
@@ -43,6 +45,7 @@ def entity_prox_graph(filename, file_prox_graph, KG1_flag):
         print(f"✅ Tripla prossimità: {prox_triple_string}")
 
         prox_graph.append(prox_triple_string)
+        unique_predicates.add(p)
 
 
         if i % 1000 == 0:
@@ -61,6 +64,12 @@ def entity_prox_graph(filename, file_prox_graph, KG1_flag):
                 f.write(str(prox_i))
                 f.write('\n')
         print("✔️ Scrittura finale completata")
+
+    unique_predicates_file = r'C:\Users\acer\KGs-Integration\files\unique_predicates.txt'
+
+    with open(unique_predicates_file, "w", encoding='utf-8') as f:
+        for pred in sorted(unique_predicates):
+            f.write(pred + "\n")
 
     if KG1_flag:
         print("Scrittura file con i tipi per KG1")
@@ -146,15 +155,30 @@ def main():
     #another_try(prompt_file, match_file_gen2)
     # Calcoliamo lo score delle coppie date da GPT
     #score_gpt = r'C:\Users\acer\KGs-Integration\files\matched_score_GPT.txt'
-    match_gpt = r'C:\Users\acer\KGs-Integration\files\GPT_match.txt'
+    #match_gpt = r'C:\Users\acer\KGs-Integration\files\GPT_match.txt'
     #gpt_score(score_gpt, match_gpt)
     # Ripuliamo il file dei sinonimi da quelli con stesso type1 ma score più basso dell'altro
     #clean_gpt_score = r'C:\Users\acer\KGs-Integration\files\cleaned_matched_score_GPT.txt'
-    #clean_match(score_gpt, clean_gpt_score)
+    #clean_gpt = r'C:\Users\acer\KGs-Integration\files\cleaned_GPT.txt'
+    #clean_match(score_gpt, clean_gpt_score, clean_gpt)
 
     # Creiamo il grafo di prossimità finale per KG1
-    prox_graph_KG1 = r'C:\Users\acer\KGs-Integration\files\KG1_pred_prox_graph.txt'
-    match_entities(match_gpt, prox_graph_KG1)
+    #prox_graph_KG1 = r'C:\Users\acer\KGs-Integration\files\KG1_pred_prox_graph.txt'
+    #prox_graph_KG2 = r'C:\Users\acer\KGs-Integration\files\KG2_pred_prox_graph.txt'
+    #prox_graph_merge_before_align = r'C:\Users\acer\KGs-Integration\files\pred_prox_graph_merge_before_align.txt'
+    #merge_prox_graphs(prox_graph_KG1, prox_graph_KG2, prox_graph_merge_before_align)
+    #match_entities(clean_gpt, prox_graph_KG1, prox_graph_KG2)
+
+    # Facciamo la valutazione
+    # Prima valutazione con i tipi unici
+    #file_all_types = r'C:\Users\acer\KGs-Integration\files\all_types.txt'
+    #results_unique_types = r'C:\Users\acer\KGs-Integration\files\unique_types_valuation_results.txt'
+    #union_typeset(file_type_KG1, file_type_KG2, file_all_types)
+    #file_after_align = r'C:\Users\acer\KGs-Integration\files\all_types_after_align.txt'
+    #process_and_write(file_all_types, clean_gpt, file_after_align)
+    #type_unique_valuation(file_all_types, file_after_align, results_unique_types)
+    # Verifica tramite embedding per avere più o meno una visualizzazione dei predicati potenzialmente simili e del loro cambiamento prima e dopo la sostituzione dei sinonimi
+    embedding_predicate()
 
     try:
         # Carichiamo specifica del modulo
