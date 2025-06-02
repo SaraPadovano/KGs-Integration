@@ -3,6 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.manifold import TSNE
 import os
+from sentence_transformers import SentenceTransformer
 
 def merge_prox_graphs(prox_graph1, prox_graph2, prox_graph_final):
     base_path = r"C:\Users\acer\KGs-Integration\files"
@@ -105,55 +106,75 @@ def type_unique_valuation(type_before_file, type_after_file, results):
         for line in output_lines:
             results_file.write(line + "\n")
 
+def load_predicates_from_txt(file_path):
+    predicates = set()
+    with open(file_path, 'r', encoding='utf-8') as f:
+        for line in f:
+            parts = line.strip().split('\t')
+            if len(parts) == 3:
+                predicates.add(parts[1])  # il predicato è in mezzo
+    return predicates
+
+def load_predicates_from_txt(file_path):
+    predicates = set()
+    with open(file_path, 'r', encoding='utf-8') as f:
+        for line in f:
+            parts = line.strip().split('\t')
+            if len(parts) == 3:
+                predicates.add(parts[1])
+    return predicates
+
 def embedding_predicate():
-    before_file = r'C:\Users\acer\KGs-Integration\files\pred_prox_graph_merge_before_align.pickle'
-    after_file = r'C:\Users\acer\KGs-Integration\files\KGs_merged_pred_prox_graph.pickle'
+    before_path = r'C:\Users\acer\KGs-Integration\files\pred_prox_graph_merge_before_align.txt'
+    after_path = r'C:\Users\acer\KGs-Integration\files\KGs_merged_pred_prox_graph.txt'
+    result_path = r'C:\Users\acer\KGs-Integration\files\embedding_analysis_results.txt'
+    image_path = r'C:\Users\acer\KGs-Integration\files\embedding_tsne_comparison.png'
 
-    results_txt = r'C:\Users\acer\KGs-Integration\files\embedding_results.txt'
-    output_img = r'C:\Users\acer\KGs-Integration\files\embedding_visualization.png'
+    preds_before = load_predicates_from_txt(before_path)
+    preds_after = load_predicates_from_txt(after_path)
 
-    with open(before_file, 'rb') as f:
-        emb_before = pickle.load(f)
-
-    with open(after_file, 'rb') as f:
-        emb_after = pickle.load(f)
-
-    # Intersezione predicati comuni per confronto coerente
-    common_preds = list(set(emb_before.keys()) & set(emb_after.keys()))
-    print(f"🔗 Predicati comuni: {len(common_preds)}")
+    common_preds = sorted(preds_before & preds_after)
     num_common = len(common_preds)
 
-    # Prepariamo array per t-SNE
-    X_before = np.array([emb_before[p] for p in common_preds])
-    X_after = np.array([emb_after[p] for p in common_preds])
+    if num_common == 0:
+        print("⚠️ Nessun predicato comune trovato.")
+        return
 
-    # Riduciamo la dimensionalità
-    tsne = TSNE(n_components=2, random_state=42, perplexity=15, init="pca", learning_rate="auto")
-    X_b_2d = tsne.fit_transform(X_before)
-    X_a_2d = tsne.fit_transform(X_after)
+    # Usa embedding reali da sentence-transformers
+    model = SentenceTransformer('all-MiniLM-L6-v2')
+    emb_before = model.encode(common_preds)
+    emb_after = model.encode(common_preds)
 
-    with open(results_txt, 'w', encoding='utf-8') as f:
-        f.write("=== Embedding Predicate Alignment Results ===\n")
-        f.write(f"Numero di predicati comuni per confronto: {num_common}\n")
-        f.write(f"Dimensione originale embedding: {X_before.shape[1]}\n")
-        f.write(f"Dimensione dopo riduzione t-SNE: {X_b_2d.shape[1]}\n")
-        f.write("\nNota: la riduzione dimensionale è stata fatta separatamente per prima e dopo l’allineamento.\n")
+    X_b_2d = TSNE(n_components=2, random_state=42, perplexity=15, init="pca", learning_rate="auto").fit_transform(emb_before)
+    X_a_2d = TSNE(n_components=2, random_state=42, perplexity=15, init="pca", learning_rate="auto").fit_transform(emb_after)
 
-    # Visualizzaziamo il tutto
+    # Grafico
     fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(18, 8))
 
-    # Prima dell'allineamento
     ax1.scatter(X_b_2d[:, 0], X_b_2d[:, 1], alpha=0.7)
     for i, label in enumerate(common_preds):
         ax1.annotate(label, (X_b_2d[i, 0], X_b_2d[i, 1]), fontsize=7, alpha=0.6)
-    ax1.set_title("🔴 Prima dell’allineamento tipi")
+    ax1.set_title("Prima dell’allineamento tipi")
 
-    # Dopo l'allineamento
     ax2.scatter(X_a_2d[:, 0], X_a_2d[:, 1], alpha=0.7)
     for i, label in enumerate(common_preds):
         ax2.annotate(label, (X_a_2d[i, 0], X_a_2d[i, 1]), fontsize=7, alpha=0.6)
-    ax2.set_title("🟢 Dopo l’allineamento tipi")
+    ax2.set_title("Dopo l’allineamento tipi")
 
     plt.tight_layout()
-    plt.savefig(output_img, dpi=300)
-    plt.show()
+    plt.savefig(image_path)
+    plt.close()
+
+    # Scrittura risultati
+    with open(result_path, 'w', encoding='utf-8') as f:
+        f.write("=== Analisi Embedding Predicati ===\n")
+        f.write(f"Numero di predicati prima: {len(preds_before)}\n")
+        f.write(f"Numero di predicati dopo: {len(preds_after)}\n")
+        f.write(f"Numero di predicati comuni per confronto: {num_common}\n")
+        f.write("Predicati comuni:\n")
+        for p in common_preds:
+            f.write(f"- {p}\n")
+        f.write(f"\nGrafico salvato in: {image_path}\n")
+        f.write("===================================\n")
+
+    print(f"✅ Completato. Risultati in:\n- {result_path}\n- {image_path}")
