@@ -1,1 +1,1 @@
-Perpetrator,Abuse,Consequence,LegalJudgment,LegalCase,Context,LegalArticle,Violation,Victim,Damages,string
+Violation,Damages,Abuse,LegalJudgment,Consequence,Context,LegalArticle,Perpetrator,string,LegalCase,Victim
