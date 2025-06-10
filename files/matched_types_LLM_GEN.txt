@@ -1,1 +1,1 @@
-hasLegalJudgment, LegalJudgment, hasConsequence, hasLegalArticle, PhysicalAbuse, hasVictim, duration
+Violation, Damages, duration, Consequence, Victim, Emotional Abuse, hasLegalCase, Abuse, hasDamages, Physical Abuse, hasLegalCase
