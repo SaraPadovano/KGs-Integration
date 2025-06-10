@@ -3,20 +3,1004 @@
 @prefix ns1: <https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#10601/09> dcterms:abstract "Inadmissible"^^xsd:string ;
+<https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#8978/80> dcterms:abstract "Non-pecuniary damage - financial award"^^xsd:string,
+        "Violation of Art. 8"^^xsd:string ;
+    dcterms:creator "Court (Chamber)"^^xsd:string ;
+    dcterms:date "1985-03-26"^^xsd:date ;
+    dcterms:identifier <https://hudoc.echr.coe.int/eng?i=001-57603> ;
+    dcterms:isPartOf "A91"^^xsd:string ;
+    dcterms:isVersionOf "ECLI:CE:ECHR:1985:0326JUD000897880"^^xsd:string ;
+    dcterms:references [ a ns1:InternationalLaw ;
+            dcterms:description "Criminal Code, Articles 64 para. 1, 239 para. 2, 248 ter"^^xsd:string ],
+        [ a ns1:StrasbourgCaseLaw ;
+            dcterms:date "1979-10-09"^^xsd:date ;
+            dcterms:description "Airey judgment of 9 October 1979, Series A no. 32, pp. 17, 16, paras. 32, 30"^^xsd:string ;
+            dcterms:title "Airey judgment of 9 October 1979"^^xsd:string ],
+        [ a ns1:DomesticLaw ;
+            dcterms:description "Criminal Code, Articles 64 para. 1, 239 para. 2, 248 ter"^^xsd:string ],
+        [ a ns1:InternationalLaw ;
+            dcterms:description "Code of Criminal Procedure, Article 12"^^xsd:string ],
+        [ a ns1:InternationalLaw ;
+            dcterms:description "Civil Code, Articles 1401, 1407"^^xsd:string ],
+        [ a ns1:StrasbourgCaseLaw ;
+            dcterms:date "1976-12-07"^^xsd:date ;
+            dcterms:description "Handyside judgment of 7 December 1976, Series A no. 24, p. 23, para. 50"^^xsd:string ;
+            dcterms:title "Handyside judgment of 7 December 1976"^^xsd:string ] ;
+    dcterms:type <http://www.wikidata.org/entity/Q3769186> ;
+    ns1:hasApplicationNumber "8978/80"^^xsd:string ;
+    ns1:importanceLevel 1 ;
+    ns1:involveConventionArticle "13"^^xsd:string,
+        "14"^^xsd:string,
+        "14+8"^^xsd:string,
+        "3"^^xsd:string,
+        "41"^^xsd:string,
+        "8"^^xsd:string,
+        "8-1"^^xsd:string ;
+    ns1:respondentState <http://www.wikidata.org/entity/Q29999> ;
+    ns1:unanimousDecision true .
+
+<https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#9077/18> dcterms:abstract "No violation of Article 14+2-1 - Prohibition of discrimination (Article 14 - Discrimination) (Article 2 - Right to life Positive obligations Article 2-1 - Life)"^^xsd:string,
+        "Non-pecuniary damage - award (Article 41 - Non-pecuniary damage Just satisfaction)"^^xsd:string,
+        "Violation of Article 2 - Right to life (Article 2 - Positive obligations Article 2-1 - Life) (Substantive aspect)"^^xsd:string ;
     dcterms:contributor [ a <http://www.wikidata.org/entity/Q40348> ;
-            foaf:name "BOWLES P."^^xsd:string ] ;
+            foaf:name "KACHAUNOVA A."^^xsd:string ] ;
     dcterms:creator "Court (Fourth Section)"^^xsd:string ;
-    dcterms:date "2012-10-23"^^xsd:date ;
-    dcterms:identifier <https://hudoc.echr.coe.int/eng?i=001-114397> ;
-    dcterms:isVersionOf "ECLI:CE:ECHR:2012:1023DEC001060109"^^xsd:string ;
+    dcterms:date "2022-03-22"^^xsd:date ;
+    dcterms:identifier <https://hudoc.echr.coe.int/eng?i=001-216360> ;
+    dcterms:isVersionOf "ECLI:CE:ECHR:2022:0322JUD000907718"^^xsd:string ;
+    dcterms:references [ a ns1:StrasbourgCaseLaw ;
+            dcterms:date "2020-09-17"^^xsd:date ;
+            dcterms:description "Kotilainen and Others v. Finland, no. 62439/12, § 88, 17 September 2020"^^xsd:string ;
+            dcterms:title "Kotilainen and Others v. Finland"^^xsd:string ;
+            ns1:hasApplicationNumber "62439/12"^^xsd:string ],
+        [ a ns1:StrasbourgCaseLaw ;
+            dcterms:date "2007-05-31"^^xsd:date ;
+            dcterms:description "Kontrová v. Slovakia, no. 7510/04, § 53 in fine, 31 May 2007"^^xsd:string ;
+            dcterms:title "Kontrová v. Slovakia"^^xsd:string ;
+            ns1:hasApplicationNumber "7510/04"^^xsd:string ],
+        [ a ns1:DomesticLaw ;
+            dcterms:description "Sections 4(2) and 21(3) of the Protection Against Domestic Violence Act 2005"^^xsd:string ],
+        [ a ns1:StrasbourgCaseLaw ;
+            dcterms:date "1998-10-28"^^xsd:date ;
+            dcterms:description "Osman v. the United Kingdom, 28 October 1998, §§ 115-16, Reports of Judgments and Decisions 1998-VIII"^^xsd:string ;
+            dcterms:title "Osman v. the United Kingdom"^^xsd:string ],
+        [ a ns1:StrasbourgCaseLaw ;
+            dcterms:description "Perinçek v. Switzerland [GC], no. 27510/08, § 136, ECHR 2015 (extracts)"^^xsd:string ;
+            dcterms:title "Perinçek v. Switzerland [GC]"^^xsd:string ;
+            ns1:hasApplicationNumber "27510/08"^^xsd:string ],
+        [ a ns1:StrasbourgCaseLaw ;
+            dcterms:description "Von Hannover v. Germany (no. 2) [GC], nos. 40660/08 and 60641/08, § 116, ECHR 2012"^^xsd:string ;
+            dcterms:title "Von Hannover v. Germany (no. 2) [GC]"^^xsd:string ;
+            ns1:hasApplicationNumber "40660/08"^^xsd:string ],
+        [ a ns1:StrasbourgCaseLaw ;
+            dcterms:date "2017-05-23"^^xsd:date ;
+            dcterms:description "Bălşan v. Romania, no. 49645/09, § 81, 23 May 2017"^^xsd:string ;
+            dcterms:title "Bălşan v. Romania"^^xsd:string ;
+            ns1:hasApplicationNumber "49645/09"^^xsd:string ],
+        [ a ns1:StrasbourgCaseLaw ;
+            dcterms:date "2019-07-09"^^xsd:date ;
+            dcterms:description "Volodina v. Russia, no. 41261/17, 9 July 2019"^^xsd:string ;
+            dcterms:title "Volodina v. Russia"^^xsd:string ;
+            ns1:hasApplicationNumber "41261/17"^^xsd:string ],
+        [ a ns1:StrasbourgCaseLaw ;
+            dcterms:date "2016-03-22"^^xsd:date ;
+            dcterms:description "M.G. v. Turkey, no. 646/10, § 117, 22 March 2016"^^xsd:string ;
+            dcterms:title "M.G. v. Turkey"^^xsd:string ;
+            ns1:hasApplicationNumber "646/10"^^xsd:string ],
+        [ a ns1:StrasbourgCaseLaw ;
+            dcterms:date "2017-03-02"^^xsd:date ;
+            dcterms:description "Talpis v. Italy, no. 41237/14, 2 March 2017"^^xsd:string ;
+            dcterms:title "Talpis v. Italy"^^xsd:string ;
+            ns1:hasApplicationNumber "41237/14"^^xsd:string ],
+        [ a ns1:StrasbourgCaseLaw ;
+            dcterms:date "2021-06-15"^^xsd:date ;
+            dcterms:description "Kurt v. Austria [GC], no. 62903/15, 15 June 2021"^^xsd:string ;
+            dcterms:title "Kurt v. Austria [GC]"^^xsd:string ;
+            ns1:hasApplicationNumber "62903/15"^^xsd:string ],
+        [ a ns1:StrasbourgCaseLaw ;
+            dcterms:date "2021-02-16"^^xsd:date ;
+            dcterms:description "Behar and Gutman v. Bulgaria, no. 29335/13, §§ 115 and 120, 16 February 2021"^^xsd:string ;
+            dcterms:title "Behar and Gutman v. Bulgaria"^^xsd:string ;
+            ns1:hasApplicationNumber "29335/13"^^xsd:string ],
+        [ a ns1:StrasbourgCaseLaw ;
+            dcterms:date "2021-04-06"^^xsd:date ;
+            dcterms:description "Handzhiyski v. Bulgaria, no. 10783/14, § 74, 6 April 2021"^^xsd:string ;
+            dcterms:title "Handzhiyski v. Bulgaria"^^xsd:string ;
+            ns1:hasApplicationNumber "10783/14"^^xsd:string ],
+        [ a ns1:StrasbourgCaseLaw ;
+            dcterms:date "2016-05-03"^^xsd:date ;
+            dcterms:description "N.P. and N.I. v. Bulgaria (dec.), no. 72226/11, § 82, 3 May 2016"^^xsd:string ;
+            dcterms:title "N.P. and N.I. v. Bulgaria (dec.)"^^xsd:string ;
+            ns1:hasApplicationNumber "72226/11"^^xsd:string ],
+        [ a ns1:StrasbourgCaseLaw ;
+            dcterms:date "2021-07-08"^^xsd:date ;
+            dcterms:description "Tkhelidze v. Georgia, no. 33056/17, 8 July 2021"^^xsd:string ;
+            dcterms:title "Tkhelidze v. Georgia"^^xsd:string ;
+            ns1:hasApplicationNumber "33056/17"^^xsd:string ],
+        [ a ns1:DomesticLaw ;
+            dcterms:description "Sections 153(6) and 213a(1) of the Firearms, Ammunitions, Explosives and Pyrotechnical Products Act 2010 "^^xsd:string ],
+        [ a ns1:StrasbourgCaseLaw ;
+            dcterms:date "2020-09-03"^^xsd:date ;
+            dcterms:description "Levchuk v. Ukraine, no. 17496/19, §§ 80 and 86, 3 September 2020"^^xsd:string ;
+            dcterms:title "Levchuk v. Ukraine"^^xsd:string ;
+            ns1:hasApplicationNumber "17496/19"^^xsd:string ],
+        [ a ns1:StrasbourgCaseLaw ;
+            dcterms:date "2010-10-14"^^xsd:date ;
+            dcterms:description "A. v. Croatia, no. 55164/08, 14 October 2010"^^xsd:string ;
+            dcterms:title "A. v. Croatia"^^xsd:string ;
+            ns1:hasApplicationNumber "55164/08"^^xsd:string ],
+        [ a ns1:StrasbourgCaseLaw ;
+            dcterms:date "2012-04-24"^^xsd:date ;
+            dcterms:description "Kalucza v. Hungary, no. 57693/10, § 64, 24 April 2012"^^xsd:string ;
+            dcterms:title "Kalucza v. Hungary"^^xsd:string ;
+            ns1:hasApplicationNumber "57693/10"^^xsd:string ],
+        [ a ns1:StrasbourgCaseLaw ;
+            dcterms:date "2021-02-16"^^xsd:date ;
+            dcterms:description "Budinova and Chaprazov v. Bulgaria, no. 12567/13, §§ 104 and 108, 16 February 2021"^^xsd:string ;
+            dcterms:title "Budinova and Chaprazov v. Bulgaria"^^xsd:string ;
+            ns1:hasApplicationNumber "12567/13"^^xsd:string ],
+        [ a ns1:StrasbourgCaseLaw ;
+            dcterms:date "2014-09-18"^^xsd:date ;
+            dcterms:description "Bljakaj and Others v. Croatia, no. 74448/12, §§ 125-27, 18 September 2014"^^xsd:string ;
+            dcterms:title "Bljakaj and Others v. Croatia"^^xsd:string ;
+            ns1:hasApplicationNumber "74448/12"^^xsd:string ],
+        [ a ns1:StrasbourgCaseLaw ;
+            dcterms:date "2020-05-26"^^xsd:date ;
+            dcterms:description "Munteanu v. the Republic of Moldova, no. 34168/11, 26 May 2020"^^xsd:string ;
+            dcterms:title "Munteanu v. the Republic of Moldova"^^xsd:string ;
+            ns1:hasApplicationNumber "34168/11"^^xsd:string ],
+        [ a ns1:StrasbourgCaseLaw ;
+            dcterms:date "2013-05-28"^^xsd:date ;
+            dcterms:description "Eremia v. the Republic of Moldova, no. 3564/11, § 87, 28 May 2013"^^xsd:string ;
+            dcterms:title "Eremia v. the Republic of Moldova"^^xsd:string ;
+            ns1:hasApplicationNumber "3564/11"^^xsd:string ],
+        [ a ns1:StrasbourgCaseLaw ;
+            dcterms:date "2007-12-20"^^xsd:date ;
+            dcterms:description "Nikolova and Velichkova v. Bulgaria, no. 7888/03, § 63, 20 December 2007"^^xsd:string ;
+            dcterms:title "Nikolova and Velichkova v. Bulgaria"^^xsd:string ;
+            ns1:hasApplicationNumber "7888/03"^^xsd:string ],
+        [ a ns1:StrasbourgCaseLaw ;
+            dcterms:date "1975-02-21"^^xsd:date ;
+            dcterms:description "Golder v. the United Kingdom, 21 February 1975, § 39 in fine, Series A no. 18"^^xsd:string ;
+            dcterms:title "Golder v. the United Kingdom"^^xsd:string ],
+        [ a ns1:InternationalLaw ;
+            dcterms:description "Council of Europe Convention on preventing and combating violence against women and domestic violence (“the Istanbul Convention”)"^^xsd:string ],
+        [ a ns1:StrasbourgCaseLaw ;
+            dcterms:description "Opuz v. Turkey, no. 33401/02, ECHR 2009"^^xsd:string ;
+            dcterms:title "Opuz v. Turkey"^^xsd:string ;
+            ns1:hasApplicationNumber "33401/02"^^xsd:string ],
+        [ a ns1:StrasbourgCaseLaw ;
+            dcterms:date "2008-06-12"^^xsd:date ;
+            dcterms:description "Bevacqua and S. v. Bulgaria, no. 71127/01, 12 June 2008"^^xsd:string ;
+            dcterms:title "Bevacqua and S. v. Bulgaria"^^xsd:string ;
+            ns1:hasApplicationNumber "71127/01"^^xsd:string ],
+        [ a ns1:StrasbourgCaseLaw ;
+            dcterms:date "2009-01-15"^^xsd:date ;
+            dcterms:description "Branko Tomašić and Others v. Croatia, no. 46598/06, §§ 70-74, 15 January 2009"^^xsd:string ;
+            dcterms:title "Branko Tomašić and Others v. Croatia"^^xsd:string ;
+            ns1:hasApplicationNumber "46598/06"^^xsd:string ],
+        [ a ns1:DomesticLaw ;
+            dcterms:description "Articles 296 § 1 and  339 § 1 of the Criminal Code "^^xsd:string ],
+        [ a ns1:StrasbourgCaseLaw ;
+            dcterms:date "2017-11-28"^^xsd:date ;
+            dcterms:description "Merabishvili v. Georgia [GC], no. 72508/13, § 317, 28 November 2017"^^xsd:string ;
+            dcterms:title "Merabishvili v. Georgia [GC]"^^xsd:string ;
+            ns1:hasApplicationNumber "72508/13"^^xsd:string ] ;
+    dcterms:type <http://www.wikidata.org/entity/Q3769186> ;
+    ns1:hasApplicationNumber "9077/18"^^xsd:string ;
+    ns1:importanceLevel 2 ;
+    ns1:involveConventionArticle "14"^^xsd:string,
+        "14+2-1"^^xsd:string,
+        "2"^^xsd:string,
+        "2-1"^^xsd:string,
+        "41"^^xsd:string ;
+    ns1:respondentState <http://www.wikidata.org/entity/Q219> ;
+    ns1:unanimousDecision true .
+
+<https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#9873/11> dcterms:abstract "Inadmissible"^^xsd:string ;
+    dcterms:contributor [ a <http://www.wikidata.org/entity/Q40348> ;
+            foaf:name "DROZD A."^^xsd:string ] ;
+    dcterms:creator "Court (Fourth Section)"^^xsd:string ;
+    dcterms:date "2014-12-02"^^xsd:date ;
+    dcterms:identifier <https://hudoc.echr.coe.int/eng?i=001-150572> ;
+    dcterms:isVersionOf "ECLI:CE:ECHR:2014:1202DEC000987311"^^xsd:string ;
     dcterms:type <http://www.wikidata.org/entity/Q327000> ;
-    ns1:hasApplicationNumber "10601/09"^^xsd:string ;
+    ns1:hasApplicationNumber "9873/11"^^xsd:string ;
     ns1:importanceLevel 3 ;
-    ns1:involveConventionArticle "10"^^xsd:string,
-        "13"^^xsd:string,
-        "35"^^xsd:string,
-        "6"^^xsd:string,
-        "8"^^xsd:string ;
-    ns1:respondentState <http://www.wikidata.org/entity/Q145> .
+    ns1:involveConventionArticle "35"^^xsd:string,
+        "6"^^xsd:string ;
+    ns1:respondentState <http://www.wikidata.org/entity/Q36> .
+
+<https://hudoc.echr.coe.int/eng?i=001-101152> dcterms:accessRights "public"^^xsd:string ;
+    dcterms:coverage <http://www.wikidata.org/entity/Q6602> ;
+    dcterms:description "(Art. 14) Discrimination"^^xsd:string,
+        "(Art. 14) Prohibition of discrimination"^^xsd:string,
+        "(Art. 14) Sex"^^xsd:string,
+        "(Art. 41) Just satisfaction-{general}"^^xsd:string,
+        "(Art. 8) Right to respect for private and family life"^^xsd:string,
+        "(Art. 8-1) Respect for private life"^^xsd:string,
+        "Positive obligations"^^xsd:string ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher <http://www.wikidata.org/entity/Q122880> ;
+    dcterms:title "CASE OF A. v. CROATIA"^^xsd:string .
+
+<https://hudoc.echr.coe.int/eng?i=001-101945> dcterms:accessRights "public"^^xsd:string ;
+    dcterms:coverage <http://www.wikidata.org/entity/Q6602> ;
+    dcterms:description "(Art. 41) Just satisfaction-{general}"^^xsd:string,
+        "(Art. 8) Right to respect for private and family life"^^xsd:string,
+        "(Art. 8-1) Respect for private life"^^xsd:string,
+        "Positive obligations"^^xsd:string ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher <http://www.wikidata.org/entity/Q122880> ;
+    dcterms:title "CASE OF HAJDUOVÁ v. SLOVAKIA"^^xsd:string .
+
+<https://hudoc.echr.coe.int/eng?i=001-105081> dcterms:accessRights "public"^^xsd:string ;
+    dcterms:coverage <http://www.wikidata.org/entity/Q6602> ;
+    dcterms:description "(Art. 13) Right to an effective remedy"^^xsd:string,
+        "(Art. 14) Prohibition of discrimination"^^xsd:string,
+        "(Art. 3) Prohibition of torture"^^xsd:string,
+        "(Art. 6) Right to a fair trial"^^xsd:string ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher <http://www.wikidata.org/entity/Q122880> ;
+    dcterms:title "IZEVBEKHAI AND OTHERS v. IRELAND"^^xsd:string .
+
+<https://hudoc.echr.coe.int/eng?i=001-106527> dcterms:accessRights "public"^^xsd:string ;
+    dcterms:coverage <http://www.wikidata.org/entity/Q6602> ;
+    dcterms:description "(Art. 3) Degrading treatment"^^xsd:string,
+        "(Art. 3) Expulsion"^^xsd:string,
+        "(Art. 3) Inhuman treatment"^^xsd:string,
+        "(Art. 3) Prohibition of torture"^^xsd:string,
+        "(Art. 35) Admissibility criteria"^^xsd:string,
+        "(Art. 35-3-a) Ratione materiae"^^xsd:string,
+        "(Art. 6) Right to a fair trial"^^xsd:string ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher <http://www.wikidata.org/entity/Q122880> ;
+    dcterms:title "OMEREDO v. AUSTRIA"^^xsd:string .
+
+<https://hudoc.echr.coe.int/eng?i=001-108781> dcterms:accessRights "public"^^xsd:string ;
+    dcterms:coverage <http://www.wikidata.org/entity/Q6602> ;
+    dcterms:description "(Art. 3) Effective investigation"^^xsd:string,
+        "(Art. 3) Prohibition of torture"^^xsd:string,
+        "(Art. 35) Admissibility criteria"^^xsd:string,
+        "(Art. 35-3-a) Ratione temporis"^^xsd:string,
+        "(Art. 41) Just satisfaction-{general}"^^xsd:string ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher <http://www.wikidata.org/entity/Q122880> ;
+    dcterms:title "CASE OF P.M. v. BULGARIA"^^xsd:string .
+
+<https://hudoc.echr.coe.int/eng?i=001-109557> dcterms:accessRights "public"^^xsd:string ;
+    dcterms:coverage <http://www.wikidata.org/entity/Q6602> ;
+    dcterms:description "(Art. 35) Admissibility criteria"^^xsd:string,
+        "(Art. 8) Right to respect for private and family life"^^xsd:string,
+        "(Art. 8-1) Respect for family life"^^xsd:string,
+        "(Art. 8-2) Necessary in a democratic society"^^xsd:string,
+        "(Art. 8-2) Protection of the rights and freedoms of others"^^xsd:string,
+        "Proportionality"^^xsd:string ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher <http://www.wikidata.org/entity/Q122880> ;
+    dcterms:title "CASE OF Y.C. v. THE UNITED KINGDOM"^^xsd:string .
+
+<https://hudoc.echr.coe.int/eng?i=001-110452> dcterms:accessRights "public"^^xsd:string ;
+    dcterms:coverage <http://www.wikidata.org/entity/Q6602> ;
+    dcterms:description "(Art. 8) Positive obligations"^^xsd:string,
+        "(Art. 8) Right to respect for private and family life"^^xsd:string ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher <http://www.wikidata.org/entity/Q122880> ;
+    dcterms:title "CASE OF KALUCZA v. HUNGARY"^^xsd:string .
+
+<https://hudoc.echr.coe.int/eng?i=001-110904> dcterms:accessRights "public"^^xsd:string ;
+    dcterms:coverage <http://www.wikidata.org/entity/Q6602> ;
+    dcterms:description "(Art. 3) Positive obligations"^^xsd:string,
+        "(Art. 3) Prohibition of torture"^^xsd:string ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher <http://www.wikidata.org/entity/Q122880> ;
+    dcterms:title "CASE OF I.G. v. MOLDOVA"^^xsd:string .
+
+<https://hudoc.echr.coe.int/eng?i=001-111553> dcterms:accessRights "public"^^xsd:string ;
+    dcterms:coverage <http://www.wikidata.org/entity/Q6602> ;
+    dcterms:description "(Art. 2) Extradition"^^xsd:string,
+        "(Art. 2) Right to life"^^xsd:string,
+        "(Art. 3) Extradition"^^xsd:string,
+        "(Art. 3) Prohibition of torture"^^xsd:string ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher <http://www.wikidata.org/entity/Q122880> ;
+    dcterms:title "CASE OF A.A. AND OTHERS v. SWEDEN"^^xsd:string .
+
+<https://hudoc.echr.coe.int/eng?i=001-112459> dcterms:accessRights "public"^^xsd:string ;
+    dcterms:coverage <http://www.wikidata.org/entity/Q6602> ;
+    dcterms:description "(Art. 14) Colour"^^xsd:string,
+        "(Art. 14) Discrimination"^^xsd:string,
+        "(Art. 14) National origin"^^xsd:string,
+        "(Art. 14) Prohibition of discrimination"^^xsd:string,
+        "(Art. 14) Race"^^xsd:string,
+        "(Art. 3) Degrading treatment"^^xsd:string,
+        "(Art. 3) Effective investigation"^^xsd:string,
+        "(Art. 3) Inhuman treatment"^^xsd:string,
+        "(Art. 3) Prohibition of torture"^^xsd:string,
+        "(Art. 41) Just satisfaction-{general}"^^xsd:string ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher <http://www.wikidata.org/entity/Q122880> ;
+    dcterms:title "CASE OF B.S. v. SPAIN"^^xsd:string .
+
+<https://hudoc.echr.coe.int/eng?i=001-112576> dcterms:accessRights "public"^^xsd:string ;
+    dcterms:coverage <http://www.wikidata.org/entity/Q6602> ;
+    dcterms:description "(Art. 3) Effective investigation"^^xsd:string,
+        "(Art. 3) Inhuman treatment"^^xsd:string,
+        "(Art. 3) Prohibition of torture"^^xsd:string,
+        "(Art. 34) Individual applications"^^xsd:string,
+        "(Art. 34) Victim"^^xsd:string,
+        "(Art. 35) Admissibility criteria"^^xsd:string,
+        "(Art. 4) Prohibition of slavery and forced labour"^^xsd:string,
+        "(Art. 4-1) Trafficking in human beings"^^xsd:string,
+        "Positive obligations"^^xsd:string ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher <http://www.wikidata.org/entity/Q122880> ;
+    dcterms:title "CASE OF M. AND OTHERS v. ITALY AND BULGARIA"^^xsd:string .
+
+<https://hudoc.echr.coe.int/eng?i=001-113956> dcterms:accessRights "public"^^xsd:string ;
+    dcterms:coverage <http://www.wikidata.org/entity/Q6602> ;
+    dcterms:description "(Art. 35) Admissibility criteria"^^xsd:string,
+        "(Art. 8) Right to respect for private and family life"^^xsd:string ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher <http://www.wikidata.org/entity/Q122880> ;
+    dcterms:title "KOWAL v. POLAND"^^xsd:string .
+
+<https://hudoc.echr.coe.int/eng?i=001-114098> dcterms:accessRights "public"^^xsd:string ;
+    dcterms:coverage <http://www.wikidata.org/entity/Q6602> ;
+    dcterms:description "(Art. 3) Degrading treatment"^^xsd:string,
+        "(Art. 3) Inhuman treatment"^^xsd:string,
+        "(Art. 3) Prohibition of torture"^^xsd:string,
+        "(Art. 34) Individual applications"^^xsd:string,
+        "(Art. 34) Victim"^^xsd:string,
+        "(Art. 35) Admissibility criteria"^^xsd:string,
+        "(Art. 35-1) Exhaustion of domestic remedies"^^xsd:string,
+        "(Art. 41) Just satisfaction-{general}"^^xsd:string,
+        "(Art. 5) Right to liberty and security"^^xsd:string,
+        "(Art. 5-1) Deprivation of liberty"^^xsd:string,
+        "(Art. 5-1-d) Educational supervision"^^xsd:string,
+        "(Art. 8) Positive obligations"^^xsd:string,
+        "(Art. 8) Right to respect for private and family life"^^xsd:string,
+        "(Art. 8-1) Respect for private life"^^xsd:string,
+        "(Art. 8-2) In accordance with the law"^^xsd:string,
+        "Margin of appreciation"^^xsd:string,
+        "Proportionality"^^xsd:string ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher <http://www.wikidata.org/entity/Q122880> ;
+    dcterms:title "CASE OF P. AND S. v. POLAND"^^xsd:string .
+
+<https://hudoc.echr.coe.int/eng?i=001-114397> dcterms:accessRights "public"^^xsd:string ;
+    dcterms:coverage <http://www.wikidata.org/entity/Q6602> ;
+    dcterms:description "(Art. 10) Freedom of expression-{general}"^^xsd:string,
+        "(Art. 13) Right to an effective remedy"^^xsd:string,
+        "(Art. 35) Admissibility criteria"^^xsd:string,
+        "(Art. 6) Right to a fair trial"^^xsd:string,
+        "(Art. 8) Right to respect for private and family life"^^xsd:string ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher <http://www.wikidata.org/entity/Q122880> ;
+    dcterms:title "IRENE WILSON v. THE UNITED KINGDOM"^^xsd:string .
+
+<https://hudoc.echr.coe.int/eng?i=001-117636> dcterms:accessRights "public"^^xsd:string ;
+    dcterms:coverage <http://www.wikidata.org/entity/Q6602> ;
+    dcterms:description "(Art. 3) Positive obligations"^^xsd:string,
+        "(Art. 3) Prohibition of torture"^^xsd:string,
+        "(Art. 41) Just satisfaction-{general}"^^xsd:string,
+        "Margin of appreciation"^^xsd:string ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher <http://www.wikidata.org/entity/Q122880> ;
+    dcterms:title "CASE OF VALIULIENĖ v. LITHUANIA"^^xsd:string .
+
+<https://hudoc.echr.coe.int/eng?i=001-119968> dcterms:accessRights "public"^^xsd:string ;
+    dcterms:coverage <http://www.wikidata.org/entity/Q6602> ;
+    dcterms:description "(Art. 14) Discrimination"^^xsd:string,
+        "(Art. 14) Prohibition of discrimination"^^xsd:string,
+        "(Art. 14) Sex"^^xsd:string,
+        "(Art. 3) Inhuman treatment"^^xsd:string,
+        "(Art. 3) Positive obligations"^^xsd:string,
+        "(Art. 3) Prohibition of torture"^^xsd:string,
+        "(Art. 35) Admissibility criteria"^^xsd:string,
+        "(Art. 41) Just satisfaction-{general}"^^xsd:string,
+        "(Art. 8) Positive obligations"^^xsd:string,
+        "(Art. 8) Right to respect for private and family life"^^xsd:string,
+        "(Art. 8-1) Respect for home"^^xsd:string,
+        "(Art. 8-1) Respect for private life"^^xsd:string,
+        "(Art. 8-2) Interference"^^xsd:string ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher <http://www.wikidata.org/entity/Q122880> ;
+    dcterms:title "CASE OF EREMIA v. THE REPUBLIC OF MOLDOVA"^^xsd:string .
+
+<https://hudoc.echr.coe.int/eng?i=001-122372> dcterms:accessRights "public"^^xsd:string ;
+    dcterms:coverage <http://www.wikidata.org/entity/Q6602> ;
+    dcterms:description "(Art. 3) Positive obligations"^^xsd:string,
+        "(Art. 3) Prohibition of torture"^^xsd:string,
+        "(Art. 35) Admissibility criteria"^^xsd:string,
+        "(Art. 35-1) Exhaustion of domestic remedies"^^xsd:string,
+        "(Art. 41) Just satisfaction-{general}"^^xsd:string,
+        "(Art. 8) Positive obligations"^^xsd:string,
+        "(Art. 8) Right to respect for private and family life"^^xsd:string,
+        "(Art. 8-1) Respect for private life"^^xsd:string ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher <http://www.wikidata.org/entity/Q122880> ;
+    dcterms:title "CASE OF B. v. THE REPUBLIC OF MOLDOVA"^^xsd:string .
+
+<https://hudoc.echr.coe.int/eng?i=001-122375> dcterms:accessRights "public"^^xsd:string ;
+    dcterms:coverage <http://www.wikidata.org/entity/Q6602> ;
+    dcterms:description "(Art. 14) Discrimination"^^xsd:string,
+        "(Art. 14) Prohibition of discrimination"^^xsd:string,
+        "(Art. 14) Sex"^^xsd:string,
+        "(Art. 3) Positive obligations"^^xsd:string,
+        "(Art. 3) Prohibition of torture"^^xsd:string,
+        "(Art. 35) Admissibility criteria"^^xsd:string,
+        "(Art. 41) Just satisfaction-{general}"^^xsd:string ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher <http://www.wikidata.org/entity/Q122880> ;
+    dcterms:title "CASE OF MUDRIC v. THE REPUBLIC OF MOLDOVA"^^xsd:string .
+
+<https://hudoc.echr.coe.int/eng?i=001-127061> dcterms:accessRights "public"^^xsd:string ;
+    dcterms:coverage <http://www.wikidata.org/entity/Q6602> ;
+    dcterms:description "(Art. 3) Prohibition of torture"^^xsd:string,
+        "(Art. 35) Admissibility criteria"^^xsd:string,
+        "(Art. 4) Prohibition of slavery and forced labour"^^xsd:string ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher <http://www.wikidata.org/entity/Q122880> ;
+    dcterms:title "F.A. v. THE UNITED KINGDOM"^^xsd:string .
+
+<https://hudoc.echr.coe.int/eng?i=001-138514> dcterms:accessRights "public"^^xsd:string ;
+    dcterms:coverage <http://www.wikidata.org/entity/Q6602> ;
+    dcterms:description "(Art. 37) Striking out applications-{general}"^^xsd:string,
+        "(Art. 6) Right to a fair trial"^^xsd:string ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher <http://www.wikidata.org/entity/Q122880> ;
+    dcterms:title "D.P. v. LITHUANIA"^^xsd:string .
+
+<https://hudoc.echr.coe.int/eng?i=001-140030> dcterms:accessRights "public"^^xsd:string ;
+    dcterms:coverage <http://www.wikidata.org/entity/Q6602> ;
+    dcterms:description "(Art. 3) Effective investigation"^^xsd:string,
+        "(Art. 3) Prohibition of torture"^^xsd:string ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher <http://www.wikidata.org/entity/Q122880> ;
+    dcterms:title "CASE OF W. v. SLOVENIA"^^xsd:string .
+
+<https://hudoc.echr.coe.int/eng?i=001-140235> dcterms:accessRights "public"^^xsd:string ;
+    dcterms:coverage <http://www.wikidata.org/entity/Q6602> ;
+    dcterms:description "(Art. 13) Effective remedy"^^xsd:string,
+        "(Art. 13) Right to an effective remedy"^^xsd:string,
+        "(Art. 3) Degrading treatment"^^xsd:string,
+        "(Art. 3) Effective investigation"^^xsd:string,
+        "(Art. 3) Inhuman treatment"^^xsd:string,
+        "(Art. 3) Positive obligations"^^xsd:string,
+        "(Art. 3) Prohibition of torture"^^xsd:string,
+        "(Art. 34) Individual applications"^^xsd:string,
+        "(Art. 34) Victim"^^xsd:string,
+        "(Art. 35) Admissibility criteria"^^xsd:string,
+        "(Art. 35-1) Exhaustion of domestic remedies"^^xsd:string,
+        "(Art. 35-3-a) Manifestly ill-founded"^^xsd:string,
+        "(Art. 41) Just satisfaction-{general}"^^xsd:string ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher <http://www.wikidata.org/entity/Q122880> ;
+    dcterms:title "CASE OF O'KEEFFE v. IRELAND"^^xsd:string .
+
+<https://hudoc.echr.coe.int/eng?i=001-140240> dcterms:accessRights "public"^^xsd:string ;
+    dcterms:coverage <http://www.wikidata.org/entity/Q6602> ;
+    dcterms:description "(Art. 14) Discrimination"^^xsd:string,
+        "(Art. 14) Prohibition of discrimination"^^xsd:string,
+        "(Art. 14) Sex"^^xsd:string,
+        "(Art. 3) Degrading treatment"^^xsd:string,
+        "(Art. 3) Inhuman treatment"^^xsd:string,
+        "(Art. 3) Positive obligations"^^xsd:string,
+        "(Art. 3) Prohibition of torture"^^xsd:string,
+        "(Art. 41) Just satisfaction-{general}"^^xsd:string ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher <http://www.wikidata.org/entity/Q122880> ;
+    dcterms:title "CASE OF T.M. AND C.M. v. THE REPUBLIC OF MOLDOVA"^^xsd:string .
+
+<https://hudoc.echr.coe.int/eng?i=001-144137> dcterms:accessRights "public"^^xsd:string ;
+    dcterms:coverage <http://www.wikidata.org/entity/Q6602> ;
+    dcterms:description "(Art. 14) Prohibition of discrimination"^^xsd:string,
+        "(Art. 3) Positive obligations"^^xsd:string,
+        "(Art. 3) Prohibition of torture"^^xsd:string ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher <http://www.wikidata.org/entity/Q122880> ;
+    dcterms:title "CASE OF RUMOR v. ITALY"^^xsd:string .
+
+<https://hudoc.echr.coe.int/eng?i=001-147871> dcterms:accessRights "public"^^xsd:string ;
+    dcterms:coverage <http://www.wikidata.org/entity/Q6602> ;
+    dcterms:description "(Art. 2) Right to life"^^xsd:string,
+        "(Art. 2-1) Effective investigation"^^xsd:string ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher <http://www.wikidata.org/entity/Q122880> ;
+    dcterms:title "CASE OF DURMAZ v. TURKEY"^^xsd:string .
+
+<https://hudoc.echr.coe.int/eng?i=001-150310> dcterms:accessRights "public"^^xsd:string ;
+    dcterms:coverage <http://www.wikidata.org/entity/Q6602> ;
+    dcterms:description "(Art. 3) Positive obligations"^^xsd:string,
+        "(Art. 3) Prohibition of torture"^^xsd:string ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher <http://www.wikidata.org/entity/Q122880> ;
+    dcterms:title "CASE OF N.D. v. SLOVENIA"^^xsd:string .
+
+<https://hudoc.echr.coe.int/eng?i=001-150318> dcterms:accessRights "public"^^xsd:string ;
+    dcterms:coverage <http://www.wikidata.org/entity/Q6602> ;
+    dcterms:description "(Art. 3) Positive obligations"^^xsd:string,
+        "(Art. 3) Prohibition of torture"^^xsd:string ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher <http://www.wikidata.org/entity/Q122880> ;
+    dcterms:title "CASE OF M.A. v. SLOVENIA"^^xsd:string .
+
+<https://hudoc.echr.coe.int/eng?i=001-150572> dcterms:accessRights "public"^^xsd:string ;
+    dcterms:coverage <http://www.wikidata.org/entity/Q6602> ;
+    dcterms:description "(Art. 35) Admissibility criteria"^^xsd:string,
+        "(Art. 6) Right to a fair trial"^^xsd:string ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher <http://www.wikidata.org/entity/Q122880> ;
+    dcterms:title "WASIEWSKA v. POLAND"^^xsd:string .
+
+<https://hudoc.echr.coe.int/eng?i=001-152850> dcterms:accessRights "public"^^xsd:string ;
+    dcterms:coverage <http://www.wikidata.org/entity/Q6602> ;
+    dcterms:description "(Art. 3) Effective investigation"^^xsd:string,
+        "(Art. 3) Prohibition of torture"^^xsd:string,
+        "(Art. 35) Admissibility criteria"^^xsd:string,
+        "(Art. 35-1) Exhaustion of domestic remedies"^^xsd:string,
+        "(Art. 41) Just satisfaction"^^xsd:string,
+        "(Art. 41) Just satisfaction-{general}"^^xsd:string,
+        "(Art. 41) Non-pecuniary damage"^^xsd:string,
+        "(Art. 46) Binding force and execution of judgments"^^xsd:string,
+        "(Art. 46) General measures (pilot judgment)"^^xsd:string,
+        "(Art. 46) Systemic problem"^^xsd:string ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher <http://www.wikidata.org/entity/Q122880> ;
+    dcterms:title "CASE OF S.Z. v. BULGARIA"^^xsd:string .
+
+<https://hudoc.echr.coe.int/eng?i=001-154152> dcterms:accessRights "public"^^xsd:string ;
+    dcterms:coverage <http://www.wikidata.org/entity/Q6602> ;
+    dcterms:description "(Art. 13) Effective remedy"^^xsd:string,
+        "(Art. 13) Right to an effective remedy"^^xsd:string,
+        "(Art. 3) Effective investigation"^^xsd:string,
+        "(Art. 3) Positive obligations"^^xsd:string,
+        "(Art. 3) Prohibition of torture"^^xsd:string ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher <http://www.wikidata.org/entity/Q122880> ;
+    dcterms:title "CASE OF I.P. v. THE REPUBLIC OF MOLDOVA"^^xsd:string .
+
+<https://hudoc.echr.coe.int/eng?i=001-154728> dcterms:accessRights "public"^^xsd:string ;
+    dcterms:coverage <http://www.wikidata.org/entity/Q6602> ;
+    dcterms:description "(Art. 3) Effective investigation"^^xsd:string,
+        "(Art. 3) Prohibition of torture"^^xsd:string,
+        "(Art. 35) Admissibility criteria"^^xsd:string,
+        "(Art. 41) Just satisfaction"^^xsd:string,
+        "(Art. 41) Just satisfaction-{general}"^^xsd:string,
+        "(Art. 41) Non-pecuniary damage"^^xsd:string,
+        "(Art. 6) Criminal proceedings"^^xsd:string,
+        "(Art. 6) Right to a fair trial"^^xsd:string,
+        "(Art. 6-3-d) Examination of witnesses"^^xsd:string,
+        "(Art. 8) Positive obligations"^^xsd:string,
+        "(Art. 8) Right to respect for private and family life"^^xsd:string,
+        "(Art. 8-1) Respect for private life"^^xsd:string ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher <http://www.wikidata.org/entity/Q122880> ;
+    dcterms:title "CASE OF Y. v. SLOVENIA"^^xsd:string .
+
+<https://hudoc.echr.coe.int/eng?i=001-167118> dcterms:accessRights "public"^^xsd:string ;
+    dcterms:coverage <http://www.wikidata.org/entity/Q6602> ;
+    dcterms:description "(Art. 3) Effective investigation"^^xsd:string,
+        "(Art. 3) Positive obligations"^^xsd:string,
+        "(Art. 3) Prohibition of torture"^^xsd:string,
+        "(Art. 35) Admissibility criteria"^^xsd:string,
+        "(Art. 35-1) Exhaustion of domestic remedies"^^xsd:string,
+        "(Art. 35-3-a) Manifestly ill-founded"^^xsd:string,
+        "(Art. 41) Just satisfaction"^^xsd:string,
+        "(Art. 41) Just satisfaction-{general}"^^xsd:string,
+        "(Art. 41) Non-pecuniary damage"^^xsd:string,
+        "(Art. 8) Positive obligations"^^xsd:string,
+        "(Art. 8) Right to respect for private and family life"^^xsd:string,
+        "(Art. 8-1) Respect for home"^^xsd:string,
+        "(Art. 8-1) Respect for private life"^^xsd:string,
+        "Proportionality"^^xsd:string ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher <http://www.wikidata.org/entity/Q122880> ;
+    dcterms:title "CASE OF IRINA SMIRNOVA v. UKRAINE"^^xsd:string .
+
+<https://hudoc.echr.coe.int/eng?i=001-170388> dcterms:accessRights "public"^^xsd:string ;
+    dcterms:coverage <http://www.wikidata.org/entity/Q6602> ;
+    dcterms:description "(Art. 3) Effective investigation"^^xsd:string,
+        "(Art. 3) Prohibition of torture"^^xsd:string,
+        "(Art. 35) Admissibility criteria"^^xsd:string,
+        "(Art. 35-1) Exhaustion of domestic remedies"^^xsd:string,
+        "(Art. 4) Positive obligations"^^xsd:string,
+        "(Art. 4) Prohibition of slavery and forced labour"^^xsd:string,
+        "(Art. 4-1) Trafficking in human beings"^^xsd:string ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher <http://www.wikidata.org/entity/Q122880> ;
+    dcterms:title "CASE OF J. AND OTHERS v. AUSTRIA"^^xsd:string .
+
+<https://hudoc.echr.coe.int/eng?i=001-171994> dcterms:accessRights "public"^^xsd:string ;
+    dcterms:coverage <http://www.wikidata.org/entity/Q6602> ;
+    dcterms:description "(Art. 14) Discrimination"^^xsd:string,
+        "(Art. 14) Prohibition of discrimination"^^xsd:string,
+        "(Art. 2) Positive obligations"^^xsd:string,
+        "(Art. 2) Right to life"^^xsd:string,
+        "(Art. 2-1) Life"^^xsd:string,
+        "(Art. 3) Effective investigation"^^xsd:string,
+        "(Art. 3) Positive obligations"^^xsd:string,
+        "(Art. 3) Prohibition of torture"^^xsd:string,
+        "(Art. 35) Admissibility criteria"^^xsd:string,
+        "(Art. 35-1) Exhaustion of domestic remedies"^^xsd:string,
+        "(Art. 41) Just satisfaction"^^xsd:string,
+        "(Art. 41) Just satisfaction-{general}"^^xsd:string,
+        "(Art. 41) Non-pecuniary damage"^^xsd:string,
+        "(Art. 41) Pecuniary damage"^^xsd:string ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher <http://www.wikidata.org/entity/Q122880> ;
+    dcterms:title "CASE OF TALPIS v. ITALY"^^xsd:string .
+
+<https://hudoc.echr.coe.int/eng?i=001-173619> dcterms:accessRights "public"^^xsd:string ;
+    dcterms:coverage <http://www.wikidata.org/entity/Q6602> ;
+    dcterms:description "(Art. 14) Discrimination"^^xsd:string,
+        "(Art. 14) Prohibition of discrimination"^^xsd:string,
+        "(Art. 14) Sex"^^xsd:string,
+        "(Art. 3) Effective investigation"^^xsd:string,
+        "(Art. 3) Positive obligations"^^xsd:string,
+        "(Art. 3) Prohibition of torture"^^xsd:string,
+        "(Art. 41) Just satisfaction"^^xsd:string,
+        "(Art. 41) Just satisfaction-{general}"^^xsd:string,
+        "(Art. 41) Non-pecuniary damage"^^xsd:string ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher <http://www.wikidata.org/entity/Q122880> ;
+    dcterms:title "CASE OF BĂLȘAN v. ROMANIA"^^xsd:string .
+
+<https://hudoc.echr.coe.int/eng?i=001-175142> dcterms:accessRights "public"^^xsd:string ;
+    dcterms:coverage <http://www.wikidata.org/entity/Q6602> ;
+    dcterms:description "(Art. 8) Positive obligations"^^xsd:string,
+        "(Art. 8) Right to respect for private and family life"^^xsd:string,
+        "(Art. 8-1) Respect for private life"^^xsd:string ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher <http://www.wikidata.org/entity/Q122880> ;
+    dcterms:title "CASE OF Ž.B. v. CROATIA"^^xsd:string .
+
+<https://hudoc.echr.coe.int/eng?i=001-177226> dcterms:accessRights "public"^^xsd:string ;
+    dcterms:coverage <http://www.wikidata.org/entity/Q6602> ;
+    dcterms:description "(Art. 3) Effective investigation"^^xsd:string,
+        "(Art. 3) Prohibition of torture"^^xsd:string,
+        "(Art. 35) Admissibility criteria"^^xsd:string,
+        "(Art. 35-1) Exhaustion of domestic remedies"^^xsd:string,
+        "(Art. 41) Just satisfaction"^^xsd:string,
+        "(Art. 41) Just satisfaction-{general}"^^xsd:string,
+        "(Art. 41) Non-pecuniary damage"^^xsd:string,
+        "(Art. 6) Civil proceedings"^^xsd:string,
+        "(Art. 6) Right to a fair trial"^^xsd:string,
+        "(Art. 6-1) Access to court"^^xsd:string,
+        "(Art. 6-1) Fair hearing"^^xsd:string ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher <http://www.wikidata.org/entity/Q122880> ;
+    dcterms:title "CASE OF D.M.D. v. ROMANIA"^^xsd:string .
+
+<https://hudoc.echr.coe.int/eng?i=001-191749> dcterms:accessRights "public"^^xsd:string ;
+    dcterms:coverage <http://www.wikidata.org/entity/Q6602> ;
+    dcterms:description "(Art. 3) Positive obligations"^^xsd:string,
+        "(Art. 3) Prohibition of torture"^^xsd:string,
+        "(Art. 8) Positive obligations"^^xsd:string,
+        "(Art. 8) Right to respect for private and family life"^^xsd:string,
+        "(Art. 8-1) Respect for private life"^^xsd:string ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher <http://www.wikidata.org/entity/Q122880> ;
+    dcterms:title "CASE OF E.B. v. ROMANIA"^^xsd:string .
+
+<https://hudoc.echr.coe.int/eng?i=001-193069> dcterms:accessRights "public"^^xsd:string ;
+    dcterms:coverage <http://www.wikidata.org/entity/Q6602> ;
+    dcterms:description "(Art. 8) Right to respect for private and family life"^^xsd:string,
+        "(Art. 8-1) Respect for family life"^^xsd:string ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher <http://www.wikidata.org/entity/Q122880> ;
+    dcterms:title "CASE OF O.C.I. AND OTHERS v. ROMANIA"^^xsd:string .
+
+<https://hudoc.echr.coe.int/eng?i=001-194321> dcterms:accessRights "public"^^xsd:string ;
+    dcterms:coverage <http://www.wikidata.org/entity/Q6602> ;
+    dcterms:description "(Art. 14) Discrimination"^^xsd:string,
+        "(Art. 14) Prohibition of discrimination"^^xsd:string,
+        "(Art. 14) Sex"^^xsd:string,
+        "(Art. 3) Inhuman treatment"^^xsd:string,
+        "(Art. 3) Positive obligations"^^xsd:string,
+        "(Art. 3) Prohibition of torture"^^xsd:string,
+        "(Art. 41) Just satisfaction"^^xsd:string,
+        "(Art. 41) Just satisfaction-{general}"^^xsd:string,
+        "(Art. 41) Non-pecuniary damage"^^xsd:string ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher <http://www.wikidata.org/entity/Q122880> ;
+    dcterms:title "CASE OF VOLODINA v. RUSSIA"^^xsd:string .
+
+<https://hudoc.echr.coe.int/eng?i=001-196880> dcterms:accessRights "public"^^xsd:string ;
+    dcterms:coverage <http://www.wikidata.org/entity/Q6602> ;
+    dcterms:description "(Art. 3) Positive obligations"^^xsd:string,
+        "(Art. 3) Prohibition of torture"^^xsd:string ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher <http://www.wikidata.org/entity/Q122880> ;
+    dcterms:title "CASE OF BARSOVA v. RUSSIA"^^xsd:string .
+
+<https://hudoc.echr.coe.int/eng?i=001-201342> dcterms:accessRights "public"^^xsd:string ;
+    dcterms:coverage <http://www.wikidata.org/entity/Q6602> ;
+    dcterms:description "(Art. 3) Effective investigation"^^xsd:string,
+        "(Art. 3) Positive obligations"^^xsd:string,
+        "(Art. 3) Prohibition of torture"^^xsd:string,
+        "(Art. 35) Admissibility criteria"^^xsd:string,
+        "(Art. 35-1) Exhaustion of domestic remedies"^^xsd:string,
+        "(Art. 41) Just satisfaction"^^xsd:string,
+        "(Art. 41) Just satisfaction-{general}"^^xsd:string,
+        "(Art. 41) Non-pecuniary damage"^^xsd:string,
+        "(Art. 41) Pecuniary damage"^^xsd:string,
+        "(Art. 8) Positive obligations"^^xsd:string,
+        "(Art. 8) Right to respect for private and family life"^^xsd:string,
+        "(Art. 8-1) Respect for correspondence"^^xsd:string ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher <http://www.wikidata.org/entity/Q122880> ;
+    dcterms:title "CASE OF BUTURUGĂ v. ROMANIA"^^xsd:string .
+
+<https://hudoc.echr.coe.int/eng?i=001-202554> dcterms:accessRights "public"^^xsd:string ;
+    dcterms:coverage <http://www.wikidata.org/entity/Q6602> ;
+    dcterms:description "(Art. 14) Discrimination"^^xsd:string,
+        "(Art. 14) Prohibition of discrimination"^^xsd:string,
+        "(Art. 3) Inhuman treatment"^^xsd:string,
+        "(Art. 3) Positive obligations"^^xsd:string,
+        "(Art. 3) Prohibition of torture"^^xsd:string ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher <http://www.wikidata.org/entity/Q122880> ;
+    dcterms:title "CASE OF MUNTEANU v. THE REPUBLIC OF MOLDOVA"^^xsd:string .
+
+<https://hudoc.echr.coe.int/eng?i=001-203503> dcterms:accessRights "public"^^xsd:string ;
+    dcterms:coverage <http://www.wikidata.org/entity/Q6602> ;
+    dcterms:description "(Art. 4) Effective investigation"^^xsd:string,
+        "(Art. 4) Positive obligations"^^xsd:string,
+        "(Art. 4) Prohibition of slavery and forced labour"^^xsd:string,
+        "(Art. 4-1) Trafficking in human beings"^^xsd:string,
+        "(Art. 41) Just satisfaction"^^xsd:string,
+        "(Art. 41) Just satisfaction-{general}"^^xsd:string,
+        "(Art. 41) Non-pecuniary damage"^^xsd:string ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher <http://www.wikidata.org/entity/Q122880> ;
+    dcterms:title "CASE OF S.M. v. CROATIA"^^xsd:string .
+
+<https://hudoc.echr.coe.int/eng?i=001-203825> dcterms:accessRights "public"^^xsd:string ;
+    dcterms:coverage <http://www.wikidata.org/entity/Q6602> ;
+    dcterms:description "(Art 35-1) Four-month period (former six-month)"^^xsd:string,
+        "(Art. 2) Positive obligations"^^xsd:string,
+        "(Art. 2) Right to life"^^xsd:string,
+        "(Art. 2-1) Effective investigation"^^xsd:string,
+        "(Art. 35) Admissibility criteria"^^xsd:string,
+        "(Art. 35-1) Exhaustion of domestic remedies"^^xsd:string,
+        "(Art. 41) Just satisfaction"^^xsd:string,
+        "(Art. 41) Just satisfaction-{general}"^^xsd:string,
+        "(Art. 41) Non-pecuniary damage"^^xsd:string,
+        "(Art. 41) Pecuniary damage"^^xsd:string ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher <http://www.wikidata.org/entity/Q122880> ;
+    dcterms:title "CASE OF TËRSHANA v. ALBANIA"^^xsd:string .
+
+<https://hudoc.echr.coe.int/eng?i=001-203931> dcterms:accessRights "public"^^xsd:string ;
+    dcterms:coverage <http://www.wikidata.org/entity/Q6602> ;
+    dcterms:description "(Art. 41) Just satisfaction"^^xsd:string,
+        "(Art. 41) Just satisfaction-{general}"^^xsd:string,
+        "(Art. 41) Non-pecuniary damage"^^xsd:string,
+        "(Art. 8) Positive obligations"^^xsd:string,
+        "(Art. 8) Right to respect for private and family life"^^xsd:string,
+        "(Art. 8-1) Respect for private life"^^xsd:string ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher <http://www.wikidata.org/entity/Q122880> ;
+    dcterms:title "CASE OF LEVCHUK v. UKRAINE"^^xsd:string .
+
+<https://hudoc.echr.coe.int/eng?i=001-207360> dcterms:accessRights "public"^^xsd:string ;
+    dcterms:coverage <http://www.wikidata.org/entity/Q6602> ;
+    dcterms:description "(Art. 14) Discrimination"^^xsd:string,
+        "(Art. 14) Other status"^^xsd:string,
+        "(Art. 14) Prohibition of discrimination"^^xsd:string,
+        "(Art. 3) Effective investigation"^^xsd:string,
+        "(Art. 3) Prohibition of torture"^^xsd:string,
+        "(Art. 41) Just satisfaction"^^xsd:string,
+        "(Art. 41) Just satisfaction-{general}"^^xsd:string,
+        "(Art. 41) Non-pecuniary damage"^^xsd:string,
+        "(P7-4) Fundamental defect in proceedings"^^xsd:string,
+        "(P7-4) Reopening of case"^^xsd:string,
+        "(P7-4) Right not to be tried or punished twice-{general}"^^xsd:string ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher <http://www.wikidata.org/entity/Q122880> ;
+    dcterms:title "CASE OF SABALIĆ v. CROATIA"^^xsd:string .
+
+<https://hudoc.echr.coe.int/eng?i=001-209373> dcterms:accessRights "public"^^xsd:string ;
+    dcterms:coverage <http://www.wikidata.org/entity/Q6602> ;
+    dcterms:description "(Art 35-1) Four-month period (former six-month)"^^xsd:string,
+        "(Art. 3) Positive obligations"^^xsd:string,
+        "(Art. 3) Prohibition of torture"^^xsd:string,
+        "(Art. 35) Admissibility criteria"^^xsd:string,
+        "(Art. 41) Just satisfaction"^^xsd:string,
+        "(Art. 41) Just satisfaction-{general}"^^xsd:string,
+        "(Art. 41) Non-pecuniary damage"^^xsd:string,
+        "(Art. 8) Positive obligations"^^xsd:string,
+        "(Art. 8) Right to respect for private and family life"^^xsd:string ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher <http://www.wikidata.org/entity/Q122880> ;
+    dcterms:title "CASE OF E.G. v. THE REPUBLIC OF MOLDOVA"^^xsd:string .
+
+<https://hudoc.echr.coe.int/eng?i=001-210463> dcterms:accessRights "public"^^xsd:string ;
+    dcterms:coverage <http://www.wikidata.org/entity/Q6602> ;
+    dcterms:description "(Art 35-1) Four-month period (former six-month)"^^xsd:string,
+        "(Art. 2) Positive obligations"^^xsd:string,
+        "(Art. 2) Right to life"^^xsd:string,
+        "(Art. 2-1) Life"^^xsd:string,
+        "(Art. 35) Admissibility criteria"^^xsd:string,
+        "(Art. 35-1) Exhaustion of domestic remedies"^^xsd:string,
+        "(Art. 5) Right to liberty and security"^^xsd:string,
+        "(Art. 5-1) Deprivation of liberty"^^xsd:string ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher <http://www.wikidata.org/entity/Q122880> ;
+    dcterms:title "CASE OF KURT v. AUSTRIA"^^xsd:string .
+
+<https://hudoc.echr.coe.int/eng?i=001-210854> dcterms:accessRights "public"^^xsd:string ;
+    dcterms:coverage <http://www.wikidata.org/entity/Q6602> ;
+    dcterms:description "(Art. 14) Discrimination"^^xsd:string,
+        "(Art. 14) Prohibition of discrimination"^^xsd:string,
+        "(Art. 14) Sex"^^xsd:string,
+        "(Art. 2) Positive obligations"^^xsd:string,
+        "(Art. 2) Right to life"^^xsd:string,
+        "(Art. 2-1) Effective investigation"^^xsd:string,
+        "(Art. 2-1) Life"^^xsd:string,
+        "(Art. 41) Just satisfaction"^^xsd:string,
+        "(Art. 41) Just satisfaction-{general}"^^xsd:string,
+        "(Art. 41) Non-pecuniary damage"^^xsd:string,
+        "(Art. 41) Pecuniary damage"^^xsd:string ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher <http://www.wikidata.org/entity/Q122880> ;
+    dcterms:title "CASE OF TKHELIDZE v. GEORGIA"^^xsd:string .
+
+<https://hudoc.echr.coe.int/eng?i=001-211592> dcterms:accessRights "public"^^xsd:string ;
+    dcterms:coverage <http://www.wikidata.org/entity/Q6602> ;
+    dcterms:description "(Art. 41) Just satisfaction"^^xsd:string,
+        "(Art. 41) Just satisfaction-{general}"^^xsd:string,
+        "(Art. 41) Non-pecuniary damage"^^xsd:string,
+        "(Art. 41) Pecuniary damage"^^xsd:string,
+        "(Art. 6) Criminal proceedings"^^xsd:string,
+        "(Art. 6) Right to a fair trial"^^xsd:string,
+        "(Art. 6-1) Fair hearing"^^xsd:string,
+        "(Art. 6-3) Rights of defence"^^xsd:string,
+        "(Art. 6-3-b) Adequate facilities"^^xsd:string,
+        "(Art. 6-3-b) Adequate time"^^xsd:string,
+        "(Art. 6-3-c) Defence in person"^^xsd:string,
+        "(Art. 6-3-c) Defence through legal assistance"^^xsd:string,
+        "(P7-4) Right not to be tried or punished twice"^^xsd:string,
+        "(P7-4) Right not to be tried or punished twice-{general}"^^xsd:string ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher <http://www.wikidata.org/entity/Q122880> ;
+    dcterms:title "CASE OF GALOVIĆ v. CROATIA"^^xsd:string .
+
+<https://hudoc.echr.coe.int/eng?i=001-211794> dcterms:accessRights "public"^^xsd:string ;
+    dcterms:coverage <http://www.wikidata.org/entity/Q6602> ;
+    dcterms:description "(Art. 35) Admissibility criteria"^^xsd:string,
+        "(Art. 35-2-b) Relevant new information"^^xsd:string,
+        "(Art. 41) Just satisfaction"^^xsd:string,
+        "(Art. 41) Just satisfaction-{general}"^^xsd:string,
+        "(Art. 41) Non-pecuniary damage"^^xsd:string,
+        "(Art. 8) Positive obligations"^^xsd:string,
+        "(Art. 8) Right to respect for private and family life"^^xsd:string,
+        "(Art. 8-1) Respect for private life"^^xsd:string,
+        "Margin of appreciation"^^xsd:string ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher <http://www.wikidata.org/entity/Q122880> ;
+    dcterms:title "CASE OF VOLODINA v. RUSSIA (No. 2)"^^xsd:string .
+
+<https://hudoc.echr.coe.int/eng?i=001-215716> dcterms:accessRights "public"^^xsd:string ;
+    dcterms:coverage <http://www.wikidata.org/entity/Q6602> ;
+    dcterms:description "(Art. 14) Discrimination"^^xsd:string,
+        "(Art. 14) Prohibition of discrimination"^^xsd:string,
+        "(Art. 14) Sex"^^xsd:string,
+        "(Art. 2) Right to life"^^xsd:string,
+        "(Art. 2-1) Effective investigation"^^xsd:string,
+        "(Art. 2-1) Life"^^xsd:string,
+        "(Art. 34) Individual applications"^^xsd:string,
+        "(Art. 34) Victim"^^xsd:string,
+        "(Art. 41) Just satisfaction"^^xsd:string,
+        "(Art. 41) Just satisfaction-{general}"^^xsd:string,
+        "(Art. 41) Non-pecuniary damage"^^xsd:string ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher <http://www.wikidata.org/entity/Q122880> ;
+    dcterms:title "CASE OF A AND B v. GEORGIA"^^xsd:string .
+
+<https://hudoc.echr.coe.int/eng?i=001-216360> dcterms:accessRights "public"^^xsd:string ;
+    dcterms:coverage <http://www.wikidata.org/entity/Q6602> ;
+    dcterms:description "(Art. 14) Discrimination"^^xsd:string,
+        "(Art. 14) Prohibition of discrimination"^^xsd:string,
+        "(Art. 14) Sex"^^xsd:string,
+        "(Art. 2) Positive obligations"^^xsd:string,
+        "(Art. 2) Right to life"^^xsd:string,
+        "(Art. 2-1) Life"^^xsd:string,
+        "(Art. 41) Just satisfaction"^^xsd:string,
+        "(Art. 41) Just satisfaction-{general}"^^xsd:string,
+        "(Art. 41) Non-pecuniary damage"^^xsd:string ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher <http://www.wikidata.org/entity/Q122880> ;
+    dcterms:title "CASE OF Y AND OTHERS v. BULGARIA"^^xsd:string .
+
+<https://hudoc.echr.coe.int/eng?i=001-219067> dcterms:accessRights "public"^^xsd:string ;
+    dcterms:coverage <http://www.wikidata.org/entity/Q6602> ;
+    dcterms:description "(Art. 3) Effective investigation"^^xsd:string,
+        "(Art. 3) Prohibition of torture"^^xsd:string,
+        "(Art. 41) Just satisfaction"^^xsd:string,
+        "(Art. 41) Just satisfaction-{general}"^^xsd:string,
+        "(Art. 41) Non-pecuniary damage"^^xsd:string ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher <http://www.wikidata.org/entity/Q122880> ;
+    dcterms:title "CASE OF J.I. v. CROATIA"^^xsd:string .
+
+<https://hudoc.echr.coe.int/eng?i=001-220867> dcterms:accessRights "public"^^xsd:string ;
+    dcterms:coverage <http://www.wikidata.org/entity/Q6602> ;
+    dcterms:description "(Art. 8) Positive obligations"^^xsd:string,
+        "(Art. 8) Right to respect for private and family life"^^xsd:string,
+        "(Art. 8-1) Respect for private life"^^xsd:string,
+        "Proportionality"^^xsd:string ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher <http://www.wikidata.org/entity/Q122880> ;
+    dcterms:title "CASE OF MALAGIĆ v. CROATIA"^^xsd:string .
+
+<https://hudoc.echr.coe.int/eng?i=001-57603> dcterms:accessRights "public"^^xsd:string ;
+    dcterms:coverage <http://www.wikidata.org/entity/Q6602> ;
+    dcterms:description "(Art. 13) Effective remedy"^^xsd:string,
+        "(Art. 13) Right to an effective remedy"^^xsd:string,
+        "(Art. 14) Discrimination"^^xsd:string,
+        "(Art. 14) Prohibition of discrimination"^^xsd:string,
+        "(Art. 3) Degrading punishment"^^xsd:string,
+        "(Art. 3) Degrading treatment"^^xsd:string,
+        "(Art. 3) Inhuman punishment"^^xsd:string,
+        "(Art. 3) Inhuman treatment"^^xsd:string,
+        "(Art. 3) Prohibition of torture"^^xsd:string,
+        "(Art. 41) Just satisfaction-{general}"^^xsd:string,
+        "(Art. 8) Right to respect for private and family life"^^xsd:string,
+        "(Art. 8-1) Respect for private life"^^xsd:string ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher <http://www.wikidata.org/entity/Q122880> ;
+    dcterms:title "CASE OF X AND Y v. THE NETHERLANDS"^^xsd:string .
+
+<https://hudoc.echr.coe.int/eng?i=001-58371> dcterms:accessRights "public"^^xsd:string ;
+    dcterms:coverage <http://www.wikidata.org/entity/Q6602> ;
+    dcterms:description "(Art. 13) Effective remedy"^^xsd:string,
+        "(Art. 13) Right to an effective remedy"^^xsd:string,
+        "(Art. 3) Prohibition of torture"^^xsd:string,
+        "(Art. 3) Torture"^^xsd:string,
+        "(Art. 34) Hinder the exercise of the right of application"^^xsd:string,
+        "(Art. 34) Individual"^^xsd:string,
+        "(Art. 34) Individual applications"^^xsd:string,
+        "(Art. 41) Just satisfaction-{general}"^^xsd:string,
+        "(Art. 46) Binding force and execution of judgments"^^xsd:string,
+        "(Art. 53) Rights otherwise guaranteed"^^xsd:string,
+        "(Art. 6) Right to a fair trial"^^xsd:string ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher <http://www.wikidata.org/entity/Q122880> ;
+    dcterms:title "CASE OF AYDIN v. TURKEY"^^xsd:string .
+
+<https://hudoc.echr.coe.int/eng?i=001-61247> dcterms:accessRights "public"^^xsd:string ;
+    dcterms:coverage <http://www.wikidata.org/entity/Q6602> ;
+    dcterms:description "(Art. 41) Just satisfaction-{general}"^^xsd:string,
+        "(Art. 8) Right to respect for private and family life"^^xsd:string,
+        "(Art. 8-1) Respect for private life"^^xsd:string,
+        "(Art. 8-2) In accordance with the law"^^xsd:string,
+        "(Art. 8-2) Interference"^^xsd:string ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher <http://www.wikidata.org/entity/Q122880> ;
+    dcterms:title "CASE OF Y.F. v. TURKEY"^^xsd:string .
+
+<https://hudoc.echr.coe.int/eng?i=001-61521> dcterms:accessRights "public"^^xsd:string ;
+    dcterms:coverage <http://www.wikidata.org/entity/Q6602> ;
+    dcterms:description "(Art. 13) Right to an effective remedy"^^xsd:string,
+        "(Art. 14) Prohibition of discrimination"^^xsd:string,
+        "(Art. 3) Inhuman treatment"^^xsd:string,
+        "(Art. 3) Prohibition of torture"^^xsd:string,
+        "(Art. 41) Just satisfaction-{general}"^^xsd:string,
+        "(Art. 8) Right to respect for private and family life"^^xsd:string,
+        "(Art. 8-1) Respect for private life"^^xsd:string,
+        "Positive obligations"^^xsd:string ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher <http://www.wikidata.org/entity/Q122880> ;
+    dcterms:title "CASE OF M.C. v. BULGARIA"^^xsd:string .
+
+<https://hudoc.echr.coe.int/eng?i=001-79864> dcterms:accessRights "public"^^xsd:string ;
+    dcterms:coverage <http://www.wikidata.org/entity/Q6602> ;
+    dcterms:description "(Art. 3) Inhuman treatment"^^xsd:string,
+        "(Art. 3) Prohibition of torture"^^xsd:string ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher <http://www.wikidata.org/entity/Q122880> ;
+    dcterms:title "COLLINS AND AKAZIEBIE v. SWEDEN"^^xsd:string .
 
