@@ -1,1 +1,1 @@
-string,StrasbourgCaseLaw
+decision,StrasbourgCaseLaw,judgment,BlankNode

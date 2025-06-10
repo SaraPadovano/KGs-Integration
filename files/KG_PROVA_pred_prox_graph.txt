@@ -1,672 +1,976 @@
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/references	string
-string	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	Class
-StrasbourgCaseLaw	http://purl.org/dc/terms/creator	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-string	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	Class
-StrasbourgCaseLaw	http://purl.org/dc/terms/references	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#unanimousDecision	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/references	string
-string	http://purl.org/dc/terms/description	string
-string	http://purl.org/dc/terms/date	date
-StrasbourgCaseLaw	http://purl.org/dc/terms/references	string
-string	http://purl.org/dc/terms/description	string
-string	http://purl.org/dc/terms/date	date
-string	http://purl.org/dc/terms/title	string
-string	http://purl.org/dc/terms/description	string
-string	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/references	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/references	string
-string	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	Class
-string	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#importanceLevel	integer
-string	http://xmlns.com/foaf/0.1/name	string
-string	http://purl.org/dc/terms/description	string
-string	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/references	string
-string	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	string
-string	http://purl.org/dc/terms/date	date
-StrasbourgCaseLaw	http://purl.org/dc/terms/references	string
-string	http://purl.org/dc/terms/title	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/type	string
-string	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	integer
-string	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	Class
-string	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	Class
-string	http://purl.org/dc/terms/description	string
-string	http://purl.org/dc/terms/description	string
+decision	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/language	string
+judgment	http://purl.org/dc/terms/language	string
+judgment	http://purl.org/dc/terms/language	string
+judgment	http://purl.org/dc/terms/language	string
+judgment	http://purl.org/dc/terms/title	string
+judgment	http://purl.org/dc/terms/publisher	international court
+BlankNode	http://purl.org/dc/terms/title	string
+BlankNode	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	InternationalLaw
+judgment	http://purl.org/dc/terms/language	string
+judgment	http://purl.org/dc/terms/description	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/references	BlankNode
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/publisher	international court
+decision	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+BlankNode	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	StrasbourgCaseLaw
+judgment	http://purl.org/dc/terms/coverage	state in the Holy Roman Empire,big city,free imperial city,commune of France,Q902814
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/publisher	international court
+BlankNode	http://purl.org/dc/terms/title	string
+judgment	http://purl.org/dc/terms/description	string
+decision	http://purl.org/dc/terms/description	string
+BlankNode	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	StrasbourgCaseLaw
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+BlankNode	http://purl.org/dc/terms/date	date
+StrasbourgCaseLaw	http://purl.org/dc/terms/references	BlankNode
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/coverage	state in the Holy Roman Empire,border city,big city,free imperial city,commune of France
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/accessRights	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/references	BlankNode
+decision	http://purl.org/dc/terms/accessRights	string
+judgment	http://purl.org/dc/terms/coverage	state in the Holy Roman Empire,border city,big city,free imperial city,commune of France
+BlankNode	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	StrasbourgCaseLaw
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/publisher	international court
+decision	http://purl.org/dc/terms/title	string
+BlankNode	http://purl.org/dc/terms/title	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+decision	http://purl.org/dc/terms/language	string
+judgment	http://purl.org/dc/terms/coverage	state in the Holy Roman Empire,border city,big city,free imperial city,commune of France
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/language	string
+judgment	http://purl.org/dc/terms/publisher	international court
+BlankNode	http://purl.org/dc/terms/title	string
+judgment	http://purl.org/dc/terms/description	string
+BlankNode	http://purl.org/dc/terms/title	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+BlankNode	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	string
+decision	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/publisher	international court
+judgment	http://purl.org/dc/terms/title	string
+judgment	http://purl.org/dc/terms/coverage	state in the Holy Roman Empire,border city,big city,free imperial city,commune of France
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/publisher	international court
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+BlankNode	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	string
+judgment	http://purl.org/dc/terms/coverage	state in the Holy Roman Empire,border city,big city,free imperial city,commune of France
+decision	http://purl.org/dc/terms/publisher	international court
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+BlankNode	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/publisher	international court
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/accessRights	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/coverage	state in the Holy Roman Empire,border city,big city,free imperial city,commune of France
+BlankNode	http://purl.org/dc/terms/date	date
+judgment	http://purl.org/dc/terms/title	string
+judgment	http://purl.org/dc/terms/title	string
+judgment	http://purl.org/dc/terms/coverage	state in the Holy Roman Empire,big city,free imperial city,commune of France,Q902814
+decision	http://purl.org/dc/terms/language	string
+BlankNode	http://purl.org/dc/terms/date	date
+judgment	http://purl.org/dc/terms/publisher	international court
+judgment	http://purl.org/dc/terms/description	string
+BlankNode	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/references	BlankNode
+BlankNode	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/references	BlankNode
+decision	http://purl.org/dc/terms/description	string
+BlankNode	http://purl.org/dc/terms/date	date
+judgment	http://purl.org/dc/terms/language	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/coverage	state in the Holy Roman Empire,border city,big city,free imperial city,commune of France
+judgment	http://purl.org/dc/terms/accessRights	string
+decision	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/publisher	international court
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
 StrasbourgCaseLaw	http://purl.org/dc/terms/abstract	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/references	string
-string	http://purl.org/dc/terms/title	string
-string	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#respondentState	string
-string	http://purl.org/dc/terms/date	date
-string	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	Class
+judgment	http://purl.org/dc/terms/description	string
+decision	http://purl.org/dc/terms/language	string
+judgment	http://purl.org/dc/terms/title	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/references	BlankNode
+BlankNode	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	StrasbourgCaseLaw
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/publisher	international court
+judgment	http://purl.org/dc/terms/publisher	international court
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/language	string
+judgment	http://purl.org/dc/terms/description	string
+BlankNode	http://purl.org/dc/terms/description	string
+decision	http://purl.org/dc/terms/title	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/coverage	state in the Holy Roman Empire,big city,free imperial city,commune of France,Q902814
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/accessRights	string
+decision	http://purl.org/dc/terms/description	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/references	BlankNode
+judgment	http://purl.org/dc/terms/description	string
+decision	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/accessRights	string
+judgment	http://purl.org/dc/terms/accessRights	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/coverage	state in the Holy Roman Empire,border city,big city,free imperial city,commune of France
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/accessRights	string
+judgment	http://purl.org/dc/terms/coverage	state in the Holy Roman Empire,border city,big city,free imperial city,commune of France
+StrasbourgCaseLaw	http://purl.org/dc/terms/contributor	BlankNode
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/title	string
+judgment	http://purl.org/dc/terms/accessRights	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/publisher	international court
+judgment	http://purl.org/dc/terms/publisher	international court
+judgment	http://purl.org/dc/terms/description	string
 StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/date	date
-string	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	integer
+judgment	http://purl.org/dc/terms/title	string
+judgment	http://purl.org/dc/terms/publisher	international court
+decision	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/title	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/publisher	international court
+BlankNode	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/accessRights	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+BlankNode	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	StrasbourgCaseLaw
+judgment	http://purl.org/dc/terms/description	string
+BlankNode	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/title	string
+decision	http://purl.org/dc/terms/description	string
+BlankNode	http://purl.org/dc/terms/title	string
+BlankNode	http://purl.org/dc/terms/date	date
+judgment	http://purl.org/dc/terms/description	string
+BlankNode	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	string
+judgment	http://purl.org/dc/terms/coverage	state in the Holy Roman Empire,border city,big city,free imperial city,commune of France
+BlankNode	http://purl.org/dc/terms/title	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/title	string
+judgment	http://purl.org/dc/terms/title	string
+BlankNode	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/accessRights	string
 StrasbourgCaseLaw	http://purl.org/dc/terms/isVersionOf	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-string	http://purl.org/dc/terms/title	string
-string	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	integer
-string	http://purl.org/dc/terms/description	string
+BlankNode	http://purl.org/dc/terms/date	date
+judgment	http://purl.org/dc/terms/title	string
+BlankNode	http://purl.org/dc/terms/title	string
+judgment	http://purl.org/dc/terms/accessRights	string
+judgment	http://purl.org/dc/terms/accessRights	string
+BlankNode	http://purl.org/dc/terms/date	date
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
 StrasbourgCaseLaw	http://purl.org/dc/terms/abstract	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-string	http://purl.org/dc/terms/title	string
-string	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	Class
-string	http://purl.org/dc/terms/description	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/references	string
-string	http://xmlns.com/foaf/0.1/name	string
-string	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	Class
-string	http://purl.org/dc/terms/description	string
-string	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+BlankNode	http://purl.org/dc/terms/date	date
+judgment	http://purl.org/dc/terms/title	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/language	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/publisher	international court
+judgment	http://purl.org/dc/terms/description	string
+BlankNode	http://purl.org/dc/terms/description	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/references	BlankNode
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+BlankNode	http://purl.org/dc/terms/description	string
+BlankNode	http://purl.org/dc/terms/date	date
+BlankNode	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	string
+judgment	http://purl.org/dc/terms/language	string
+judgment	http://purl.org/dc/terms/publisher	international court
+decision	http://purl.org/dc/terms/coverage	state in the Holy Roman Empire,border city,big city,free imperial city,commune of France
+judgment	http://purl.org/dc/terms/accessRights	string
+judgment	http://purl.org/dc/terms/title	string
+BlankNode	http://purl.org/dc/terms/title	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/title	string
+judgment	http://purl.org/dc/terms/description	string
+BlankNode	http://purl.org/dc/terms/title	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/language	string
+BlankNode	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	StrasbourgCaseLaw
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/title	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+decision	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/accessRights	string
 StrasbourgCaseLaw	http://purl.org/dc/terms/abstract	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/contributor	string
-string	http://purl.org/dc/terms/title	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/references	string
-string	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	Class
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#importanceLevel	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/contributor	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/identifier	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/identifier	string
-string	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/isVersionOf	string
-string	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/date	date
-string	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	integer
-string	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	Class
-string	http://purl.org/dc/terms/title	string
-string	http://purl.org/dc/terms/title	string
-string	http://purl.org/dc/terms/description	string
-string	http://purl.org/dc/terms/date	date
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#respondentState	string
-string	http://purl.org/dc/terms/title	string
+BlankNode	http://purl.org/dc/terms/description	string
+decision	http://purl.org/dc/terms/description	string
+BlankNode	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	InternationalLaw
+judgment	http://purl.org/dc/terms/language	string
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	string
+judgment	http://purl.org/dc/terms/title	string
+judgment	http://purl.org/dc/terms/description	string
 StrasbourgCaseLaw	http://purl.org/dc/terms/creator	string
-string	http://purl.org/dc/terms/title	string
-string	http://purl.org/dc/terms/date	date
-string	http://purl.org/dc/terms/title	string
-string	http://purl.org/dc/terms/date	date
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/type	string
-string	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	Class
-string	http://purl.org/dc/terms/date	date
-StrasbourgCaseLaw	http://purl.org/dc/terms/creator	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/type	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#importanceLevel	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/identifier	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/contributor	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#respondentState	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/date	date
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-string	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	string
-string	http://xmlns.com/foaf/0.1/name	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/abstract	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/isVersionOf	string
-string	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/isVersionOf	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/identifier	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/date	date
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#respondentState	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	integer
-string	http://xmlns.com/foaf/0.1/name	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#importanceLevel	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/abstract	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/contributor	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/type	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/creator	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-unknown	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	unknown
-unknown	http://xmlns.com/foaf/0.1/name	unknown
-unknown	http://purl.org/dc/terms/abstract	unknown
-unknown	http://purl.org/dc/terms/type	unknown
-unknown	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	unknown
-unknown	http://purl.org/dc/terms/isVersionOf	unknown
-unknown	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	unknown
-unknown	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	unknown
-unknown	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	unknown
-unknown	http://purl.org/dc/terms/contributor	unknown
-unknown	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	unknown
-unknown	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	unknown
-unknown	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#respondentState	unknown
-unknown	http://purl.org/dc/terms/date	unknown
-unknown	http://purl.org/dc/terms/identifier	unknown
-unknown	http://purl.org/dc/terms/creator	unknown
-unknown	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#importanceLevel	unknown
-StrasbourgCaseLaw	http://purl.org/dc/terms/contributor	string
-string	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/date	date
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#importanceLevel	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/creator	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/type	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/isVersionOf	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#respondentState	string
-string	http://xmlns.com/foaf/0.1/name	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/abstract	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/identifier	string
-string	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/contributor	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/creator	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#importanceLevel	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/type	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/isVersionOf	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	integer
-string	http://xmlns.com/foaf/0.1/name	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/abstract	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/identifier	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#respondentState	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/date	date
-StrasbourgCaseLaw	http://purl.org/dc/terms/isVersionOf	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/type	wikidata_entity
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-string	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	wikidata_entity
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/contributor	string
-string	http://xmlns.com/foaf/0.1/name	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#respondentState	wikidata_entity
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#importanceLevel	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/identifier	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/abstract	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/date	date
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/creator	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/creator	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/type	wikidata_entity
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/isVersionOf	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/identifier	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#respondentState	wikidata_entity
-string	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	wikidata_entity
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-string	http://xmlns.com/foaf/0.1/name	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/abstract	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/date	date
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/contributor	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#importanceLevel	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#importanceLevel	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/contributor	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#respondentState	colonial power,sovereign state,country,island country
-StrasbourgCaseLaw	http://purl.org/dc/terms/creator	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/date	date
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/identifier	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/type	
-StrasbourgCaseLaw	http://purl.org/dc/terms/abstract	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-string	http://xmlns.com/foaf/0.1/name	string
-string	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	legal profession
-StrasbourgCaseLaw	http://purl.org/dc/terms/isVersionOf	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/contributor	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/abstract	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/identifier	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/creator	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#importanceLevel	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/date	date
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-string	http://xmlns.com/foaf/0.1/name	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/type	
-StrasbourgCaseLaw	http://purl.org/dc/terms/isVersionOf	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#respondentState	colonial power,sovereign state,country,island country
-string	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	legal profession
-StrasbourgCaseLaw	http://purl.org/dc/terms/abstract	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/type	
-StrasbourgCaseLaw	http://purl.org/dc/terms/contributor	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/creator	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/identifier	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#importanceLevel	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/date	date
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#respondentState	colonial power,sovereign state,island country,country
-StrasbourgCaseLaw	http://purl.org/dc/terms/isVersionOf	string
-string	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	legal profession
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-string	http://xmlns.com/foaf/0.1/name	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/isVersionOf	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/identifier	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/abstract	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/contributor	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#respondentState	country,sovereign state,colonial power,island country
-StrasbourgCaseLaw	http://purl.org/dc/terms/creator	string
-string	http://xmlns.com/foaf/0.1/name	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-string	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	legal profession
-StrasbourgCaseLaw	http://purl.org/dc/terms/date	date
-StrasbourgCaseLaw	http://purl.org/dc/terms/type	
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#importanceLevel	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/isVersionOf	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/abstract	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/identifier	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	integer
-string	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	legal profession,academic degree,occupation group according to ISCO-08
-string	http://xmlns.com/foaf/0.1/name	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/date	date
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/creator	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#respondentState	country,colonial power,island country,sovereign state
-StrasbourgCaseLaw	http://purl.org/dc/terms/type	
-StrasbourgCaseLaw	http://purl.org/dc/terms/contributor	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#importanceLevel	integer
-string	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	legal profession,academic degree,occupation group according to ISCO-08
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/isVersionOf	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/identifier	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/contributor	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/abstract	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/creator	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#respondentState	sovereign state,colonial power,island country,country
-StrasbourgCaseLaw	http://purl.org/dc/terms/date	date
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#importanceLevel	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-string	http://xmlns.com/foaf/0.1/name	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/type	
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/identifier	string
-string	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	academic degree,legal profession,occupation group according to ISCO-08
-StrasbourgCaseLaw	http://purl.org/dc/terms/contributor	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/creator	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/date	date
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-string	http://xmlns.com/foaf/0.1/name	string
+BlankNode	http://purl.org/dc/terms/title	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+BlankNode	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/accessRights	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/publisher	international court
+BlankNode	http://purl.org/dc/terms/title	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/references	BlankNode
+judgment	http://purl.org/dc/terms/description	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/references	BlankNode
+BlankNode	http://purl.org/dc/terms/description	string
+BlankNode	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	StrasbourgCaseLaw
+judgment	http://purl.org/dc/terms/language	string
+decision	http://purl.org/dc/terms/title	string
+judgment	http://purl.org/dc/terms/description	string
+BlankNode	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/title	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/title	string
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#respondentState	kingdom,realm,country,sovereign state,colonial power,European Economic Area
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+BlankNode	http://xmlns.com/foaf/0.1/name	string
+BlankNode	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	string
+judgment	http://purl.org/dc/terms/publisher	international court
+decision	http://purl.org/dc/terms/coverage	state in the Holy Roman Empire,border city,big city,free imperial city,commune of France
+judgment	http://purl.org/dc/terms/title	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/coverage	state in the Holy Roman Empire,border city,big city,free imperial city,commune of France
+decision	http://purl.org/dc/terms/accessRights	string
+judgment	http://purl.org/dc/terms/coverage	state in the Holy Roman Empire,border city,big city,free imperial city,commune of France
+judgment	http://purl.org/dc/terms/coverage	state in the Holy Roman Empire,border city,big city,free imperial city,commune of France
+decision	http://purl.org/dc/terms/description	string
+BlankNode	http://purl.org/dc/terms/date	date
+BlankNode	http://purl.org/dc/terms/date	date
+judgment	http://purl.org/dc/terms/accessRights	string
+judgment	http://purl.org/dc/terms/description	string
+decision	http://purl.org/dc/terms/coverage	state in the Holy Roman Empire,border city,big city,free imperial city,commune of France
+BlankNode	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	string
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	string
+decision	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/title	string
 StrasbourgCaseLaw	http://purl.org/dc/terms/type	court decision
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/abstract	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/isVersionOf	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#respondentState	sovereign state,colonial power,island country,country
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#importanceLevel	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/abstract	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+judgment	http://purl.org/dc/terms/coverage	state in the Holy Roman Empire,border city,big city,free imperial city,commune of France
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/accessRights	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+BlankNode	http://purl.org/dc/terms/date	date
+judgment	http://purl.org/dc/terms/title	string
+judgment	http://purl.org/dc/terms/language	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/language	string
+judgment	http://purl.org/dc/terms/accessRights	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/references	BlankNode
+BlankNode	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	StrasbourgCaseLaw
+judgment	http://purl.org/dc/terms/accessRights	string
+BlankNode	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	DomesticLaw
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/coverage	state in the Holy Roman Empire,border city,big city,free imperial city,commune of France
+BlankNode	http://purl.org/dc/terms/description	string
+BlankNode	http://purl.org/dc/terms/date	date
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/publisher	international court
+judgment	http://purl.org/dc/terms/accessRights	string
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#unanimousDecision	string
+judgment	http://purl.org/dc/terms/description	string
+BlankNode	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/coverage	state in the Holy Roman Empire,big city,free imperial city,commune of France,Q902814
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/publisher	international court
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/publisher	international court
+judgment	http://purl.org/dc/terms/description	string
+decision	http://purl.org/dc/terms/publisher	international court
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+BlankNode	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/accessRights	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
 StrasbourgCaseLaw	http://purl.org/dc/terms/creator	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/type	written work,decision,legal case
-string	http://xmlns.com/foaf/0.1/name	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/isVersionOf	string
+decision	http://purl.org/dc/terms/language	string
+judgment	http://purl.org/dc/terms/title	string
+decision	http://purl.org/dc/terms/publisher	international court
+judgment	http://purl.org/dc/terms/description	string
+BlankNode	http://purl.org/dc/terms/description	string
+BlankNode	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	string
+BlankNode	http://purl.org/dc/terms/date	date
+BlankNode	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	StrasbourgCaseLaw
+judgment	http://purl.org/dc/terms/coverage	state in the Holy Roman Empire,big city,free imperial city,commune of France,Q902814
+judgment	http://purl.org/dc/terms/publisher	international court
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/references	BlankNode
+judgment	http://purl.org/dc/terms/language	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/references	BlankNode
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#importanceLevel	integer
+judgment	http://purl.org/dc/terms/accessRights	string
+BlankNode	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/language	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/accessRights	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/coverage	state in the Holy Roman Empire,border city,big city,free imperial city,commune of France
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/title	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/accessRights	string
+judgment	http://purl.org/dc/terms/language	string
+decision	http://purl.org/dc/terms/title	string
+judgment	http://purl.org/dc/terms/coverage	state in the Holy Roman Empire,border city,big city,free imperial city,commune of France
+judgment	http://purl.org/dc/terms/publisher	international court
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+BlankNode	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/title	string
+judgment	http://purl.org/dc/terms/publisher	international court
+judgment	http://purl.org/dc/terms/title	string
+judgment	http://purl.org/dc/terms/language	string
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+judgment	http://purl.org/dc/terms/publisher	international court
+judgment	http://purl.org/dc/terms/coverage	state in the Holy Roman Empire,border city,big city,free imperial city,commune of France
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	string
+judgment	http://purl.org/dc/terms/coverage	state in the Holy Roman Empire,border city,big city,free imperial city,commune of France
 StrasbourgCaseLaw	http://purl.org/dc/terms/date	date
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#importanceLevel	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	integer
-string	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	occupation group according to ISCO-08,jurist,academic degree,legal profession
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#respondentState	Northern Europe,Europe,country,sovereign state,colonial power,realm of the United Kingdom,European Union,Common Travel Area,island country
-StrasbourgCaseLaw	http://purl.org/dc/terms/identifier	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/contributor	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/creator	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/abstract	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#importanceLevel	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/isVersionOf	string
-string	http://xmlns.com/foaf/0.1/name	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/type	decision,written work,legal case
-StrasbourgCaseLaw	http://purl.org/dc/terms/contributor	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/identifier	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#respondentState	island country,sovereign state,Northern Europe,Common Travel Area,country,colonial power,realm of the United Kingdom,European Union,Europe
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/date	date
-string	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	legal profession,academic degree,occupation group according to ISCO-08,jurist
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#importanceLevel	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-string	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	legal profession,occupation group according to ISCO-08,jurist,academic degree
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/contributor	string
-string	http://xmlns.com/foaf/0.1/name	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/identifier	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/isVersionOf	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/creator	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/abstract	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/type	decision,written work,legal case
-StrasbourgCaseLaw	http://purl.org/dc/terms/date	date
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#respondentState	Northern Europe,European Union,country,colonial power,Common Travel Area,realm of the United Kingdom,Europe,sovereign state,island country
-	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-	http://purl.org/dc/terms/date	date
-	http://purl.org/dc/terms/identifier	string
-	http://purl.org/dc/terms/contributor	string
-	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#respondentState	European Union,island country,sovereign state,colonial power,Common Travel Area,Northern Europe,realm of the United Kingdom,Europe,country
-	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-	http://purl.org/dc/terms/abstract	string
-	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-	http://purl.org/dc/terms/creator	string
-string	http://xmlns.com/foaf/0.1/name	string
-	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-string	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	legal profession,academic degree,occupation group according to ISCO-08,jurist
-	http://purl.org/dc/terms/type	decision,legal case,written work
-	http://purl.org/dc/terms/isVersionOf	string
-	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#importanceLevel	integer
-	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	integer
-string	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	academic degree,jurist,legal profession,occupation group according to ISCO-08
-StrasbourgCaseLaw	http://purl.org/dc/terms/creator	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/date	date
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#respondentState	colonial power,sovereign state,country,Europe,realm of the United Kingdom,European Union,island country,Northern Europe,Common Travel Area
-StrasbourgCaseLaw	http://purl.org/dc/terms/abstract	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/type	written work,legal case,decision
-string	http://xmlns.com/foaf/0.1/name	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/contributor	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#importanceLevel	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/isVersionOf	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/identifier	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/identifier	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/contributor	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/date	date
-string	http://xmlns.com/foaf/0.1/name	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/type	legal case,written work,decision
-StrasbourgCaseLaw	http://purl.org/dc/terms/abstract	string
-string	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	occupation group according to ISCO-08,legal profession,academic degree,jurist
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#importanceLevel	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#respondentState	realm of the United Kingdom,Northern Europe,European Union,Europe,Common Travel Area,country,island country,sovereign state,colonial power
-StrasbourgCaseLaw	http://purl.org/dc/terms/creator	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/isVersionOf	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/date	date
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#respondentState	sovereign state,country,realm of the United Kingdom,colonial power,European Union,Europe,Northern Europe,island country,Common Travel Area
-StrasbourgCaseLaw	http://purl.org/dc/terms/abstract	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/contributor	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/isVersionOf	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#importanceLevel	integer
-string	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	wikidata_entity
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/creator	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/identifier	hudoc_document
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/type	written work,legal case,decision
-string	http://xmlns.com/foaf/0.1/name	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/date	date
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/identifier	HUDOC - European Court of Human Rights
-string	http://xmlns.com/foaf/0.1/name	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#respondentState	European Union,colonial power,realm of the United Kingdom,Europe,island country,Common Travel Area,sovereign state,country,Northern Europe
-StrasbourgCaseLaw	http://purl.org/dc/terms/type	written work,legal case,decision
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/creator	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/abstract	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#importanceLevel	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/isVersionOf	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/contributor	string
-string	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	jurist,occupation group according to ISCO-08,legal profession,academic degree
-StrasbourgCaseLaw	http://purl.org/dc/terms/date	date
-string	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	jurist,academic degree,legal profession,occupation group according to ISCO-08
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#respondentState	colonial power,European Union,island country,sovereign state,Common Travel Area,Northern Europe,realm of the United Kingdom,country,Europe
-StrasbourgCaseLaw	http://purl.org/dc/terms/type	decision,legal case,written work
-string	http://xmlns.com/foaf/0.1/name	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/identifier	hudoc_document
-StrasbourgCaseLaw	http://purl.org/dc/terms/contributor	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#importanceLevel	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/abstract	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/creator	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/isVersionOf	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/date	date
-string	http://xmlns.com/foaf/0.1/name	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/identifier	hudoc_document
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/isVersionOf	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/contributor	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#importanceLevel	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/abstract	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/type	decision,legal case,written work
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-string	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	legal profession,occupation group according to ISCO-08,academic degree,jurist
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#respondentState	Common Travel Area,colonial power,sovereign state,Northern Europe,European Union,island country,country,Europe,realm of the United Kingdom
-StrasbourgCaseLaw	http://purl.org/dc/terms/creator	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/date	date
-StrasbourgCaseLaw	http://purl.org/dc/terms/identifier	hudoc_document
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-string	http://xmlns.com/foaf/0.1/name	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/abstract	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/isVersionOf	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#respondentState	Europe,island country,colonial power,realm of the United Kingdom,country,European Union,Northern Europe,sovereign state,Common Travel Area
-string	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	academic degree,legal profession,occupation group according to ISCO-08,jurist
-StrasbourgCaseLaw	http://purl.org/dc/terms/type	written work,legal case,decision
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#importanceLevel	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/contributor	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/creator	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#respondentState	realm of the United Kingdom,Europe,European Union,Common Travel Area,Northern Europe,country,colonial power,island country,sovereign state
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#importanceLevel	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/creator	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/identifier	hudoc_document
-StrasbourgCaseLaw	http://purl.org/dc/terms/type	decision,written work,legal case
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-string	http://xmlns.com/foaf/0.1/name	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/contributor	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/abstract	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/date	date
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	integer
-string	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	legal profession,academic degree,occupation group according to ISCO-08,jurist
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/isVersionOf	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-string	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	jurist,academic degree,occupation group according to ISCO-08,legal profession
-StrasbourgCaseLaw	http://purl.org/dc/terms/contributor	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#importanceLevel	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/abstract	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/creator	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/identifier	n,R,D,g, ,m,h,r,a,O,i,e,C,H,-,s,U,p,u,o,f,E,t
-string	http://xmlns.com/foaf/0.1/name	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/isVersionOf	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+BlankNode	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	StrasbourgCaseLaw
+judgment	http://purl.org/dc/terms/description	string
+BlankNode	http://purl.org/dc/terms/description	string
+decision	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+BlankNode	http://purl.org/dc/terms/date	date
+BlankNode	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	StrasbourgCaseLaw
+judgment	http://purl.org/dc/terms/coverage	state in the Holy Roman Empire,border city,big city,free imperial city,commune of France
+judgment	http://purl.org/dc/terms/coverage	state in the Holy Roman Empire,border city,big city,free imperial city,commune of France
+BlankNode	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	StrasbourgCaseLaw
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
 StrasbourgCaseLaw	http://purl.org/dc/terms/type	legal case,decision,written work
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#respondentState	country,Common Travel Area,Northern Europe,European Union,realm of the United Kingdom,sovereign state,colonial power,island country,Europe
-StrasbourgCaseLaw	http://purl.org/dc/terms/date	date
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+judgment	http://purl.org/dc/terms/coverage	state in the Holy Roman Empire,border city,big city,free imperial city,commune of France
+judgment	http://purl.org/dc/terms/description	string
+decision	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+BlankNode	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	StrasbourgCaseLaw
 StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#importanceLevel	integer
-string	http://xmlns.com/foaf/0.1/name	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#respondentState	country,European Union,colonial power,sovereign state,realm of the United Kingdom,Europe,Northern Europe,Common Travel Area,island country
-StrasbourgCaseLaw	http://purl.org/dc/terms/contributor	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/type	written work,legal case,decision
+judgment	http://purl.org/dc/terms/publisher	international court
+BlankNode	http://purl.org/dc/terms/date	date
+judgment	http://purl.org/dc/terms/description	string
+BlankNode	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	legal profession,academic degree,occupation group according to ISCO-08,jurist
+StrasbourgCaseLaw	http://purl.org/dc/terms/references	BlankNode
+judgment	http://purl.org/dc/terms/language	string
+decision	http://purl.org/dc/terms/accessRights	string
+judgment	http://purl.org/dc/terms/title	string
+BlankNode	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	StrasbourgCaseLaw
+judgment	http://purl.org/dc/terms/description	string
+BlankNode	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	string
+judgment	http://purl.org/dc/terms/publisher	international court
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/title	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/publisher	international court
+decision	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/coverage	state in the Holy Roman Empire,border city,big city,free imperial city,commune of France
+BlankNode	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	string
+judgment	http://purl.org/dc/terms/description	string
 StrasbourgCaseLaw	http://purl.org/dc/terms/abstract	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/isVersionOf	string
+BlankNode	http://purl.org/dc/terms/title	string
+BlankNode	http://purl.org/dc/terms/title	string
+judgment	http://purl.org/dc/terms/description	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/references	BlankNode
+BlankNode	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	StrasbourgCaseLaw
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+decision	http://purl.org/dc/terms/coverage	state in the Holy Roman Empire,border city,big city,free imperial city,commune of France
+decision	http://purl.org/dc/terms/coverage	state in the Holy Roman Empire,border city,big city,free imperial city,commune of France
+BlankNode	http://purl.org/dc/terms/description	string
+BlankNode	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	StrasbourgCaseLaw
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/publisher	international court
 StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/identifier	HUDOC - European Court of Human Rights
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/publisher	international court
+BlankNode	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/language	string
+judgment	http://purl.org/dc/terms/title	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/references	BlankNode
 StrasbourgCaseLaw	http://purl.org/dc/terms/creator	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/publisher	international court
+judgment	http://purl.org/dc/terms/coverage	state in the Holy Roman Empire,border city,big city,free imperial city,commune of France
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+BlankNode	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	DomesticLaw
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+BlankNode	http://purl.org/dc/terms/title	string
+judgment	http://purl.org/dc/terms/description	string
+BlankNode	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	string
+BlankNode	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	InternationalLaw
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/coverage	state in the Holy Roman Empire,border city,big city,free imperial city,commune of France
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/accessRights	string
+judgment	http://purl.org/dc/terms/coverage	state in the Holy Roman Empire,border city,big city,free imperial city,commune of France
+StrasbourgCaseLaw	http://purl.org/dc/terms/references	BlankNode
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/language	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/references	BlankNode
+judgment	http://purl.org/dc/terms/description	string
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	string
+BlankNode	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	string
+judgment	http://purl.org/dc/terms/description	string
+BlankNode	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	StrasbourgCaseLaw
+BlankNode	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/language	string
+judgment	http://purl.org/dc/terms/title	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/accessRights	string
+judgment	http://purl.org/dc/terms/description	string
+BlankNode	http://purl.org/dc/terms/date	date
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/title	string
+judgment	http://purl.org/dc/terms/language	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/accessRights	string
+BlankNode	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+decision	http://purl.org/dc/terms/accessRights	string
+judgment	http://purl.org/dc/terms/publisher	international court
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/accessRights	string
+BlankNode	http://purl.org/dc/terms/title	string
+judgment	http://purl.org/dc/terms/publisher	international court
+judgment	http://purl.org/dc/terms/coverage	state in the Holy Roman Empire,border city,big city,free imperial city,commune of France
+judgment	http://purl.org/dc/terms/title	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/abstract	string
+BlankNode	http://purl.org/dc/terms/date	date
+judgment	http://purl.org/dc/terms/coverage	state in the Holy Roman Empire,border city,big city,free imperial city,commune of France
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/publisher	international court
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+BlankNode	http://xmlns.com/foaf/0.1/name	string
+BlankNode	http://purl.org/dc/terms/title	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/accessRights	string
+BlankNode	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	string
+judgment	http://purl.org/dc/terms/title	string
+judgment	http://purl.org/dc/terms/description	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/references	BlankNode
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+judgment	http://purl.org/dc/terms/accessRights	string
+judgment	http://purl.org/dc/terms/title	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/references	BlankNode
+judgment	http://purl.org/dc/terms/language	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/title	string
 StrasbourgCaseLaw	http://purl.org/dc/terms/date	date
-string	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	legal profession,jurist,occupation group according to ISCO-08,academic degree
-string	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	legal profession,academic degree,occupation group according to ISCO-08,jurist
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#respondentState	sovereign state,European Union,Common Travel Area,island country,country,Europe,realm of the United Kingdom,colonial power,Northern Europe
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/coverage	state in the Holy Roman Empire,border city,big city,free imperial city,commune of France
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+BlankNode	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	string
+judgment	http://purl.org/dc/terms/description	string
+decision	http://purl.org/dc/terms/description	string
+BlankNode	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	string
+BlankNode	http://purl.org/dc/terms/date	date
+decision	http://purl.org/dc/terms/accessRights	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+BlankNode	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	StrasbourgCaseLaw
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/coverage	state in the Holy Roman Empire,border city,big city,free imperial city,commune of France
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/language	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/references	BlankNode
+StrasbourgCaseLaw	http://purl.org/dc/terms/identifier	judgment
+StrasbourgCaseLaw	http://purl.org/dc/terms/references	BlankNode
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/title	string
+judgment	http://purl.org/dc/terms/title	string
+judgment	http://purl.org/dc/terms/accessRights	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/references	BlankNode
+judgment	http://purl.org/dc/terms/language	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/language	string
+decision	http://purl.org/dc/terms/title	string
+judgment	http://purl.org/dc/terms/title	string
+judgment	http://purl.org/dc/terms/publisher	international court
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+BlankNode	http://purl.org/dc/terms/date	date
+decision	http://purl.org/dc/terms/title	string
+judgment	http://purl.org/dc/terms/language	string
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#respondentState	successor state,country bordering the Baltic Sea,European Economic Area,Eastern Europe,European Union,country,sovereign state,Central Europe
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/language	string
+judgment	http://purl.org/dc/terms/title	string
+BlankNode	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	string
+judgment	http://purl.org/dc/terms/accessRights	string
+BlankNode	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	string
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+decision	http://purl.org/dc/terms/description	string
+BlankNode	http://purl.org/dc/terms/title	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/accessRights	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+BlankNode	http://purl.org/dc/terms/date	date
 StrasbourgCaseLaw	http://purl.org/dc/terms/isVersionOf	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/creator	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/date	date
-StrasbourgCaseLaw	http://purl.org/dc/terms/identifier	f,R,S,K,N,M,G,W,D, ,I,U,O,.,T,L,E,o,),v,H,1,(
-StrasbourgCaseLaw	http://purl.org/dc/terms/type	legal case,decision,written work
-string	http://xmlns.com/foaf/0.1/name	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+BlankNode	http://purl.org/dc/terms/title	string
+decision	http://purl.org/dc/terms/language	string
+BlankNode	http://purl.org/dc/terms/title	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+BlankNode	http://purl.org/dc/terms/description	string
+BlankNode	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	StrasbourgCaseLaw
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/publisher	international court
+BlankNode	http://purl.org/dc/terms/description	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/references	BlankNode
+BlankNode	http://purl.org/dc/terms/title	string
+judgment	http://purl.org/dc/terms/description	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/references	BlankNode
+judgment	http://purl.org/dc/terms/language	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+decision	http://purl.org/dc/terms/accessRights	string
+decision	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/publisher	international court
+judgment	http://purl.org/dc/terms/title	string
+judgment	http://purl.org/dc/terms/title	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/accessRights	string
+judgment	http://purl.org/dc/terms/publisher	international court
+BlankNode	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/publisher	international court
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/publisher	international court
+judgment	http://purl.org/dc/terms/title	string
+judgment	http://purl.org/dc/terms/description	string
+BlankNode	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	StrasbourgCaseLaw
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/language	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/coverage	state in the Holy Roman Empire,border city,big city,free imperial city,commune of France
+judgment	http://purl.org/dc/terms/coverage	state in the Holy Roman Empire,border city,big city,free imperial city,commune of France
+judgment	http://purl.org/dc/terms/publisher	international court
+judgment	http://purl.org/dc/terms/description	string
+BlankNode	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	string
+judgment	http://purl.org/dc/terms/coverage	state in the Holy Roman Empire,border city,big city,free imperial city,commune of France
+decision	http://purl.org/dc/terms/publisher	international court
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+BlankNode	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	StrasbourgCaseLaw
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/title	string
+decision	http://purl.org/dc/terms/description	string
+decision	http://purl.org/dc/terms/publisher	international court
+judgment	http://purl.org/dc/terms/accessRights	string
+judgment	http://purl.org/dc/terms/language	string
+BlankNode	http://purl.org/dc/terms/date	date
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/language	string
+BlankNode	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/language	string
+judgment	http://purl.org/dc/terms/language	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/accessRights	string
+judgment	http://purl.org/dc/terms/description	string
+BlankNode	http://purl.org/dc/terms/title	string
+judgment	http://purl.org/dc/terms/description	string
+BlankNode	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/title	string
+BlankNode	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	string
+judgment	http://purl.org/dc/terms/language	string
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/isPartOf	string
+judgment	http://purl.org/dc/terms/coverage	state in the Holy Roman Empire,border city,big city,free imperial city,commune of France
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/coverage	state in the Holy Roman Empire,border city,big city,free imperial city,commune of France
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/coverage	state in the Holy Roman Empire,border city,big city,free imperial city,commune of France
+decision	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/language	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/accessRights	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/publisher	international court
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+BlankNode	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	StrasbourgCaseLaw
+judgment	http://purl.org/dc/terms/title	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/accessRights	string
+judgment	http://purl.org/dc/terms/publisher	international court
+judgment	http://purl.org/dc/terms/accessRights	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+BlankNode	http://purl.org/dc/terms/title	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/publisher	international court
+StrasbourgCaseLaw	http://purl.org/dc/terms/references	BlankNode
+judgment	http://purl.org/dc/terms/description	string
+decision	http://purl.org/dc/terms/coverage	state in the Holy Roman Empire,border city,big city,free imperial city,commune of France
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/title	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/publisher	international court
+BlankNode	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	string
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+BlankNode	http://purl.org/dc/terms/date	date
+judgment	http://purl.org/dc/terms/language	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/accessRights	string
+BlankNode	http://purl.org/dc/terms/title	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/accessRights	string
+judgment	http://purl.org/dc/terms/description	string
+BlankNode	http://purl.org/dc/terms/description	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/contributor	BlankNode
+judgment	http://purl.org/dc/terms/language	string
+BlankNode	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	string
+judgment	http://purl.org/dc/terms/coverage	state in the Holy Roman Empire,border city,big city,free imperial city,commune of France
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/language	string
+judgment	http://purl.org/dc/terms/language	string
+BlankNode	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+BlankNode	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	StrasbourgCaseLaw
+judgment	http://purl.org/dc/terms/description	string
+BlankNode	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/title	string
+decision	http://purl.org/dc/terms/accessRights	string
+judgment	http://purl.org/dc/terms/description	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/references	BlankNode
 StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#importanceLevel	integer
+judgment	http://purl.org/dc/terms/description	string
+decision	http://purl.org/dc/terms/publisher	international court
+judgment	http://purl.org/dc/terms/language	string
+judgment	http://purl.org/dc/terms/accessRights	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/coverage	state in the Holy Roman Empire,border city,big city,free imperial city,commune of France
+decision	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/coverage	state in the Holy Roman Empire,border city,big city,free imperial city,commune of France
+judgment	http://purl.org/dc/terms/accessRights	string
+BlankNode	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	StrasbourgCaseLaw
+judgment	http://purl.org/dc/terms/accessRights	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/title	string
+judgment	http://purl.org/dc/terms/title	string
+decision	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/references	BlankNode
+decision	http://purl.org/dc/terms/language	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/accessRights	string
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+judgment	http://purl.org/dc/terms/coverage	state in the Holy Roman Empire,border city,big city,free imperial city,commune of France
+judgment	http://purl.org/dc/terms/description	string
 StrasbourgCaseLaw	http://purl.org/dc/terms/abstract	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/contributor	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/contributor	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/date	date
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
+BlankNode	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	StrasbourgCaseLaw
+BlankNode	http://purl.org/dc/terms/date	date
+StrasbourgCaseLaw	http://purl.org/dc/terms/references	BlankNode
+judgment	http://purl.org/dc/terms/title	string
+decision	http://purl.org/dc/terms/publisher	international court
+BlankNode	http://purl.org/dc/terms/title	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/references	BlankNode
+judgment	http://purl.org/dc/terms/language	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/publisher	international court
+judgment	http://purl.org/dc/terms/coverage	state in the Holy Roman Empire,border city,big city,free imperial city,commune of France
+StrasbourgCaseLaw	http://purl.org/dc/terms/identifier	judgment
+judgment	http://purl.org/dc/terms/description	string
+BlankNode	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	legal profession,academic degree,occupation group according to ISCO-08,jurist
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/language	string
+judgment	http://purl.org/dc/terms/coverage	state in the Holy Roman Empire,border city,big city,free imperial city,commune of France
+StrasbourgCaseLaw	http://purl.org/dc/terms/references	BlankNode
+judgment	http://purl.org/dc/terms/publisher	international court
+BlankNode	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	InternationalLaw
+judgment	http://purl.org/dc/terms/accessRights	string
+judgment	http://purl.org/dc/terms/title	string
+judgment	http://purl.org/dc/terms/coverage	state in the Holy Roman Empire,border city,big city,free imperial city,commune of France
+judgment	http://purl.org/dc/terms/publisher	international court
+judgment	http://purl.org/dc/terms/accessRights	string
+judgment	http://purl.org/dc/terms/description	string
+BlankNode	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+decision	http://purl.org/dc/terms/title	string
+judgment	http://purl.org/dc/terms/description	string
+decision	http://purl.org/dc/terms/coverage	state in the Holy Roman Empire,border city,big city,free imperial city,commune of France
+judgment	http://purl.org/dc/terms/publisher	international court
+judgment	http://purl.org/dc/terms/description	string
+BlankNode	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	DomesticLaw
+decision	http://purl.org/dc/terms/accessRights	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/language	string
+decision	http://purl.org/dc/terms/language	string
+judgment	http://purl.org/dc/terms/coverage	state in the Holy Roman Empire,border city,big city,free imperial city,commune of France
 StrasbourgCaseLaw	http://purl.org/dc/terms/isVersionOf	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#respondentState	country,sovereign state,realm of the United Kingdom,colonial power,Europe,Common Travel Area,Northern Europe,European Union,island country
-string	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	jurist,academic degree,occupation group according to ISCO-08,legal profession
-string	http://xmlns.com/foaf/0.1/name	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/abstract	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/creator	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/identifier	(1 of 1) IRENE WILSON v. THE UNITED KINGDOM
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#importanceLevel	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/type	decision,legal case,written work
-StrasbourgCaseLaw	http://purl.org/dc/terms/type	decision,written work,legal case
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#respondentState	colonial power,Common Travel Area,country,Northern Europe,Europe,European Union,island country,sovereign state,realm of the United Kingdom
-StrasbourgCaseLaw	http://purl.org/dc/terms/identifier	(1 of 1) IRENE WILSON v. THE UNITED KINGDOM
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-string	http://xmlns.com/foaf/0.1/name	string
-string	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	occupation group according to ISCO-08,jurist,legal profession,academic degree
+judgment	http://purl.org/dc/terms/language	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/references	BlankNode
+judgment	http://purl.org/dc/terms/description	string
+BlankNode	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	StrasbourgCaseLaw
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/accessRights	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#unanimousDecision	string
+judgment	http://purl.org/dc/terms/description	string
+BlankNode	http://purl.org/dc/terms/title	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	string
+judgment	http://purl.org/dc/terms/description	string
+BlankNode	http://purl.org/dc/terms/title	string
+judgment	http://purl.org/dc/terms/description	string
+BlankNode	http://purl.org/dc/terms/description	string
+BlankNode	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	StrasbourgCaseLaw
+decision	http://purl.org/dc/terms/coverage	state in the Holy Roman Empire,border city,big city,free imperial city,commune of France
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+BlankNode	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	DomesticLaw
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/language	string
+BlankNode	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/title	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/coverage	state in the Holy Roman Empire,border city,big city,free imperial city,commune of France
+judgment	http://purl.org/dc/terms/accessRights	string
+judgment	http://purl.org/dc/terms/description	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/references	BlankNode
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+BlankNode	http://purl.org/dc/terms/description	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/identifier	decision
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/references	BlankNode
+judgment	http://purl.org/dc/terms/language	string
+decision	http://purl.org/dc/terms/publisher	international court
+decision	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+BlankNode	http://purl.org/dc/terms/date	date
+BlankNode	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/publisher	international court
+judgment	http://purl.org/dc/terms/description	string
+BlankNode	http://purl.org/dc/terms/date	date
+StrasbourgCaseLaw	http://purl.org/dc/terms/references	BlankNode
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/language	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/references	BlankNode
+judgment	http://purl.org/dc/terms/description	string
+BlankNode	http://purl.org/dc/terms/description	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/type	court decision
+BlankNode	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	StrasbourgCaseLaw
+judgment	http://purl.org/dc/terms/description	string
+BlankNode	http://purl.org/dc/terms/title	string
+judgment	http://purl.org/dc/terms/publisher	international court
+judgment	http://purl.org/dc/terms/language	string
+judgment	http://purl.org/dc/terms/description	string
+decision	http://purl.org/dc/terms/description	string
+decision	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/accessRights	string
+judgment	http://purl.org/dc/terms/coverage	state in the Holy Roman Empire,border city,big city,free imperial city,commune of France
+BlankNode	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	StrasbourgCaseLaw
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/coverage	state in the Holy Roman Empire,border city,big city,free imperial city,commune of France
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/language	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/accessRights	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#respondentState	demographics of country or region,unitary state,Eastern Europe,European Union,country,sovereign state,European Economic Area
+BlankNode	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
 StrasbourgCaseLaw	http://purl.org/dc/terms/date	date
-StrasbourgCaseLaw	http://purl.org/dc/terms/isVersionOf	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/contributor	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/creator	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	integer
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/accessRights	string
+judgment	http://purl.org/dc/terms/language	string
+judgment	http://purl.org/dc/terms/description	string
+StrasbourgCaseLaw	http://purl.org/dc/terms/references	BlankNode
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/title	string
+BlankNode	http://purl.org/dc/terms/description	string
+decision	http://purl.org/dc/terms/language	string
+BlankNode	http://purl.org/dc/terms/description	string
+BlankNode	http://purl.org/dc/terms/title	string
+judgment	http://purl.org/dc/terms/coverage	state in the Holy Roman Empire,border city,big city,free imperial city,commune of France
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+BlankNode	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/description	string
 StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#importanceLevel	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/abstract	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/contributor	string
-string	http://xmlns.com/foaf/0.1/name	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/creator	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#importanceLevel	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/type	legal case,written work,decision
-StrasbourgCaseLaw	http://purl.org/dc/terms/isVersionOf	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#respondentState	island country,European Union,Common Travel Area,Europe,colonial power,country,realm of the United Kingdom,Northern Europe,sovereign state
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-string	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	legal profession,academic degree,occupation group according to ISCO-08,jurist
-StrasbourgCaseLaw	http://purl.org/dc/terms/date	date
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/identifier	(1 of 1) IRENE WILSON v. THE UNITED KINGDOM
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/abstract	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/date	date
-StrasbourgCaseLaw	http://purl.org/dc/terms/contributor	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#respondentState	sovereign state,European Union,realm of the United Kingdom,Common Travel Area,colonial power,Europe,island country,Northern Europe,country
-StrasbourgCaseLaw	http://purl.org/dc/terms/type	decision,legal case,written work
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/identifier	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/creator	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#importanceLevel	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-string	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	occupation group according to ISCO-08,jurist,academic degree,legal profession
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-string	http://xmlns.com/foaf/0.1/name	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/isVersionOf	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/abstract	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/creator	string
-string	http://xmlns.com/foaf/0.1/name	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/date	date
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#respondentState	realm of the United Kingdom,colonial power,Europe,Northern Europe,island country,Common Travel Area,country,European Union,sovereign state
-StrasbourgCaseLaw	http://purl.org/dc/terms/abstract	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber	integer
-string	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	jurist,academic degree,occupation group according to ISCO-08,legal profession
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/type	legal case,decision,written work
-StrasbourgCaseLaw	http://purl.org/dc/terms/contributor	string
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#importanceLevel	integer
-StrasbourgCaseLaw	https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle	integer
-StrasbourgCaseLaw	http://purl.org/dc/terms/identifier	string
-StrasbourgCaseLaw	http://purl.org/dc/terms/isVersionOf	string
+judgment	http://purl.org/dc/terms/description	string
+judgment	http://purl.org/dc/terms/accessRights	string
+decision	http://purl.org/dc/terms/title	string
