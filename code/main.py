@@ -4,15 +4,20 @@ import warnings
 import importlib.util
 from KB_entity_type import getRDFData, add_to_set
 from rdflib import Graph
-#from selenium import webdriver
-#from selenium.webdriver.chrome.service import Service
-#from selenium.webdriver.chrome.options import Options
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options
 from prompt_gen import union_typeset, prompt, call_for_sim, call_llm_without_api, another_try, gpt_score, clean_match
 from match_type import match_entities
 from valuation import type_unique_valuation, process_and_write, merge_prox_graphs, embedding_predicate
+from rdflib.term import BNode
+import re
+
+def filter_types(typeset):
+    return [t for t in typeset if not re.match(r'^Q\d+$', t)]
 
 # Funzione che richiama le funzioni di KB_entity_type per la definzione dei tipi per la generazione dei prox graph
-def entity_prox_graph(filename, file_prox_graph, KG1_flag):
+def entity_prox_graph(filename, file_prox_graph, KG1_flag, driver):
 
     print("Entrato nella funzione entity_prox_graph")
     graph = Graph()
@@ -32,15 +37,25 @@ def entity_prox_graph(filename, file_prox_graph, KG1_flag):
         i += 1
         print(f"\n--- Tripla {i} ---")
         print(f"s: {s}, p: {p}, o: {o}")
-        s, s_data_type = getRDFData(str(s), KG1_flag, graph)
-        print(f"🟢 Tipo soggetto: {s_data_type}")
-        o, o_data_type = getRDFData(str(o), KG1_flag, graph)
-        print(f"🔵 Tipo oggetto: {o_data_type}")
 
+        if isinstance(s, BNode):
+            s_str = f"_:{str(s)}"
+            s_types = ["BlankNode"]
+        else:
+            s_str, s_types = getRDFData(str(s), KG1_flag, graph, driver)
 
-        add_to_set(s_data_type, typeset1)
-        add_to_set(o_data_type, typeset2)
-        prox_triple_list = [','.join(s_data_type), p, ','.join(o_data_type)]
+        if isinstance(o, BNode):
+            o_str = f"_:{str(o)}"
+            o_types = ["BlankNode"]
+        else:
+            o_str, o_types = getRDFData(str(o), KG1_flag, graph, driver)
+
+        print(f"🟢 Tipo soggetto: {s_types}")
+        print(f"🔵 Tipo oggetto: {o_types}")
+
+        add_to_set(s_types, typeset1)
+        add_to_set(o_types, typeset2)
+        prox_triple_list = [','.join(s_types), p, ','.join(o_types)]
         prox_triple_string = '\t'.join(prox_triple_list)
         print(f"✅ Tripla prossimità: {prox_triple_string}")
 
@@ -73,16 +88,20 @@ def entity_prox_graph(filename, file_prox_graph, KG1_flag):
 
     if KG1_flag:
         print("Scrittura file con i tipi per KG1")
+        filtered_typeset1 = filter_types(typeset1)
+        filtered_typeset2 = filter_types(typeset2)
         with open('../files/typeset1_KG1.txt', 'w', encoding='utf-8') as f:
-            f.write(','.join(list(typeset1)))
+            f.write(','.join(list(filtered_typeset1)))
         with open('../files/typeset2_KG1.txt', 'w', encoding='utf-8') as f:
-            f.write(','.join(list(typeset2)))
+            f.write(','.join(list(filtered_typeset2)))
     else:
         print("Scrittura file con i tipi per KG2")
+        filtered_typeset1 = filter_types(typeset1)
+        filtered_typeset2 = filter_types(typeset2)
         with open('../files/typeset1_KG2.txt', 'w', encoding='utf-8') as f:
-            f.write(','.join(list(typeset1)))
+            f.write(','.join(list(filtered_typeset1)))
         with open('../files/typeset2_KG2.txt', 'w', encoding='utf-8') as f:
-            f.write(','.join(list(typeset2)))
+            f.write(','.join(list(filtered_typeset2)))
 
 def main():
 
@@ -106,23 +125,23 @@ def main():
     # Aggiungiamo variabile mancante 'writer'
     writer = open("../files/training_log2.txt", "w", encoding="utf-8")
 
-    #service = Service(r'C:\Users\acer\Downloads\chromedriver-win64\chromedriver-win64\chromedriver.exe')
-    #options = Options()
-    #options.add_argument("--headless")
-    #options.add_argument("--disable-gpu")
-    #driver = webdriver.Chrome(service=service, options=options)
+    service = Service(r'C:\Users\acer\Downloads\chromedriver-win64\chromedriver-win64\chromedriver.exe')
+    options = Options()
+    options.add_argument("--headless")
+    options.add_argument("--disable-gpu")
+    driver = webdriver.Chrome(service=service, options=options)
 
     # KG di prova
     #KG1_filename = r'C:\Users\acer\KGs-Integration\KGs\KG_PROVA.ttl'
     #KG1_prox_graph_file = r'C:\Users\acer\KGs-Integration\files\KG_PROVA_pred_prox_graph'
     #KG1_flag = True
-    #entity_prox_graph(KG1_filename, KG1_prox_graph_file, KG1_flag)
+    #entity_prox_graph(KG1_filename, KG1_prox_graph_file, KG1_flag, driver)
 
     # Definiamo il primo KG in ttl che deve essere fatto il grafo di prossimità e i tipi delle entità
     #KG1_filename = r'C:\Users\acer\KGs-Integration\KGs\KG1.ttl'
     #KG1_prox_graph_file = r'C:\Users\acer\KGs-Integration\files\KG1_pred_prox_graph'
     #KG1_flag = True
-    #entity_prox_graph(KG1_filename, KG1_prox_graph_file, KG1_flag)
+    #entity_prox_graph(KG1_filename, KG1_prox_graph_file, KG1_flag, driver)
     #file1 = r'C:\Users\acer\KGs-Integration\files\typeset1_KG1.txt'
     #file2 = r'C:\Users\acer\KGs-Integration\files\typeset2_KG1.txt'
     #fileUnion = r'C:\Users\acer\KGs-Integration\files\final_typeset_KG1.txt'
@@ -132,27 +151,27 @@ def main():
     #KG2_filename = r'C:\Users\acer\KGs-Integration\KGs\KG2.ttl'
     #KG2_prox_graph_file = r'C:\Users\acer\KGs-Integration\files\KG2_pred_prox_graph'
     #KG1_flag = False
-    #entity_prox_graph(KG2_filename, KG2_prox_graph_file, KG1_flag)
+    #entity_prox_graph(KG2_filename, KG2_prox_graph_file, KG1_flag, driver)
     #file1 = r'C:\Users\acer\KGs-Integration\files\typeset1_KG2.txt'
     #file2 = r'C:\Users\acer\KGs-Integration\files\typeset2_KG2.txt'
     #fileUnion = r'C:\Users\acer\KGs-Integration\files\final_typeset_KG2.txt'
     #union_typeset(file1, file2, fileUnion)
 
     # Creiamo il prompt per l'LLM
-    #file_type_KG1 = r'C:\Users\acer\KGs-Integration\files\final_typeset_KG1.txt'
-    #file_type_KG2 = r'C:\Users\acer\KGs-Integration\files\final_typeset_KG2.txt'
-    #prompt_file = r'C:\Users\acer\KGs-Integration\files\prompt.txt'
-    #prompt(file_type_KG1, file_type_KG2, prompt_file)
+    file_type_KG1 = r'C:\Users\acer\KGs-Integration\files\final_typeset_KG1.txt'
+    file_type_KG2 = r'C:\Users\acer\KGs-Integration\files\final_typeset_KG2.txt'
+    prompt_file = r'C:\Users\acer\KGs-Integration\files\prompt.txt'
+    prompt(file_type_KG1, file_type_KG2, prompt_file)
     # Richiamiamo la funzione per richiamare prima un modello di similarità
-    #match_file_sim = r'C:\Users\acer\KGs-Integration\files\matched_types_SIM.txt'
-    #match_score = r'C:\Users\acer\KGs-Integration\files\matched_score.txt'
-    #call_for_sim(match_file_sim, file_type_KG1, file_type_KG2, match_score)
+    match_file_sim = r'C:\Users\acer\KGs-Integration\files\matched_types_SIM.txt'
+    match_score = r'C:\Users\acer\KGs-Integration\files\matched_score.txt'
+    call_for_sim(match_file_sim, file_type_KG1, file_type_KG2, match_score)
     # Richiamo la funzione per richiamare un llm generativo
-    #match_file_gen = r'C:\Users\acer\KGs-Integration\files\matched_types_LLM_GEN.txt'
-    #call_llm_without_api(prompt_file, match_file_gen)
+    match_file_gen = r'C:\Users\acer\KGs-Integration\files\matched_types_LLM_GEN.txt'
+    call_llm_without_api(prompt_file, match_file_gen)
     # Un altro modello generativo più potente
-    #match_file_gen2 = r'C:\Users\acer\KGs-Integration\files\matched_types_LLM_GEN2.txt'
-    #another_try(prompt_file, match_file_gen2)
+    match_file_gen2 = r'C:\Users\acer\KGs-Integration\files\matched_types_LLM_GEN2.txt'
+    another_try(prompt_file, match_file_gen2)
     # Calcoliamo lo score delle coppie date da GPT
     #score_gpt = r'C:\Users\acer\KGs-Integration\files\matched_score_GPT.txt'
     #match_gpt = r'C:\Users\acer\KGs-Integration\files\GPT_match.txt'
@@ -178,7 +197,7 @@ def main():
     #process_and_write(file_all_types, clean_gpt, file_after_align)
     #type_unique_valuation(file_all_types, file_after_align, results_unique_types)
     # Verifica tramite embedding per avere più o meno una visualizzazione dei predicati potenzialmente simili e del loro cambiamento prima e dopo la sostituzione dei sinonimi
-    embedding_predicate()
+    #embedding_predicate()
 
     try:
         # Carichiamo specifica del modulo
