@@ -2,26 +2,36 @@ import os
 import re
 import xml.etree.ElementTree as ET
 from SPARQLWrapper import SPARQLWrapper, JSON
-#from selenium.webdriver.common.by import By
-#from selenium.webdriver.support.ui import WebDriverWait
-#from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import StaleElementReferenceException
 os.environ['TF_CPP_MIN_LOG_LEVEL']='4'
 
-#def get_hudoc_type(uri, driver):
-    #try:
-        #driver.get(uri)
+def get_hudoc_type(uri, driver):
+    try:
+        driver.get(uri)
 
-        #title_element = WebDriverWait(driver, 10).until(
-            #EC.presence_of_element_located((By.CSS_SELECTOR, ".lineone"))
-        #)
-        #title = title_element.text
-        #print(f"Titolo: {title}")
+        # Tentativi multipli per evitare StaleElementReference
+        for _ in range(3):
+            try:
+                element = WebDriverWait(driver, 10).until(
+                    EC.presence_of_element_located((By.CSS_SELECTOR, ".linetwo .column02"))
+                )
+                raw_text = element.text.strip()
+                match = re.match(r"^\s*(\w+)", raw_text)
+                decision_type = match.group(1).lower() if match else "unknown"
+                print(f"🧾 Tipo di decisione HUDOC: {decision_type}")
+                return decision_type
+            except StaleElementReferenceException:
+                continue  # Riprova a trovare l’elemento
 
-    #except Exception as e:
-        #print(f"Errore durante l'estrazione del titolo HUDOC: {e}")
-        #title = "HUDOC_title_not_found"
+        print("❌ Fallito dopo più tentativi a causa di elemento obsoleto")
+        return "unknown"
 
-    #return title
+    except Exception as e:
+        print(f"❌ Errore durante estrazione tipo HUDOC: {e}")
+        return "unknown"
 
 def get_wikidata_type(entity_uri):
     qid = entity_uri.split("/")[-1]
@@ -121,7 +131,7 @@ def query_sparql(Q, KG1_flag, data_flag):
         return queryString
 
 
-def getRdfType(Q, KG1_flag, graph):
+def getRdfType(Q, KG1_flag, graph, driver):
     data_flag = False
     Q_types = []
 
@@ -221,52 +231,56 @@ def getRdfType(Q, KG1_flag, graph):
             Q_types = list(set(Q_types))
             return Q_types
 
-    #Commento codice perchè non vi è necessità di vedere l'uri hudoc in quanto semplice tipo string
-    #elif "hudoc.echr.coe.int" in clean_uri:
-        #print("🔎 URI esterna rilevata (HUDOC), estrazione contenuto...")
-        #types_from_hudoc = get_hudoc_type(clean_uri, driver)
-        #if types_from_hudoc:
-            #Q_types.append(types_from_hudoc)
-            #return Q_types
+    #Decommento perchè l'uri hudoc necessita il ritrovamento del tipo/categoria in quanto spesso soggetto quindi
+    #non può avere tipo string
+    elif "hudoc.echr.coe.int" in clean_uri:
+        print("🔎 URI esterna rilevata (HUDOC), estrazione contenuto...")
+        types_from_hudoc = get_hudoc_type(clean_uri, driver)
+        if types_from_hudoc:
+            Q_types.append(types_from_hudoc)
+            return Q_types
 
     return Q_types if Q_types else []
 
 def dataType(string):
-    odp='string'
-    patternBIT=re.compile('[01]')
-    patternINT=re.compile('[0-9]+')
-    patternFLOAT=re.compile('[0-9]+\.[0-9]+')
-    patternTEXT=re.compile('[a-zA-Z0-9]+')
-    patternDate=re.compile('(\d{4})-(\d{2})-(\d{2})')
-    if patternTEXT.match(string):
-        odp= "string"
-    if patternINT.match(string):
-        odp= "integer"
-    if patternFLOAT.match(string):
-        odp= "float"
-    if patternDate.match(string):
-        odp= "date"
+    odp = 'string'
+    patternBIT = re.fullmatch(r'[01]', string)
+    patternINT = re.fullmatch(r'\d+', string)
+    patternFLOAT = re.fullmatch(r'\d+\.\d+', string)
+    patternDate = re.fullmatch(r'\d{4}-\d{2}-\d{2}', string)
+
+    if patternDate:
+        odp = "date"
+    elif patternFLOAT:
+        odp = "float"
+    elif patternINT and '/' not in string and '-' not in string:
+        odp = "integer"
+    elif patternBIT:
+        odp = "bit"
+    else:
+        odp = "string"
+
     return odp
 
 
-def getRDFData(o, KG1_flag, graph):
+def getRDFData(o, KG1_flag, graph, driver):
     data_type = []
 
     if str(o).startswith('https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#'):
         Q_entity = "<" + o + ">"
-        data_type = getRdfType(Q_entity, KG1_flag, graph)
+        data_type = getRdfType(Q_entity, KG1_flag, graph, driver)
 
     elif "wikidata.org/entity/" in o:
         Q_entity = "<" + o + ">"
-        data_type = getRdfType(Q_entity, KG1_flag, graph)
+        data_type = getRdfType(Q_entity, KG1_flag, graph, driver)
 
-    #elif "hudoc.echr.coe.int" in o:
-        #Q_entity = "<" + o + ">"
-        #data_type = getRdfType(Q_entity, KG1_flag, graph, driver)
+    elif "hudoc.echr.coe.int" in o:
+        Q_entity = "<" + o + ">"
+        data_type = getRdfType(Q_entity, KG1_flag, graph, driver)
 
     elif str(o).startswith('http://example.org/abuse-of-women#'):
         Q_entity = "<" + o + ">"
-        data_type = getRdfType(Q_entity, KG1_flag, graph)
+        data_type = getRdfType(Q_entity, KG1_flag, graph, driver)
 
     else:
         data_type = [dataType(o)]
