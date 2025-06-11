@@ -138,24 +138,26 @@ def main():
     #entity_prox_graph(KG1_filename, KG1_prox_graph_file, KG1_flag, driver)
 
     # Definiamo il primo KG in ttl che deve essere fatto il grafo di prossimità e i tipi delle entità
-    #KG1_filename = r'C:\Users\acer\KGs-Integration\KGs\KG1.ttl'
-    #KG1_prox_graph_file = r'C:\Users\acer\KGs-Integration\files\KG1_pred_prox_graph'
-    #KG1_flag = True
-    #entity_prox_graph(KG1_filename, KG1_prox_graph_file, KG1_flag, driver)
-    #file1 = r'C:\Users\acer\KGs-Integration\files\typeset1_KG1.txt'
-    #file2 = r'C:\Users\acer\KGs-Integration\files\typeset2_KG1.txt'
-    #fileUnion = r'C:\Users\acer\KGs-Integration\files\final_typeset_KG1.txt'
-    #union_typeset(file1, file2, fileUnion)
+    KG1_filename = r'C:\Users\acer\KGs-Integration\KGs\KG1.ttl'
+    KG1_prox_graph_file = r'C:\Users\acer\KGs-Integration\files\KG1_pred_prox_graph'
+    KG1_flag = True
+    entity_prox_graph(KG1_filename, KG1_prox_graph_file, KG1_flag, driver)
+    file1 = r'C:\Users\acer\KGs-Integration\files\typeset1_KG1.txt'
+    file2 = r'C:\Users\acer\KGs-Integration\files\typeset2_KG1.txt'
+    fileUnion = r'C:\Users\acer\KGs-Integration\files\final_typeset_KG1.txt'
+    union_typeset(file1, file2, fileUnion)
+    print("Chiusura driver...")
+    driver.quit()
 
     # Definiamo il secondo KG in ttl che deve essere fatto il grafo di prossimità e i tipi delle entità
-    #KG2_filename = r'C:\Users\acer\KGs-Integration\KGs\KG2.ttl'
-    #KG2_prox_graph_file = r'C:\Users\acer\KGs-Integration\files\KG2_pred_prox_graph'
-    #KG1_flag = False
-    #entity_prox_graph(KG2_filename, KG2_prox_graph_file, KG1_flag, driver)
-    #file1 = r'C:\Users\acer\KGs-Integration\files\typeset1_KG2.txt'
-    #file2 = r'C:\Users\acer\KGs-Integration\files\typeset2_KG2.txt'
-    #fileUnion = r'C:\Users\acer\KGs-Integration\files\final_typeset_KG2.txt'
-    #union_typeset(file1, file2, fileUnion)
+    KG2_filename = r'C:\Users\acer\KGs-Integration\KGs\KG2.ttl'
+    KG2_prox_graph_file = r'C:\Users\acer\KGs-Integration\files\KG2_pred_prox_graph'
+    KG1_flag = False
+    entity_prox_graph(KG2_filename, KG2_prox_graph_file, KG1_flag, driver)
+    file1 = r'C:\Users\acer\KGs-Integration\files\typeset1_KG2.txt'
+    file2 = r'C:\Users\acer\KGs-Integration\files\typeset2_KG2.txt'
+    fileUnion = r'C:\Users\acer\KGs-Integration\files\final_typeset_KG2.txt'
+    union_typeset(file1, file2, fileUnion)
 
     # Creiamo il prompt per l'LLM
     file_type_KG1 = r'C:\Users\acer\KGs-Integration\files\final_typeset_KG1.txt'
@@ -166,38 +168,38 @@ def main():
     match_file_sim = r'C:\Users\acer\KGs-Integration\files\matched_types_SIM.txt'
     match_score = r'C:\Users\acer\KGs-Integration\files\matched_score.txt'
     call_for_sim(match_file_sim, file_type_KG1, file_type_KG2, match_score)
-    # Richiamo la funzione per richiamare un llm generativo
+    # Richiamiamo la funzione per richiamare un llm generativo
     match_file_gen = r'C:\Users\acer\KGs-Integration\files\matched_types_LLM_GEN.txt'
     call_llm_without_api(prompt_file, match_file_gen)
     # Un altro modello generativo più potente
     match_file_gen2 = r'C:\Users\acer\KGs-Integration\files\matched_types_LLM_GEN2.txt'
     another_try(prompt_file, match_file_gen2)
     # Calcoliamo lo score delle coppie date da GPT
-    #score_gpt = r'C:\Users\acer\KGs-Integration\files\matched_score_GPT.txt'
-    #match_gpt = r'C:\Users\acer\KGs-Integration\files\GPT_match.txt'
-    #gpt_score(score_gpt, match_gpt)
+    score_gpt = r'C:\Users\acer\KGs-Integration\files\matched_score_GPT.txt'
+    match_gpt = r'C:\Users\acer\KGs-Integration\files\GPT_match.txt'
+    gpt_score(score_gpt, match_gpt)
     # Ripuliamo il file dei sinonimi da quelli con stesso type1 ma score più basso dell'altro
-    #clean_gpt_score = r'C:\Users\acer\KGs-Integration\files\cleaned_matched_score_GPT.txt'
-    #clean_gpt = r'C:\Users\acer\KGs-Integration\files\cleaned_GPT.txt'
-    #clean_match(score_gpt, clean_gpt_score, clean_gpt)
+    clean_gpt_score = r'C:\Users\acer\KGs-Integration\files\cleaned_matched_score_GPT.txt'
+    clean_gpt = r'C:\Users\acer\KGs-Integration\files\cleaned_GPT.txt'
+    clean_match(score_gpt, clean_gpt_score, clean_gpt)
 
-    # Creiamo il grafo di prossimità finale per KG1
-    #prox_graph_KG1 = r'C:\Users\acer\KGs-Integration\files\KG1_pred_prox_graph.txt'
-    #prox_graph_KG2 = r'C:\Users\acer\KGs-Integration\files\KG2_pred_prox_graph.txt'
-    #prox_graph_merge_before_align = r'C:\Users\acer\KGs-Integration\files\pred_prox_graph_merge_before_align.txt'
-    #merge_prox_graphs(prox_graph_KG1, prox_graph_KG2, prox_graph_merge_before_align)
-    #match_entities(clean_gpt, prox_graph_KG1, prox_graph_KG2)
+    # Creiamo il grafo di prossimità finale
+    prox_graph_KG1 = r'C:\Users\acer\KGs-Integration\files\KG1_pred_prox_graph.txt'
+    prox_graph_KG2 = r'C:\Users\acer\KGs-Integration\files\KG2_pred_prox_graph.txt'
+    prox_graph_merge_before_align = r'C:\Users\acer\KGs-Integration\files\pred_prox_graph_merge_before_align.txt'
+    merge_prox_graphs(prox_graph_KG1, prox_graph_KG2, prox_graph_merge_before_align)
+    match_entities(clean_gpt, prox_graph_KG1, prox_graph_KG2)
 
     # Facciamo la valutazione
     # Prima valutazione con i tipi unici
-    #file_all_types = r'C:\Users\acer\KGs-Integration\files\all_types.txt'
-    #results_unique_types = r'C:\Users\acer\KGs-Integration\files\unique_types_valuation_results.txt'
-    #union_typeset(file_type_KG1, file_type_KG2, file_all_types)
-    #file_after_align = r'C:\Users\acer\KGs-Integration\files\all_types_after_align.txt'
-    #process_and_write(file_all_types, clean_gpt, file_after_align)
-    #type_unique_valuation(file_all_types, file_after_align, results_unique_types)
-    # Verifica tramite embedding per avere più o meno una visualizzazione dei predicati potenzialmente simili e del loro cambiamento prima e dopo la sostituzione dei sinonimi
-    #embedding_predicate()
+    file_all_types = r'C:\Users\acer\KGs-Integration\files\all_types.txt'
+    results_unique_types = r'C:\Users\acer\KGs-Integration\files\unique_types_valuation_results.txt'
+    union_typeset(file_type_KG1, file_type_KG2, file_all_types)
+    file_after_align = r'C:\Users\acer\KGs-Integration\files\all_types_after_align.txt'
+    process_and_write(file_all_types, clean_gpt, file_after_align)
+    type_unique_valuation(file_all_types, file_after_align, results_unique_types)
+    # Verifichiamo tramite embedding per avere più o meno una visualizzazione dei predicati potenzialmente simili e del loro cambiamento prima e dopo la sostituzione dei sinonimi
+    embedding_predicate()
 
     try:
         # Carichiamo specifica del modulo
