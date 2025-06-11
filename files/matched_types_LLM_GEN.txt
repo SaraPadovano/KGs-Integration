@@ -1,1 +1,1 @@
-Violation, Damages, duration, Consequence, Victim, Emotional Abuse, hasLegalCase, Abuse, hasDamages, Physical Abuse, hasLegalCase
+Consequence, Victim

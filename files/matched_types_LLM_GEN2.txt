@@ -1,1 +1,1 @@
-Consequence, LegalArticle
+hasConsequence, hasLegalJudgment, hasConsequence, hasLegalJudgment, hasContext
