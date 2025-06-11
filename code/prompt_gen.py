@@ -32,11 +32,11 @@ def prompt(file1, file2, prompt_file):
         typeset2 = f.read().strip().split(",")
         typeset2 = [x.strip() for x in typeset2]
 
-    promt_template = f"""Now you are an expert in linguistics and knowledge graphs. I will give you two sets of words, indicating the entity types from two knowledge graphs. You need to identify all the word pairs from the two sets that are synonyms. For example, if the first set has the word ‘people’ and the second set has the word 'person', you need to identify the two words being synonyms and return me the pair (people, person) or for example, if you have StrasbourgCaseLaw in the first set and LegalCase in the second (StrasbourgCaseLaw, LegalCase).
+    promt_template = f"""Now you are an expert in linguistics and knowledge graphs. I will give you two sets of words, indicating the entity types from two knowledge graphs. You need to identify all the word pairs from the two sets that are synonyms. For example, if the first set has the word ‘people’ and the second set has the word 'person', you need to identify the two words being synonyms and return me the pair (people, person) or for example, if you have StrasbourgCaseLaw in the first set and LegalCase in the second (StrasbourgCaseLaw, LegalCase). Pay attention to details because for example decision and LegalJudgment aren't synonyms and don't consider literal types.
 Now the following are the two sets:
 Set 1: {list_to_str(typeset1)}
 Set 2: {list_to_str(typeset2)}
-Please return all the pairs that are synonyms from the two sets regarding entity types. Do not output the pairs if they are exactly the same. Remember you only need to return the pairs, each pair in one line. Each pair contain two types, one from Set 1 and another from Set 2, in the format (type1, type2). Please pay very attention that they have to be synonyms or have a strong semantic connection. For example (jurist, perpatator) are not synonyms.
+Please return all the pairs that are synonyms from the two sets regarding entity types. Do not output the pairs if they are exactly the same. Remember you only need to return the pairs, each pair in one line. Each pair contain two types, one from Set 1 and another from Set 2, in the format (type1, type2). Please pay very attention that they have to be synonyms or have a strong semantic connection. For example (jurist, perpatator) are not synonyms. Remember the synonyms have to be from the two different sets not from the same, the pair must be (type1, type2) not (type1, typw1) neither (type2,type2). Only (type1, type2).
 """
 
     with open(prompt_file, "w", encoding="utf-8") as f:
