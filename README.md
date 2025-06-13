@@ -29,12 +29,3 @@ Tesi di Laurea per il corso di Laurea in Informatica dell'Università di Bari Al
 
 **PASSAGGI EFFETTUATI NEL CODICE**
    - integrato nel codice il file Jupiter per la creazione del grafo di prossimità e per ottenere gli insiemi dei tipi di entità (nome file: *KB_entity_type*). Per consentirne la modifica (perchè serve sostituire il path dello script con i path dei due grafi) è stato trasformato da file Jupiter a file .py con il comando : jupyter nbconvert --to script KB_entity_type.ipynb. Eseguito dal terminale anaconda nella cartella in cui è presente il file (si vedrà nella stessa cartella lo script con lo stesso nome in formato .py);
-   
-
-**CONSIDERAZIONI**
-- dà il superamento del 10% della memoria a volte;
-- bisognerebbe aggiungere qualcosa per capire dove ci si trova dopo l'ultimo print di test;
-- si può verificare un problema pickle da crlf a lf perchè passaggio da linux a windows;
-- problema di writer risolto;
-- lento ma penso sia normale;
-- dovuto inserire il main in una cartella per come AutoAlign si richiama i file per testarlo
