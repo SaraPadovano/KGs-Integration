@@ -178,17 +178,17 @@ def main():
     score_gpt = r'C:\Users\acer\KGs-Integration\files\matched_score_GPT.txt'
     match_gpt = r'C:\Users\acer\KGs-Integration\files\GPT_match.txt'
     gpt_score(score_gpt, match_gpt)
-    # Ripuliamo il file dei sinonimi da quelli con stesso type1 ma score più basso dell'altro
-    clean_gpt_score = r'C:\Users\acer\KGs-Integration\files\cleaned_matched_score_GPT.txt'
-    clean_gpt = r'C:\Users\acer\KGs-Integration\files\cleaned_GPT.txt'
-    clean_match(score_gpt, clean_gpt_score, clean_gpt)
+    # Ripuliamo il file dei sinonimi da quelli con stesso type1 ma score più basso dell'altro (inutile)
+    #clean_gpt_score = r'C:\Users\acer\KGs-Integration\files\cleaned_matched_score_GPT.txt'
+    #clean_gpt = r'C:\Users\acer\KGs-Integration\files\cleaned_GPT.txt'
+    #clean_match(score_gpt, clean_gpt_score, clean_gpt)
 
     # Creiamo il grafo di prossimità finale
     prox_graph_KG1 = r'C:\Users\acer\KGs-Integration\files\KG1_pred_prox_graph.txt'
     prox_graph_KG2 = r'C:\Users\acer\KGs-Integration\files\KG2_pred_prox_graph.txt'
     prox_graph_merge_before_align = r'C:\Users\acer\KGs-Integration\files\pred_prox_graph_merge_before_align.txt'
     merge_prox_graphs(prox_graph_KG1, prox_graph_KG2, prox_graph_merge_before_align)
-    match_entities(clean_gpt, prox_graph_KG1, prox_graph_KG2)
+    match_entities(match_gpt, prox_graph_KG1, prox_graph_KG2)
 
     # Facciamo la valutazione
     # Prima valutazione con i tipi unici
@@ -196,7 +196,7 @@ def main():
     results_unique_types = r'C:\Users\acer\KGs-Integration\files\unique_types_valuation_results.txt'
     union_typeset(file_type_KG1, file_type_KG2, file_all_types)
     file_after_align = r'C:\Users\acer\KGs-Integration\files\all_types_after_align.txt'
-    process_and_write(file_all_types, clean_gpt, file_after_align)
+    process_and_write(file_all_types, match_gpt, file_after_align)
     type_unique_valuation(file_all_types, file_after_align, results_unique_types)
     # Verifichiamo tramite embedding per avere più o meno una visualizzazione dei predicati potenzialmente simili e del loro cambiamento prima e dopo la sostituzione dei sinonimi
     embedding_predicate()
