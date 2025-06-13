@@ -131,7 +131,7 @@ def main():
     options.add_argument("--disable-gpu")
     driver = webdriver.Chrome(service=service, options=options)
 
-    # KG di prova
+    # (inutile) KG di prova
     #KG1_filename = r'C:\Users\acer\KGs-Integration\KGs\KG_PROVA.ttl'
     #KG1_prox_graph_file = r'C:\Users\acer\KGs-Integration\files\KG_PROVA_pred_prox_graph'
     #KG1_flag = True
@@ -178,7 +178,7 @@ def main():
     score_gpt = r'C:\Users\acer\KGs-Integration\files\matched_score_GPT.txt'
     match_gpt = r'C:\Users\acer\KGs-Integration\files\GPT_match.txt'
     gpt_score(score_gpt, match_gpt)
-    # Ripuliamo il file dei sinonimi da quelli con stesso type1 ma score più basso dell'altro (inutile)
+    # (inutile) Ripuliamo il file dei sinonimi da quelli con stesso type1 ma score più basso dell'altro
     #clean_gpt_score = r'C:\Users\acer\KGs-Integration\files\cleaned_matched_score_GPT.txt'
     #clean_gpt = r'C:\Users\acer\KGs-Integration\files\cleaned_GPT.txt'
     #clean_match(score_gpt, clean_gpt_score, clean_gpt)
