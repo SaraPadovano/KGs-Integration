@@ -1,35 +1,35 @@
-=== Analisi Embedding Predicati ===
-Numero di predicati prima: 27
-Numero di predicati dopo: 27
-Numero di predicati comuni per confronto: 27
-Predicati comuni:
-- http://purl.org/dc/terms/abstract
-- http://purl.org/dc/terms/accessRights
-- http://purl.org/dc/terms/contributor
-- http://purl.org/dc/terms/coverage
-- http://purl.org/dc/terms/creator
-- http://purl.org/dc/terms/date
-- http://purl.org/dc/terms/description
-- http://purl.org/dc/terms/identifier
-- http://purl.org/dc/terms/isPartOf
-- http://purl.org/dc/terms/isVersionOf
-- http://purl.org/dc/terms/language
-- http://purl.org/dc/terms/publisher
-- http://purl.org/dc/terms/references
-- http://purl.org/dc/terms/title
-- http://purl.org/dc/terms/type
-- http://www.w3.org/1999/02/22-rdf-syntax-ns#type
-- http://www.w3.org/2000/01/rdf-schema#comment
-- http://www.w3.org/2000/01/rdf-schema#domain
-- http://www.w3.org/2000/01/rdf-schema#label
-- http://www.w3.org/2000/01/rdf-schema#range
-- http://www.w3.org/2000/01/rdf-schema#subClassOf
-- http://xmlns.com/foaf/0.1/name
-- https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#hasApplicationNumber
-- https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#importanceLevel
-- https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#involveConventionArticle
-- https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#respondentState
-- https://github.com/PeppeRubini/EVA-KG/tree/main/ontology/ontology.owl#unanimousDecision
+=== Analisi Embedding Contestuali Aggregati dei Predicati ===
+Numero di triple 'prima dell'allineamento': 10494
+Numero di triple 'dopo l'allineamento': 10494
+Numero di predicati unici comuni analizzati: 27
+Predicati unici comuni:
+- 22-rdf-syntax-nstype
+- abstract
+- accessRights
+- contributor
+- coverage
+- creator
+- date
+- description
+- identifier
+- isPartOf
+- isVersionOf
+- language
+- name
+- ontology.owlhasApplicationNumber
+- ontology.owlimportanceLevel
+- ontology.owlinvolveConventionArticle
+- ontology.owlrespondentState
+- ontology.owlunanimousDecision
+- publisher
+- rdf-schemacomment
+- rdf-schemadomain
+- rdf-schemalabel
+- rdf-schemarange
+- rdf-schemasubClassOf
+- references
+- title
+- type
 
-Grafico salvato in: C:\Users\acer\KGs-Integration\files\embedding_tsne_comparison.png
-===================================
+Grafico di t-SNE salvato in: C:\Users\acer\KGs-Integration\files\embedding_tsne_comparison.png
+===============================================
